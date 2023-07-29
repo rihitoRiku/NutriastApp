@@ -31,3 +31,17 @@ body {
   background-color: white;
   /* EDF2F3 */
 }
+
+/* Custom Scroll */
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+::-webkit-scrollbar-thumb {        
+  /* box-shadow: inset 0 0 0 10px; */
+  width: 8px;
+  background: rgb(216, 216, 216);
+}
