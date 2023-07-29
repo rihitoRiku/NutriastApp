@@ -51,6 +51,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                   </svg>
                   <input
                     type="text"
+                    placeholder="input your name here"
                     id="fullname"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                   />
@@ -79,7 +80,8 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
                   </svg>
                   <input
-                    type="text"
+                    type="email"
+                    placeholder="example@gmail.com"
                     id="fullname"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                   />
@@ -116,6 +118,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                   </svg>
                   <input
                     type="text"
+                    placeholder="(min.8 words)"
                     id="password"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                   />
@@ -154,7 +157,8 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     <line x1="3" y1="10" x2="21" y2="10"></line>
                   </svg>
                   <input
-                    type="text"
+                    type="date"
+                    placeholder="dd-mm-yy"
                     id="birthdate"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                   />
@@ -227,7 +231,8 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     </g>
                   </svg>
                   <input
-                    type="text"
+                    type="number"
+                    placeholder="input your height"
                     id="height"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                   />
@@ -266,7 +271,8 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     </g>
                   </svg>
                   <input
-                    type="text"
+                    type="number"
+                    placeholder="input your weight"
                     id="weight"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                   />
