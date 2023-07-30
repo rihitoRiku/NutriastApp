@@ -1,7 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GrClose } from "react-icons/gr";
 import "./registerStyle.css";
+import useInputRegisterStore from "@/hooks/useInputRegister";
+import axios from "axios";
 
 interface modalProps {
   active: string;
@@ -9,6 +11,21 @@ interface modalProps {
 }
 
 export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
+  
+  const input = useInputRegisterStore();
+  const handleRegister = async () => {
+    const newRegister = {
+      
+    }
+    try{
+      axios.post('/api/register', newRegister);
+    }catch(err){
+      console.log(err);
+    }
+  }
+  useEffect(() => {
+    input.setGender('male');
+  }, [input.gender]);
   return (
     <>
       <div id="global-container" className="flex justify-center items-center">
@@ -54,6 +71,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     placeholder="input your name here"
                     id="fullname"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    onChange={(e) => input.setFullname(e.target.value)}
                   />
                 </div>
               </div>
@@ -84,6 +102,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     placeholder="example@gmail.com"
                     id="fullname"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    onChange={(e) => input.setEmail(e.target.value)}
                   />
                 </div>
               </div>
@@ -121,6 +140,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     placeholder="(min.8 words)"
                     id="password"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    onChange={(e) => input.setPassword(e.target.value)}
                   />
                 </div>
               </div>
@@ -161,6 +181,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     placeholder="dd-mm-yy"
                     id="birthdate"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    onChange={(e) => input.setBirthDate(e.target.value)}
                   />
                 </div>
               </div>
@@ -191,11 +212,15 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                       <path d="M219.9209,39.21582c-.02246-.11328-.06519-.21777-.09693-.32715a2.32952,2.32952,0,0,0-.324-.7876c-.05811-.10693-.10522-.21777-.17383-.31982a3.99291,3.99291,0,0,0-.49316-.604l-.0044-.00537h0a4.03873,4.03873,0,0,0-.60962-.498c-.10156-.06787-.21142-.11475-.31713-.17237a4.01127,4.01127,0,0,0-.37134-.19531,3.93788,3.93788,0,0,0-.417-.12939c-.11036-.03223-.21558-.0752-.32959-.09766a4.04217,4.04217,0,0,0-.7771-.07861L216,36H168a4,4,0,0,0,0,8h38.34326L168,82.34326,146.82861,61.17188a3.99991,3.99991,0,0,0-5.65722,5.65624L162.34326,88,141.165,109.17822a68.02262,68.02262,0,1,0,5.65674,5.65674L168,93.65674l21.17139,21.17138a3.99991,3.99991,0,0,0,5.65722-5.65624L173.65674,88,212,49.65674V88a4,4,0,0,0,8,0V40.00146A4.03032,4.03032,0,0,0,219.9209,39.21582ZM138.42627,202.42676A60.00052,60.00052,0,1,1,156,160,60.0702,60.0702,0,0,1,138.42627,202.42676Z"></path>{" "}
                     </g>
                   </svg>
-                  <input
-                    type="text"
+                  <select
                     id="gender"
+                    onChange={(e) => input.setGender(e.target.value)}
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
-                  />
+                  >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+            
                 </div>
               </div>
               <div className="mb-2">
@@ -235,6 +260,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     placeholder="input your height"
                     id="height"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    onChange={(e) => input.setHeight(parseInt(e.target.value))}
                   />
                 </div>
               </div>
@@ -275,11 +301,13 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     placeholder="input your weight"
                     id="weight"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    onChange={(e) => input.setWeight(parseInt(e.target.value))}
                   />
                 </div>
               </div>
               <div className="lg:flex lg:justify-center lg:items-center">
                 <button
+                onClick={handleRegister}
                   type="button"
                   className="py-2 px-4 rounded-xl h-12 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800 text-lg font-medium mr-2 mb-6"
                 >

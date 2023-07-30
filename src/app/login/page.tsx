@@ -2,10 +2,27 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import appLogo from "/public/assets/image/nutriast_logo.png";
-import {Register} from "./register";
-
+import { Register } from "./register";
+import useInputLoginStore from "@/hooks/useInputLogin";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 export default function Login() {
-  const [registerModal, setRegisterModal]=useState(false)
+  const router = useRouter();
+  const [registerModal, setRegisterModal] = useState(false);
+  const input = useInputLoginStore();
+  const handleLogin = async () => {
+    console.log(input.email, input.password)
+    const login = {
+      email: input.email,
+      password: input.password,
+    };
+    try{
+      const response = await axios.post('api/login', login);
+      router.push('/home');
+    }catch(err){
+      console.log('Error: ' + err);
+    }
+  };
   return (
     <>
       <div className="lg:flex">
@@ -41,6 +58,7 @@ export default function Login() {
                 type="email"
                 name="email"
                 placeholder="Email Address"
+                onChange={(e) => input.setEmail(e.target.value)}
               />
             </div>
             <div className="flex items-center border py-2 px-4 rounded-md h-12 bg-white">
@@ -62,12 +80,14 @@ export default function Login() {
                 name="password"
                 id="password"
                 placeholder="Password"
+                onChange={(e) => input.setPassword(e.target.value)}
               />
             </div>
 
             <div className="flex flex-col items-center justify-center mt-4">
               {/* 49BC86 */}
               <button
+                onClick={handleLogin}
                 type="button"
                 className=" py-2 px-4 rounded-xl h-12 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800"
               >
@@ -92,7 +112,9 @@ export default function Login() {
           className="lg:w-1/2 h-screen bg-green-300"
         ></div>
       </div>
-      {registerModal && <Register active="true" closeModal={() => setRegisterModal(false)} />}
+      {registerModal && (
+        <Register active="true" closeModal={() => setRegisterModal(false)} />
+      )}
     </>
   );
 }
