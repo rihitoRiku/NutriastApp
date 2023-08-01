@@ -24,8 +24,8 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
     }
   }
   useEffect(() => {
-    input.setGender('male');
-  }, [input.gender]);
+    <></>
+  }, []);
   return (
     <>
       <div id="global-container" className="flex justify-center items-center">
@@ -217,6 +217,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     onChange={(e) => input.setGender(e.target.value)}
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                   >
+                    <option value="" selected disabled>Choose gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                   </select>
@@ -305,11 +306,11 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                   />
                 </div>
               </div>
-              <div className="lg:flex lg:justify-center lg:items-center">
+              <div className="flex justify-end lg:justify-center lg:items-center">
                 <button
                 onClick={handleRegister}
                   type="button"
-                  className="py-2 px-4 rounded-xl h-12 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800 text-lg font-medium mr-2 mb-6"
+                  className="rounded-xl h-12 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800 text-lg font-medium mb-6"
                 >
                   Register
                 </button>
