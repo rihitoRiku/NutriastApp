@@ -33,7 +33,7 @@ const dailyNutritionContent = (
       </li>
       <li className="flex items-center">
         <svg
-          className="w-3.5 h-3.5 mr-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
+          className="w-3.55 h-3.5 mr-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -66,13 +66,13 @@ export default function page() {
         <div id="avatar" className="">
           <div className="flex items-center space-x-4">
             <img
-              className="w-10 h-10 rounded-full"
-              src="/docs/images/people/profile-picture-5.jpg"
+              className="w-15 h-15 rounded-full"
+              src=""
               alt=""
             />
             <div className="font-medium">
-              <div className="text-sm text-gray-500">Good afternoon,</div>
-              <div>Rihito</div>
+              <div className="text-md text-gray-500">Good afternoon,</div>
+              <div className="text-xl">Rihito</div>
             </div>
           </div>
         </div>
