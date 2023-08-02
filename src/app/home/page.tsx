@@ -3,71 +3,186 @@ import Card from "../components/card/card";
 
 const dailyNutritionContent = (
   <>
-    <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-      Password requirements:
-    </h2>
-    <ul className="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
-      <li className="flex items-center">
+    <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
+      <li className="flex items-center space-x-3">
         <svg
-          className="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0"
+          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 20"
+          fill="none"
+          viewBox="0 0 16 12"
         >
-          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5"
+          />
         </svg>
-        At least 10 characters
+        <span>
+          Fat :{" "}
+          <span className="font-semibold text-gray-600">undefinied</span>
+        </span>
       </li>
-      <li className="flex items-center">
+      <li className="flex items-center space-x-3">
         <svg
-          className="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0"
+          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 20"
+          fill="none"
+          viewBox="0 0 16 12"
         >
-          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5"
+          />
         </svg>
-        At least one lowercase character
+        <span>
+          Calory :{" "}
+          <span className="font-semibold text-gray-600">undefinied</span>
+        </span>
       </li>
-      <li className="flex items-center">
+      <li className="flex items-center space-x-3">
         <svg
-          className="w-3.55 h-3.5 mr-2 text-gray-500 dark:text-gray-400 flex-shrink-0"
+          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 20"
+          fill="none"
+          viewBox="0 0 16 12"
         >
-          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5"
+          />
         </svg>
-        At least one special character, e.g., ! @ # ?
+        <span>
+          Fiber :{" "}
+          <span className="font-semibold text-gray-600">undefinied</span>
+        </span>
+      </li>
+      <li className="flex items-center space-x-3">
+        <svg
+          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 16 12"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5"
+          />
+        </svg>
+        <span>
+          Carbohidrate :{" "}
+          <span className="font-semibold text-gray-600">undefinied</span>
+        </span>
+      </li>
+      <li className="flex items-center space-x-3">
+        <svg
+          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 16 12"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5"
+          />
+        </svg>
+        <span>
+          Protein :{" "}
+          <span className="font-semibold text-gray-600">undefinied</span>
+        </span>
       </li>
     </ul>
   </>
 );
 
 const healthStatusContent = (
-    <>
-    <div className="text-md break-words w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus delectus voluptas corrupti fugiat unde, labore non officia dignissimos. Eligendi laborum commodi, iste iure explicabo asperiores.</div>
-    </>
-)
+  <>
+    <div className="text-md break-words w-full mb-6">
+      Great job on meeting your daily nutrition needs! Keep up the good work and
+      continue to prioritize a balanced and healthy diet. Remember to listen to
+      your body and make adjustments as necessary to maintain optimal health
+    </div>
+    <button
+      type="button"
+      className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center"
+    >
+      Checkout
+      <svg
+        className="w-3.5 h-3.5 ml-2"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 5h12m0 0L9 1m4 4L9 9"
+        />
+      </svg>
+    </button>
+  </>
+);
 
 const riskContent = (
-    <>
-    <div className="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus delectus voluptas corrupti fugiat unde, labore non officia dignissimos. Eligendi laborum commodi, iste iure explicabo asperiores.</div>
-    </>
-)
+  <>
+    <div className="text-md mb-6">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+      delectus voluptas corrupti fugiat unde, labore non officia dignissimos.
+    </div>
+    <button
+      type="button"
+      className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-medium rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
+    >
+      Predict Now!
+      <svg
+        className="w-3.5 h-3.5 ml-2"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 5h12m0 0L9 1m4 4L9 9"
+        />
+      </svg>
+    </button>
+  </>
+);
 
-export default function page() {
+export default function Page() {
   return (
     <>
-      <div className="container max-w-7xl mx-auto px-4 md:px-8">
+      <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8">
         <div id="avatar" className="">
           <div className="flex items-center space-x-4">
             <img
-              className="w-15 h-15 rounded-full"
-              src=""
+              className="w-14 h-14 rounded-full border-2"
+              src="next.svg"
               alt=""
             />
             <div className="font-medium">
@@ -76,10 +191,7 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div
-          id="content"
-          className="mt-8 flex flex-col md:flex-row gap-8"
-        >
+        <div id="content" className="mt-8 flex flex-col md:flex-row gap-8">
           <div className="min-w-[20em]">
             <div className="text-body text-xl font-semibold text-gray-500 mb-4">
               Your Daily Nutrition Needs
