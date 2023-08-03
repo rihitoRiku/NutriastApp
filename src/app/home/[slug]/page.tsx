@@ -156,27 +156,29 @@ const riskContent = (
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
       delectus voluptas corrupti fugiat unde, labore non officia dignissimos.
     </div>
-    <button
-      type="button"
-      className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
-    >
-      Predict Now!
-      <svg
-        className="w-3.5 h-3.5 ml-2"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 14 10"
+    <Link href="a/predict">
+      <button
+        type="button"
+        className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
       >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M1 5h12m0 0L9 1m4 4L9 9"
-        />
-      </svg>
-    </button>
+        Predict Now!
+        <svg
+          className="w-3.5 h-3.5 ml-2"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"
+          />
+        </svg>
+      </button>
+    </Link>
   </>
 );
 
