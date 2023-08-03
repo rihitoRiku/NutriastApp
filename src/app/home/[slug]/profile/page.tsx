@@ -1,5 +1,8 @@
 import React from "react";
-import { BasicCard } from "../../components/card/card";
+import { BasicCard } from "../../../components/card/card";
+import Image from "next/image";
+import appLogo from "/public/next.svg";
+import Navbar from "../../../navbar";
 
 const profileContent = (
   <>
@@ -91,15 +94,38 @@ const profileContent = (
   </>
 );
 
-export default function Page() {
+export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
-      <div className="flex justify-center items-center xs:items-start flex-col sm:flex-row px-4 gap-8">
-        <div className="w-full max-w-[20em] h-full block sm:max-w-xs p-8">
-          <div className="flex flex-col items-center">
-            <img
-              className="w-24 h-24 mb-3 rounded-full shadow-lg"
-              src="next.svg"
+      <Navbar title="Profile" />
+      <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-12 w-full max-w-2xl">
+        <button
+          type="button"
+          className=" font-medium text-xl text-center flex items-center "
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+          <span className="">Back</span>
+        </button>
+      </div>
+      {/* Rest of your ProfilePage component */}
+      <div className="flex justify-center items-center sm:items-start flex-col sm:flex-row px-4 gap-16 mb-16">
+        <div className="max-w-[20em] h-full block sm:max-w-xs">
+          <div className="flex flex-col items-center mb-3  w-max">
+            <Image
+              className="w-24 h-24 mb-6 rounded-full shadow-lg"
+              src={appLogo}
               alt=""
             />
             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
@@ -110,8 +136,14 @@ export default function Page() {
             </span>
           </div>
         </div>
-        <div className="w-full max-w-[28em] h-full sm:max-w-md">
+        <div className="w-full max-w-[28em] h-full sm:max-w-md space-y-4 ">
           <BasicCard title="Personal information" content={profileContent} />
+          <button
+            type="button"
+            className="text-green-700 hover:text-white bg-white border border-gray-200 hover:bg-green-800 font-medium rounded-lg text-md px-12 py-3 text-center mr-2 mb-2"
+          >
+            Change
+          </button>
         </div>
       </div>
     </>

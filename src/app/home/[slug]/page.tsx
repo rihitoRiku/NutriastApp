@@ -1,5 +1,7 @@
 import React from "react";
-import Card from "../components/card/card";
+import Card from "../../components/card/card";
+import Navbar from "../../navbar";
+import appLogo from "/public/next.svg";
 
 const dailyNutritionContent = (
   <>
@@ -21,8 +23,7 @@ const dailyNutritionContent = (
           />
         </svg>
         <span>
-          Fat :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          Fat : <span className="font-semibold text-gray-600">undefinied</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -152,7 +153,7 @@ const riskContent = (
     </div>
     <button
       type="button"
-      className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-medium rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
+      className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
     >
       Predict Now!
       <svg
@@ -174,21 +175,43 @@ const riskContent = (
   </>
 );
 
-export default function Page() {
+export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
+      <Navbar title="Dashboard" />
       <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8">
-        <div id="avatar" className="">
+        <div id="avatar" className="flex items-center justify-between ">
           <div className="flex items-center space-x-4">
             <img
               className="w-14 h-14 rounded-full border-2"
-              src="next.svg"
+              src={appLogo}
               alt=""
             />
             <div className="font-medium">
               <div className="text-md text-gray-500">Good afternoon,</div>
               <div className="text-xl">Rihito</div>
             </div>
+          </div>
+          <div className="">
+            <button
+              type="button"
+              className="inline-flex items-center hover:text-white border border-green-700 hover:bg-green-800 font-semibold rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            >
+              <span className="me-2"> Logout </span> 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 17l5-5-5-5M19.8 12H9M13 22a10 10 0 1 1 0-20" />
+              </svg>
+            </button>
           </div>
         </div>
         <div id="content" className="mt-8 flex flex-col md:flex-row gap-8">
