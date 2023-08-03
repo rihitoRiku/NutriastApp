@@ -140,7 +140,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <BasicCard title="Personal information" content={profileContent} />
           <button
             type="button"
-            className="text-green-700 hover:text-white bg-white border border-gray-200 hover:bg-green-800 font-medium rounded-lg text-md px-12 py-3 text-center mr-2 mb-2"
+            className=" hover:text-white bg-white border border-gray-200 hover:bg-green-800 font-medium rounded-full text-md px-12 py-3 text-center mr-2 mb-2"
           >
             Change
           </button>

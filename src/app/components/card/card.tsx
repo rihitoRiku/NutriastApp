@@ -19,11 +19,14 @@ export default function Card({ title, content }: CardInterface) {
     <>
       <div id="" className="">
         <div className="w-full block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-50">
-          <h5
-            className={`mb-2 text-4xl font-bold tracking-tight ${titleColorClass}`}
-          >
-            {title}
-          </h5>
+          {title && (
+            <h5
+              className={`mb-6 text-4xl font-bold tracking-tight ${titleColorClass}`}
+            >
+              {title}
+            </h5>
+          )}
+
           {content && (
             <div className="font-normal text-gray-700 dark:text-gray-400">
               {content}
@@ -45,7 +48,9 @@ export function BasicCard({ title, content }: BasicCardInterface) {
     <>
       <div id="" className="">
         <div className="block p-8 bg-white border border-gray-200 rounded-lg hover:bg-gray-50">
-          <h5 className={`mb-6 text-2xl font-semibold text-slate-700`}>{title}</h5>
+          <h5 className={`mb-6 text-2xl font-semibold text-slate-700`}>
+            {title}
+          </h5>
           {content && (
             <div className="font-normal text-gray-700 dark:text-gray-400">
               {content}
