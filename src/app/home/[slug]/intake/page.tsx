@@ -1,9 +1,59 @@
-import React from "react";
+"use client";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 export default function Page() {
+  // placeholder based on screensize
+  const [isMediumScreen, setIsMediumScreen] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMediumScreen(window.innerWidth >= 768);
+    };
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const getPlaceholder = () => {
+    return isMediumScreen
+      ? "Search Food or Drink name... "
+      : "Search Food or Drink";
+  };
+  
+  //   onclick back
+  const router = useRouter();
+  //   const onClickBack = () => {
+  //     router.back(); // or router.push('/home/a') if you want to navigate to that path specifically
+  //   }
+
   return (
     <>
       <div className="px-4 min-h-screen grid grid-rows-6 grid-flow-col gap-4">
+        <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-12 w-full max-w-3xl">
+          <Link href="/home/a">
+            <button
+              type="button"
+              className=" font-medium text-xl text-center flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+              <span className="">Back</span>
+            </button>
+          </Link>
+        </div>
         <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2  row-start-2 self-end">
           How was your food today?
         </div>
@@ -16,7 +66,7 @@ export default function Page() {
             <div className="relative w-full">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
-                className="ms-1 w-6 h-6"
+                  className="ms-1 w-6 h-6"
                   fill="#6b7280"
                   viewBox="0 -3.84 122.88 122.88"
                   version="1.1"
@@ -42,8 +92,8 @@ export default function Page() {
               <input
                 type="text"
                 id="simple-search"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-md lg:text-lg rounded-lg block w-full pl-12 lg:pl-12 p-2 lg:p-2.5 focus:outline-none ring-transparent"
-                placeholder="Search Food or Drink name..."
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-md lg:text-lg rounded-lg block w-full pl-12 lg:pl-16 p-2 lg:p-2.5 focus:outline-none ring-transparent"
+                placeholder={`${getPlaceholder()}`}
                 required
               />
             </div>
