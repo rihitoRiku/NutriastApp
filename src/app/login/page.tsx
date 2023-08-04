@@ -6,21 +6,22 @@ import { Register } from "./register";
 import useInputLoginStore from "@/hooks/useInputLogin";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 export default function Login() {
   const router = useRouter();
   const [registerModal, setRegisterModal] = useState(false);
   const input = useInputLoginStore();
   const handleLogin = async () => {
-    console.log(input.email, input.password)
+    console.log(input.email, input.password);
     const login = {
       email: input.email,
       password: input.password,
     };
-    try{
-      const response = await axios.post('api/login', login);
-      router.push('/home');
-    }catch(err){
-      console.log('Error: ' + err);
+    try {
+      const response = await axios.post("api/login", login);
+      router.push("/home");
+    } catch (err) {
+      console.log("Error: " + err);
     }
   };
   return (
@@ -89,7 +90,7 @@ export default function Login() {
               <button
                 onClick={handleLogin}
                 type="button"
-                className=" py-2 px-4 rounded-xl h-12 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800"
+                className="w-3/5 py-2 px-4 rounded-xl h-12 focus:outline-none text-white bg-green-700 hover:bg-green-800"
               >
                 Login
               </button>

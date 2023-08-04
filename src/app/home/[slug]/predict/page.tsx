@@ -49,7 +49,7 @@ export default function Page() {
       <div className="mt-12 max-w-2xl mx-auto px-6 lg:px-0">
         <Image src={Illust} alt="Logo Nutriast" />
       </div>
-      <div className="px-4 mb-16">
+      <div className="px-4 mb-28">
         <div
           id="global-container"
           className="flex flex-col justify-center items-center"
@@ -403,6 +403,27 @@ export default function Page() {
               </li>
             </ul>
           </div>
+          {/* Button */}
+          <button
+            type="button"
+            className="mt-14 inline-flex items-center text-gray-700 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-full text-lg px-14 py-3 text-center"
+          >
+            Predict Now!
+            <svg
+              className="ms-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M13 17l5-5-5-5M6 17l5-5-5-5" />
+            </svg>
+          </button>
         </div>
       </div>
     </>
