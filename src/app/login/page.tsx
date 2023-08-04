@@ -7,6 +7,7 @@ import useInputLoginStore from "@/hooks/useInputLogin";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import toast from "react-hot-toast";
 export default function Login() {
   const router = useRouter();
   const [registerModal, setRegisterModal] = useState(false);
@@ -18,8 +19,16 @@ export default function Login() {
       password: input.password,
     };
     try {
-      const response = await axios.post("api/login", login);
-      router.push("/home");
+      axios
+        .post("http://localhost:5000/login/", login)
+        .then((response) => {
+          console.log(response.data)
+          // toast.success(`Hello ${response.data.data.username}`);
+          // router.push(`/home/${response.data.data.userId}`);
+        })
+        .catch((error) => {
+          console.log(error)
+        } );
     } catch (err) {
       console.log("Error: " + err);
     }

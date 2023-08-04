@@ -4,21 +4,36 @@ import { GrClose } from "react-icons/gr";
 import "./registerStyle.css";
 import useInputRegisterStore from "@/hooks/useInputRegister";
 import axios from "axios";
-
+import { useRouter } from "next/navigation";
+import { toast } from "react-hot-toast";
+// import { cookies } from 'next/headers';
 interface modalProps {
   active: string;
   closeModal: () => void;
 }
 
 export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
-  
+  const router = useRouter();
   const input = useInputRegisterStore();
   const handleRegister = async () => {
     const newRegister = {
-      
+      email: input.email,
+      password: input.password,
+      username: input.fullname,
+      birthdate: input.birthDate,
+      gender: input.gender,
+      height: input.height,
+      weight: input.weight,
     }
     try{
-      axios.post('/api/register', newRegister);
+      // console.log(newRegister);
+      axios.post('http://localhost:5000/register', newRegister).then((response) => {
+        // console.log(response);
+        // localStorage.setItem('user', JSON.stringify(response.data.data.username));
+        toast.success('Registration successfully');
+        
+      }).catch((err) => (toast.error(err.message)));
+
     }catch(err){
       console.log(err);
     }
@@ -136,7 +151,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                   </svg>
                   <input
-                    type="text"
+                    type="password"
                     placeholder="(min.8 words)"
                     id="password"
                     className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
