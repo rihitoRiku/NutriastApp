@@ -28,13 +28,14 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
     try{
       // console.log(newRegister);
       axios.post('http://localhost:5000/register', newRegister).then((response) => {
-        console.log(response);
-        localStorage.setItem('user', JSON.stringify(response.data.data.username));
-        toast.success(`Hello ${response.data.data.username}`)
-      });
+        // console.log(response);
+        // localStorage.setItem('user', JSON.stringify(response.data.data.username));
+        toast.success('Registration successfully');
+        
+      }).catch((err) => (toast.error(err.message)));
 
     }catch(err){
-      toast.error(`${err}`);
+      console.log(err);
     }
   }
   useEffect(() => {
