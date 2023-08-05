@@ -3,13 +3,22 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import jsonData from "./../../../../DataMakananTKPI.json";
+import FoodCard from "@/app/components/foodcard/foodcard";
 
-interface FoodItem {
+interface FoodData {
   nama: string;
+  energi: number;
+  protein: number;
+  lemak: number;
+  karbohidrat: number;
+  serat: number;
+}
+interface FoodItem extends FoodData {
+  quantity: number;
 }
 
 export default function Page() {
-  // placeholder based on screensize
+  // PLACEHOLDER BASED ON SCREEN SIZE
   const [isMediumScreen, setIsMediumScreen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
@@ -27,30 +36,61 @@ export default function Page() {
       : "Search Food or Drink";
   };
 
-  const [inputValue, setInputValue] = useState<string>("");
+  // FORM AND LIST HANDLER
+  const [consumedFoods, setConsumedFoods] = useState<FoodItem[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [suggestions, setSuggestions] = useState<FoodItem[]>([]);
 
-  // handler input
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
     setSearchTerm(value);
 
-    // Filter the JSON data based on the user's input
-    const filteredSuggestions = jsonData.filter((item: FoodItem) =>
-      item.nama.toLowerCase().includes(value.toLowerCase())
-    );
+    // Filter data makanan berdasarkan nama makanan yang mengandung nilai input
+    const filteredSuggestions: FoodItem[] = jsonData
+      .filter((item: FoodData) =>
+        item.nama.toLowerCase().includes(value.toLowerCase())
+      )
+      .map((item: FoodData) => ({
+        ...(item as FoodItem), // Cast (ubah tipe) item ke tipe FoodItem untuk menyertakan properti 'quantity'
+        quantity: 1, // Tambahkan properti 'quantity' dengan nilai 1 ke setiap item
+      }));
 
+    // Perbarui state suggestions dengan data yang sudah difilter dan diberi properti 'quantity'
     setSuggestions(filteredSuggestions);
   };
 
-  //handler input dropdown
+  const addFoodToConsumedList = (foodName: string) => {
+    // Dapatkan data makanan berdasarkan nama makanan
+    const foodData = getFoodData(foodName);
 
-  //   onclick back
+    if (foodData) {
+      // Buat objek makanan baru dengan nama makanan dan jumlah default 1
+      const { nama, ...rest } = foodData; // Destructure properti 'nama'
+      const newFood: FoodItem = { nama: foodName, quantity: 1, ...rest }; // Rekonstruksi objek dengan properti 'nama'
+      setConsumedFoods((prevFoods) => [...prevFoods, newFood]);
+    } else {
+      console.error(`Makanan dengan nama '${foodName}' tidak ditemukan.`);
+    }
+  };
+
+  const removeFoodFromConsumedList = (foodName: string) => {
+    // Perbarui state consumedFoods dengan menyaring makanan berdasarkan nama makanan
+    setConsumedFoods((prevFoods) =>
+      prevFoods.filter((food) => food.nama !== foodName)
+    );
+  };
+
+  const getFoodData = (foodName: string): FoodData | undefined => {
+    // Implementasi placeholder - ganti dengan logika pengambilan data sebenarnya
+    // Cari dan kembalikan data makanan berdasarkan nama makanan dari array jsonData
+    return jsonData.find((item: FoodData) => item.nama === foodName);
+  };
+
+  // ONCLICK BACK
   const router = useRouter();
-  //   const onClickBack = () => {
-  //     router.back(); // or router.push('/home/a') if you want to navigate to that path specifically
-  //   }
+  // const onClickBack = () => {
+  //   router.back(); // or router.push('/home/a') if you want to navigate to that path specifically
+  // }
 
   return (
     <>
@@ -77,9 +117,9 @@ export default function Page() {
           </button>
         </Link>
       </div>
-      <div className="px-4 h-screen gap-4 grid grid-rows-3 grid-flow-row">
+      <div className="px-4 min-h-screen gap-4 grid grid-rows-3 grid-flow-row">
         <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2 row-start-1 self-end">
-          How was your food today?
+          How's Your Food Today?
         </div>
         {/* Search Bar */}
         <div id="search" className="w-full max-w-3xl mx-auto row-start-2">
@@ -125,7 +165,9 @@ export default function Page() {
             </div>
           </form>
           <div
-            className={`max-h-56 border-2 rounded-lg overflow-scroll ${searchTerm ? "" : "hidden"} ${suggestions.length ? "" : "hidden"}`}
+            className={`max-h-56 border-2 rounded-lg overflow-scroll ${
+              searchTerm ? "" : "hidden"
+            } ${suggestions.length ? "" : "hidden"}`}
           >
             <div
               id="dropdown"
@@ -140,6 +182,7 @@ export default function Page() {
                     <a
                       href="#"
                       className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      onClick={() => addFoodToConsumedList(item.nama)}
                     >
                       {item.nama}
                     </a>
@@ -148,11 +191,85 @@ export default function Page() {
               </ul>
             </div>
           </div>
-          {/* <ul>
-            {suggestions.map((item: FoodItem) => (
-              <li key={item.nama}>{item.nama}</li>
-            ))}
-          </ul> */}
+        </div>
+        <div className="row-start-3 w-full max-w-2xl mx-auto h-min max-h-96 overflow-scroll">
+          <div className="text-2xl font-semibold text-center mb-6 text-slate-700">
+            List Foods & Drinks Consumed
+          </div>
+          {consumedFoods.length ? (
+            <>
+              <ul className="w-full divide-y divide-gray-200 dark:divide-gray-700">
+                <FoodCard />
+                {consumedFoods.map((food: FoodItem, index: number) => (
+                  <li className="pb-3 sm:pb-4">
+                    <div className="flex items-center space-x-4">
+                      <div className="flex-1 min-w-0">
+                        <p className="text-md font-medium text-gray-900 truncate">
+                          {food.nama}
+                        </p>
+                        <p className="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Protein: {food.protein * food.quantity}, Energi:{" "}
+                          {food.energi * food.quantity}, Karbohidrat:{" "}
+                          {food.karbohidrat * food.quantity * food.quantity},
+                          Lemak: {food.lemak * food.quantity}, Serat:{" "}
+                          {food.serat * food.quantity}
+                        </p>
+                      </div>
+                      <div className="">
+                        <input
+                          type="number"
+                          min="1"
+                          value={food.quantity}
+                          onChange={(e) =>
+                            setConsumedFoods((prevFoods) =>
+                              prevFoods.map((prevFood, idx) =>
+                                idx === index
+                                  ? {
+                                      ...prevFood,
+                                      quantity: parseInt(e.target.value),
+                                    }
+                                  : prevFood
+                              )
+                            )
+                          }
+                          className="w-16 py-1 px-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                        />
+                      </div>
+
+                      {/* <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                    Sip
+                  </div> */}
+                      <div className="cursor-pointer">
+                        <svg
+                          onClick={() => removeFoodFromConsumedList(food.nama)}
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#000000"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <polyline points="3 6 5 6 21 6"></polyline>
+                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                          <line x1="10" y1="11" x2="10" y2="17"></line>
+                          <line x1="14" y1="11" x2="14" y2="17"></line>
+                        </svg>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <>
+              <div className="text-lg text-center text-slate-500">
+                No food consumed, Huh?
+              </div>
+            </>
+          )}
         </div>
       </div>
     </>
