@@ -27,10 +27,22 @@ export default function Login() {
     };
 
     try {
-      const response = await axios.post("http://localhost:5000/login/", login);
-      console.log(response.data);
-      // toast.success(`Hello ${response.data.data.username}`);
-      // router.push(`/home/${response.data.data.userId}`);
+      const response = await axios.post("http://localhost:5000/login/", login).then((response) => {
+          if (response.data.status === "400") {
+            toast.error(response.data.message);
+          } else {
+            toast.success(`Hello ${response.data.data.username}`);
+            router.push(`/home/${response.data.data.userId}`);
+            // Assuming the server sends the token in the 'token' property of the response
+      const token = response.data.data.authentication_token;
+
+      // Set the token as a cookie
+      document.cookie = `token=${token}; path=/;`;
+          }
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     } catch (error) {
       console.log(error);
     }

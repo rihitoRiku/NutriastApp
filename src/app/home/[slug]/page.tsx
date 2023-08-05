@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Card from "../../components/card/card";
 import Navbar from "../../navbar";
 import appLogo from "/public/next.svg";
-
+import { cookies } from "next/dist/client/components/headers";
+import Cookies from 'js-cookie';
 const dailyNutritionContent = (
   <>
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
@@ -183,6 +184,11 @@ const riskContent = (
 );
 
 export default function Page({ params }: { params: { slug: string } }) {
+  useEffect(() => {
+    // Get the value of the "Login_Token" cookie
+    const loginTokenCookie = Cookies.get('Login_Token');
+    console.log('Login_Token Cookie Value:', loginTokenCookie);
+  }, []);
   return (
     <>
       <Navbar title="Dashboard" />
