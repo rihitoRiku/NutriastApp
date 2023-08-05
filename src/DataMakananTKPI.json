@@ -1,0 +1,9186 @@
+[
+  {
+    "nama": "Nasi",
+    "energi": 180,
+    "protein": 3,
+    "lemak": 0.3,
+    "karbohidrat": 39.8,
+    "serat": 0.2
+  },
+  {
+    "nama": "Nasi tim",
+    "energi": 120,
+    "protein": 2.4,
+    "lemak": 0.4,
+    "karbohidrat": 26,
+    "serat": 0.5
+  },
+  {
+    "nama": "Tapai beras",
+    "energi": 99,
+    "protein": 1.7,
+    "lemak": 0.3,
+    "karbohidrat": 22.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tepung beras, mentah",
+    "energi": 353,
+    "protein": 7,
+    "lemak": 0.5,
+    "karbohidrat": 80,
+    "serat": 2.4
+  },
+  {
+    "nama": "Nasi beras merah",
+    "energi": 149,
+    "protein": 2.8,
+    "lemak": 0.4,
+    "karbohidrat": 32.5,
+    "serat": 0.3
+  },
+  {
+    "nama": "Bihun, mentah",
+    "energi": 348,
+    "protein": 4.7,
+    "lemak": 0.1,
+    "karbohidrat": 82.1,
+    "serat": 1.2
+  },
+  {
+    "nama": "Bihun goreng instan",
+    "energi": 381,
+    "protein": 6.1,
+    "lemak": 3.9,
+    "karbohidrat": 80.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bihun Jagung, mentah",
+    "energi": 354,
+    "protein": 0.5,
+    "lemak": 0.3,
+    "karbohidrat": 87.4,
+    "serat": 3
+  },
+  {
+    "nama": "Nasi jagung",
+    "energi": 357,
+    "protein": 8.8,
+    "lemak": 0.5,
+    "karbohidrat": 79.5,
+    "serat": 6.2
+  },
+  {
+    "nama": "Jagung muda, rebus",
+    "energi": 142,
+    "protein": 5,
+    "lemak": 0.7,
+    "karbohidrat": 30.3,
+    "serat": 0.8
+  },
+  {
+    "nama": "Jagung kuning, tepung",
+    "energi": 355,
+    "protein": 9.2,
+    "lemak": 3.9,
+    "karbohidrat": 73.7,
+    "serat": 7.2
+  },
+  {
+    "nama": "Jagung kuning pipil, rebus",
+    "energi": 154,
+    "protein": 3.8,
+    "lemak": 3.5,
+    "karbohidrat": 28.4,
+    "serat": 0.7
+  },
+  {
+    "nama": "Tepung jagung putih",
+    "energi": 355,
+    "protein": 9.2,
+    "lemak": 3.9,
+    "karbohidrat": 73.7,
+    "serat": 7.2
+  },
+  {
+    "nama": "Ketupat ketan",
+    "energi": 212,
+    "protein": 4,
+    "lemak": 4.6,
+    "karbohidrat": 38.6,
+    "serat": 0.2
+  },
+  {
+    "nama": "Ketan hitam, matang",
+    "energi": 181,
+    "protein": 4,
+    "lemak": 1.2,
+    "karbohidrat": 37.3,
+    "serat": 0.3
+  },
+  {
+    "nama": "Tapai ketan hitam",
+    "energi": 166,
+    "protein": 3.8,
+    "lemak": 1,
+    "karbohidrat": 34.4,
+    "serat": 0.3
+  },
+  {
+    "nama": "Ketan putih, matang",
+    "energi": 163,
+    "protein": 3,
+    "lemak": 0.4,
+    "karbohidrat": 35.7,
+    "serat": 0.2
+  },
+  {
+    "nama": "Tapai ketan putih",
+    "energi": 172,
+    "protein": 3,
+    "lemak": 0.5,
+    "karbohidrat": 37.5,
+    "serat": 0.6
+  },
+  {
+    "nama": "Maizena, tepung",
+    "energi": 341,
+    "protein": 0.3,
+    "lemak": 0.0,
+    "karbohidrat": 85,
+    "serat": 7
+  },
+  {
+    "nama": "Makaroni, mentah",
+    "energi": 353,
+    "protein": 8.7,
+    "lemak": 0.4,
+    "karbohidrat": 78.7,
+    "serat": 4.9
+  },
+  {
+    "nama": "Mi basah",
+    "energi": 88,
+    "protein": 0.6,
+    "lemak": 3.3,
+    "karbohidrat": 14,
+    "serat": 0.1
+  },
+  {
+    "nama": "Mi kering",
+    "energi": 339,
+    "protein": 10,
+    "lemak": 1.7,
+    "karbohidrat": 6.3,
+    "serat": 0.4
+  },
+  {
+    "nama": "Misoa",
+    "energi": 345,
+    "protein": 8.5,
+    "lemak": 2.2,
+    "karbohidrat": 78,
+    "serat": 0.5
+  },
+  {
+    "nama": "Roti putih",
+    "energi": 248,
+    "protein": 8,
+    "lemak": 1.2,
+    "karbohidrat": 50,
+    "serat": 9.1
+  },
+  {
+    "nama": "Tepung terigu",
+    "energi": 333,
+    "protein": 9,
+    "lemak": 1,
+    "karbohidrat": 77.2,
+    "serat": 0.3
+  },
+  {
+    "nama": "Amparan tatak",
+    "energi": 191,
+    "protein": 1.3,
+    "lemak": 5.5,
+    "karbohidrat": 34,
+    "serat": 0.0
+  },
+  {
+    "nama": "Apang kukus, kue",
+    "energi": 202,
+    "protein": 3,
+    "lemak": 0.3,
+    "karbohidrat": 46.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Apem, kue",
+    "energi": 148,
+    "protein": 2,
+    "lemak": 0.5,
+    "karbohidrat": 33.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Biskuit",
+    "energi": 458,
+    "protein": 6.9,
+    "lemak": 14.4,
+    "karbohidrat": 75.1,
+    "serat": 2.1
+  },
+  {
+    "nama": "Bakpia, kue",
+    "energi": 272,
+    "protein": 8.7,
+    "lemak": 6.7,
+    "karbohidrat": 44.1,
+    "serat": 0.9
+  },
+  {
+    "nama": "Bakwan",
+    "energi": 280,
+    "protein": 8.2,
+    "lemak": 10.2,
+    "karbohidrat": 39,
+    "serat": 3.4
+  },
+  {
+    "nama": "Bantal",
+    "energi": 190,
+    "protein": 3.3,
+    "lemak": 0.3,
+    "karbohidrat": 43.5,
+    "serat": 3.4
+  },
+  {
+    "nama": "Baruasa",
+    "energi": 417,
+    "protein": 6.5,
+    "lemak": 8.2,
+    "karbohidrat": 79.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Batar daan",
+    "energi": 107,
+    "protein": 2.2,
+    "lemak": 2.2,
+    "karbohidrat": 19.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bika ambon",
+    "energi": 199,
+    "protein": 2.1,
+    "lemak": 1.5,
+    "karbohidrat": 44.4,
+    "serat": 0.3
+  },
+  {
+    "nama": "Bingka",
+    "energi": 273,
+    "protein": 5.3,
+    "lemak": 10.6,
+    "karbohidrat": 39.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bobengka",
+    "energi": 225,
+    "protein": 5.3,
+    "lemak": 2.6,
+    "karbohidrat": 45.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bolu peca",
+    "energi": 197,
+    "protein": 3.3,
+    "lemak": 4.6,
+    "karbohidrat": 35.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Brem",
+    "energi": 249,
+    "protein": 3.4,
+    "lemak": 0.4,
+    "karbohidrat": 58,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bubur tinotuan (Manado)",
+    "energi": 156,
+    "protein": 2.3,
+    "lemak": 0.2,
+    "karbohidrat": 15.6,
+    "serat": 8.2
+  },
+  {
+    "nama": "Cake tape",
+    "energi": 323,
+    "protein": 4.9,
+    "lemak": 11.5,
+    "karbohidrat": 50.1,
+    "serat": 1.4
+  },
+  {
+    "nama": "Cangkuning",
+    "energi": 204,
+    "protein": 2.8,
+    "lemak": 7.5,
+    "karbohidrat": 31.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Dodol bali",
+    "energi": 298,
+    "protein": 3.7,
+    "lemak": 2.1,
+    "karbohidrat": 65.9,
+    "serat": 0.4
+  },
+  {
+    "nama": "Dodol galamai",
+    "energi": 348,
+    "protein": 0.4,
+    "lemak": 3.8,
+    "karbohidrat": 76.1,
+    "serat": 0.5
+  },
+  {
+    "nama": "Dodol kedondong",
+    "energi": 331,
+    "protein": 1.9,
+    "lemak": 7.6,
+    "karbohidrat": 63.8,
+    "serat": 1
+  },
+  {
+    "nama": "Dodol manado",
+    "energi": 373,
+    "protein": 4.3,
+    "lemak": 16.5,
+    "karbohidrat": 51.9,
+    "serat": 0.4
+  },
+  {
+    "nama": "Emping beras",
+    "energi": 403,
+    "protein": 10.6,
+    "lemak": 2.2,
+    "karbohidrat": 85.3,
+    "serat": 0.2
+  },
+  {
+    "nama": "Gemblong",
+    "energi": 274,
+    "protein": 1.7,
+    "lemak": 5.4,
+    "karbohidrat": 55.5,
+    "serat": 2.2
+  },
+  {
+    "nama": "Gendar goreng",
+    "energi": 407,
+    "protein": 6.4,
+    "lemak": 28.2,
+    "karbohidrat": 32,
+    "serat": 0.1
+  },
+  {
+    "nama": "Intip goreng",
+    "energi": 474,
+    "protein": 7.6,
+    "lemak": 21.6,
+    "karbohidrat": 62.3,
+    "serat": 1.2
+  },
+  {
+    "nama": "Jagung gerontol",
+    "energi": 156,
+    "protein": 2.7,
+    "lemak": 1.3,
+    "karbohidrat": 33.3,
+    "serat": 1
+  },
+  {
+    "nama": "Jagung titi",
+    "energi": 374,
+    "protein": 9.4,
+    "lemak": 2.2,
+    "karbohidrat": 79.1,
+    "serat": 0.8
+  },
+  {
+    "nama": "Japilus",
+    "energi": 500,
+    "protein": 1.2,
+    "lemak": 25.1,
+    "karbohidrat": 67.3,
+    "serat": 0.4
+  },
+  {
+    "nama": "Kakicak",
+    "energi": 296,
+    "protein": 3.4,
+    "lemak": 15.1,
+    "karbohidrat": 36.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kambose",
+    "energi": 164,
+    "protein": 3,
+    "lemak": 2.4,
+    "karbohidrat": 32.6,
+    "serat": 4.3
+  },
+  {
+    "nama": "Kapusa",
+    "energi": 158,
+    "protein": 4.4,
+    "lemak": 3.2,
+    "karbohidrat": 27.8,
+    "serat": 5.3
+  },
+  {
+    "nama": "Keddo bodong",
+    "energi": 290,
+    "protein": 4.6,
+    "lemak": 5.7,
+    "karbohidrat": 55.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kelepon, kue",
+    "energi": 215,
+    "protein": 3.7,
+    "lemak": 3.7,
+    "karbohidrat": 41.8,
+    "serat": 1
+  },
+  {
+    "nama": "Kereput",
+    "energi": 580,
+    "protein": 4.8,
+    "lemak": 39.6,
+    "karbohidrat": 51.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ketoprak",
+    "energi": 153,
+    "protein": 7.9,
+    "lemak": 7.7,
+    "karbohidrat": 13,
+    "serat": 2.9
+  },
+  {
+    "nama": "Ketupat kandangan",
+    "energi": 109,
+    "protein": 2.2,
+    "lemak": 5.2,
+    "karbohidrat": 13.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Koya",
+    "energi": 366,
+    "protein": 4.2,
+    "lemak": 4.3,
+    "karbohidrat": 77.5,
+    "serat": 0.8
+  },
+  {
+    "nama": "Koya mirasa",
+    "energi": 370,
+    "protein": 8,
+    "lemak": 1,
+    "karbohidrat": 82.2,
+    "serat": 0.4
+  },
+  {
+    "nama": "Koyabu",
+    "energi": 241,
+    "protein": 3.4,
+    "lemak": 4.3,
+    "karbohidrat": 47.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue ali",
+    "energi": 440,
+    "protein": 3.8,
+    "lemak": 18.5,
+    "karbohidrat": 64.5,
+    "serat": 0.3
+  },
+  {
+    "nama": "Kue bangen",
+    "energi": 442,
+    "protein": 3.3,
+    "lemak": 14.7,
+    "karbohidrat": 74.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue gelang",
+    "energi": 448,
+    "protein": 5.8,
+    "lemak": 16.1,
+    "karbohidrat": 70,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue jahe",
+    "energi": 425,
+    "protein": 1.6,
+    "lemak": 8.8,
+    "karbohidrat": 84.6,
+    "serat": 1.2
+  },
+  {
+    "nama": "Kue kelapa",
+    "energi": 591,
+    "protein": 5.6,
+    "lemak": 42.1,
+    "karbohidrat": 47.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue koa",
+    "energi": 340,
+    "protein": 4.8,
+    "lemak": 0.4,
+    "karbohidrat": 79.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue ku temu",
+    "energi": 214,
+    "protein": 3.5,
+    "lemak": 0.2,
+    "karbohidrat": 49.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue lumpur",
+    "energi": 291,
+    "protein": 3.6,
+    "lemak": 11.1,
+    "karbohidrat": 44.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue pelita",
+    "energi": 141,
+    "protein": 5.3,
+    "lemak": 5.5,
+    "karbohidrat": 17.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue putu cangkir",
+    "energi": 304,
+    "protein": 5.3,
+    "lemak": 7,
+    "karbohidrat": 54.9,
+    "serat": 0.9
+  },
+  {
+    "nama": "Kue sus",
+    "energi": 221,
+    "protein": 7.5,
+    "lemak": 10.2,
+    "karbohidrat": 24.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue thipan",
+    "energi": 247,
+    "protein": 2.9,
+    "lemak": 4.2,
+    "karbohidrat": 49.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Laksa/Putu mayang",
+    "energi": 121,
+    "protein": 1.7,
+    "lemak": 3.4,
+    "karbohidrat": 21.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lapis legit",
+    "energi": 389,
+    "protein": 6.6,
+    "lemak": 15.7,
+    "karbohidrat": 55.5,
+    "serat": 0.5
+  },
+  {
+    "nama": "Lupis ketan",
+    "energi": 164,
+    "protein": 1.8,
+    "lemak": 2.1,
+    "karbohidrat": 34.5,
+    "serat": 0.7
+  },
+  {
+    "nama": "Manan samin",
+    "energi": 379,
+    "protein": 3.4,
+    "lemak": 18.1,
+    "karbohidrat": 50.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Martabak india",
+    "energi": 153,
+    "protein": 4.5,
+    "lemak": 4.2,
+    "karbohidrat": 24.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Martabak mesir",
+    "energi": 278,
+    "protein": 5.1,
+    "lemak": 8.6,
+    "karbohidrat": 45,
+    "serat": 0.0
+  },
+  {
+    "nama": "Masekat",
+    "energi": 369,
+    "protein": 2.1,
+    "lemak": 7,
+    "karbohidrat": 74.1,
+    "serat": 4
+  },
+  {
+    "nama": "Mie aceh rebus",
+    "energi": 113,
+    "protein": 3,
+    "lemak": 3.2,
+    "karbohidrat": 18.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Mie ayam",
+    "energi": 102,
+    "protein": 6.2,
+    "lemak": 3.9,
+    "karbohidrat": 10.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Mie bakso",
+    "energi": 114,
+    "protein": 5.3,
+    "lemak": 3,
+    "karbohidrat": 16.4,
+    "serat": 0.1
+  },
+  {
+    "nama": "Mie celon",
+    "energi": 102,
+    "protein": 3,
+    "lemak": 2.1,
+    "karbohidrat": 17.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Mie pangsit basah",
+    "energi": 105,
+    "protein": 5.9,
+    "lemak": 4.9,
+    "karbohidrat": 9.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Nasi gemuk",
+    "energi": 192,
+    "protein": 3.8,
+    "lemak": 8.8,
+    "karbohidrat": 24.4,
+    "serat": 0.7
+  },
+  {
+    "nama": "Nasi gurih",
+    "energi": 190,
+    "protein": 4.7,
+    "lemak": 7.5,
+    "karbohidrat": 26,
+    "serat": 0.7
+  },
+  {
+    "nama": "Nasi minyak",
+    "energi": 207,
+    "protein": 3.5,
+    "lemak": 5,
+    "karbohidrat": 37.1,
+    "serat": 0.8
+  },
+  {
+    "nama": "Nasi rames",
+    "energi": 155,
+    "protein": 10.3,
+    "lemak": 4.2,
+    "karbohidrat": 19.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Nopia spesial",
+    "energi": 387,
+    "protein": 5.3,
+    "lemak": 7.6,
+    "karbohidrat": 74.3,
+    "serat": 0.3
+  },
+  {
+    "nama": "Onde-onde",
+    "energi": 336,
+    "protein": 4,
+    "lemak": 9.8,
+    "karbohidrat": 57.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Padamaran",
+    "energi": 171,
+    "protein": 3.9,
+    "lemak": 8.9,
+    "karbohidrat": 18.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pastel",
+    "energi": 307,
+    "protein": 4.5,
+    "lemak": 13.3,
+    "karbohidrat": 42.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pulut",
+    "energi": 216,
+    "protein": 2.6,
+    "lemak": 3.1,
+    "karbohidrat": 44.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pundut nasi",
+    "energi": 104,
+    "protein": 1.9,
+    "lemak": 4.1,
+    "karbohidrat": 15.1,
+    "serat": 0.4
+  },
+  {
+    "nama": "Putri selat",
+    "energi": 163,
+    "protein": 2.2,
+    "lemak": 6.5,
+    "karbohidrat": 23.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Putu sopa",
+    "energi": 215,
+    "protein": 3.3,
+    "lemak": 4.1,
+    "karbohidrat": 41.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Renggi goreng",
+    "energi": 471,
+    "protein": 4.7,
+    "lemak": 21.8,
+    "karbohidrat": 64.1,
+    "serat": 6.4
+  },
+  {
+    "nama": "Roti boong",
+    "energi": 341,
+    "protein": 5.5,
+    "lemak": 16.2,
+    "karbohidrat": 43.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Roti warna sawo matang",
+    "energi": 249,
+    "protein": 7.9,
+    "lemak": 1.5,
+    "karbohidrat": 49.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sarimuka",
+    "energi": 166,
+    "protein": 2.3,
+    "lemak": 2.8,
+    "karbohidrat": 32.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Spaghetti",
+    "energi": 139,
+    "protein": 7.4,
+    "lemak": 2.1,
+    "karbohidrat": 22.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Srikaya ketan",
+    "energi": 265,
+    "protein": 2.7,
+    "lemak": 6.4,
+    "karbohidrat": 49.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sunduk lawang",
+    "energi": 181,
+    "protein": 1.9,
+    "lemak": 1.3,
+    "karbohidrat": 32.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Suwir-suwir",
+    "energi": 347,
+    "protein": 0.5,
+    "lemak": 0.9,
+    "karbohidrat": 84.2,
+    "serat": 0.8
+  },
+  {
+    "nama": "Tipa-tipa",
+    "energi": 355,
+    "protein": 6.2,
+    "lemak": 1.2,
+    "karbohidrat": 79.8,
+    "serat": 1.3
+  },
+  {
+    "nama": "Wajit camilan",
+    "energi": 303,
+    "protein": 6.3,
+    "lemak": 2.7,
+    "karbohidrat": 63.3,
+    "serat": 6.9
+  },
+  {
+    "nama": "Widaran",
+    "energi": 424,
+    "protein": 1.3,
+    "lemak": 10.7,
+    "karbohidrat": 80.7,
+    "serat": 0.2
+  },
+  {
+    "nama": "Wingko babat",
+    "energi": 355,
+    "protein": 3.2,
+    "lemak": 15.1,
+    "karbohidrat": 51.4,
+    "serat": 2.4
+  },
+  {
+    "nama": "Yangko",
+    "energi": 254,
+    "protein": 3,
+    "lemak": 1.1,
+    "karbohidrat": 58.1,
+    "serat": 0.8
+  },
+  {
+    "nama": "Putri hijau",
+    "energi": 189,
+    "protein": 5.4,
+    "lemak": 2.1,
+    "karbohidrat": 37.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Beras giling, mentah",
+    "energi": 357,
+    "protein": 8.4,
+    "lemak": 1.7,
+    "karbohidrat": 77.1,
+    "serat": 0.2
+  },
+  {
+    "nama": "Beras giling var pelita, mentah",
+    "energi": 369,
+    "protein": 9.5,
+    "lemak": 1.4,
+    "karbohidrat": 77.1,
+    "serat": 0.4
+  },
+  {
+    "nama": "Beras giling var rojolele, mentah",
+    "energi": 357,
+    "protein": 8.4,
+    "lemak": 1.7,
+    "karbohidrat": 77.1,
+    "serat": 0.2
+  },
+  {
+    "nama": "Beras hitam, mentah",
+    "energi": 351,
+    "protein": 8,
+    "lemak": 1.3,
+    "karbohidrat": 76.9,
+    "serat": 20.1
+  },
+  {
+    "nama": "Beras jagung kuning, kering, mentah",
+    "energi": 358,
+    "protein": 5.5,
+    "lemak": 0.1,
+    "karbohidrat": 82.7,
+    "serat": 10
+  },
+  {
+    "nama": "Beras jagung putih, kering, mentah",
+    "energi": 307,
+    "protein": 4.8,
+    "lemak": 0.1,
+    "karbohidrat": 71.8,
+    "serat": 10
+  },
+  {
+    "nama": "Beras ketan hitam tumbuk, mentah",
+    "energi": 360,
+    "protein": 8,
+    "lemak": 2.3,
+    "karbohidrat": 74.5,
+    "serat": 1
+  },
+  {
+    "nama": "Beras ketan putih tumbuk, mentah",
+    "energi": 361,
+    "protein": 7.4,
+    "lemak": 0.8,
+    "karbohidrat": 78.4,
+    "serat": 0.4
+  },
+  {
+    "nama": "Beras ladang, mentah",
+    "energi": 376,
+    "protein": 7.5,
+    "lemak": 3.8,
+    "karbohidrat": 78,
+    "serat": 5.9
+  },
+  {
+    "nama": "Beras menir, mentah",
+    "energi": 362,
+    "protein": 7.7,
+    "lemak": 4.4,
+    "karbohidrat": 73,
+    "serat": 0.2
+  },
+  {
+    "nama": "Beras parboiled",
+    "energi": 353,
+    "protein": 6.8,
+    "lemak": 0.6,
+    "karbohidrat": 80,
+    "serat": 0.5
+  },
+  {
+    "nama": "Beras tumbuk, mentah",
+    "energi": 354,
+    "protein": 7.8,
+    "lemak": 0.4,
+    "karbohidrat": 79.9,
+    "serat": 3.8
+  },
+  {
+    "nama": "Beras tumbuk merah, mentah",
+    "energi": 352,
+    "protein": 7.3,
+    "lemak": 0.9,
+    "karbohidrat": 76.2,
+    "serat": 0.8
+  },
+  {
+    "nama": "Cantel, mentah",
+    "energi": 366,
+    "protein": 11,
+    "lemak": 3.3,
+    "karbohidrat": 73,
+    "serat": 1.2
+  },
+  {
+    "nama": "Jagung muda, kuning, mentah",
+    "energi": 147,
+    "protein": 5.1,
+    "lemak": 0.7,
+    "karbohidrat": 31.5,
+    "serat": 1.3
+  },
+  {
+    "nama": "Jagung kuning pipil, kering, mentah",
+    "energi": 366,
+    "protein": 9.8,
+    "lemak": 7.3,
+    "karbohidrat": 69.1,
+    "serat": 2.2
+  },
+  {
+    "nama": "Jagung pipil var. harapan, kering",
+    "energi": 367,
+    "protein": 6.2,
+    "lemak": 5.1,
+    "karbohidrat": 76.2,
+    "serat": 2.6
+  },
+  {
+    "nama": "Jagung pipil var. metro, kering",
+    "energi": 368,
+    "protein": 5.5,
+    "lemak": 4.6,
+    "karbohidrat": 78,
+    "serat": 2.9
+  },
+  {
+    "nama": "Jali, mentah",
+    "energi": 324,
+    "protein": 11,
+    "lemak": 4,
+    "karbohidrat": 61,
+    "serat": 3.1
+  },
+  {
+    "nama": "Jawawut, mentah",
+    "energi": 364,
+    "protein": 9.7,
+    "lemak": 3.5,
+    "karbohidrat": 73.4,
+    "serat": 8.2
+  },
+  {
+    "nama": "Jampang huma, mentah",
+    "energi": 350,
+    "protein": 6.2,
+    "lemak": 1.4,
+    "karbohidrat": 78.2,
+    "serat": 1.7
+  },
+  {
+    "nama": "Batatas kelapa, ubi, bakar",
+    "energi": 110,
+    "protein": 1.4,
+    "lemak": 1.1,
+    "karbohidrat": 23.4,
+    "serat": 4.5
+  },
+  {
+    "nama": "Batatas kelapa, ubi, kukus",
+    "energi": 92,
+    "protein": 1.2,
+    "lemak": 0.3,
+    "karbohidrat": 21,
+    "serat": 4.1
+  },
+  {
+    "nama": "Batatas tali, ubi, rebus",
+    "energi": 182,
+    "protein": 2.4,
+    "lemak": 0.4,
+    "karbohidrat": 42.2,
+    "serat": 9.2
+  },
+  {
+    "nama": "Belitung, talas, kukus",
+    "energi": 145,
+    "protein": 1.2,
+    "lemak": 0.4,
+    "karbohidrat": 34.2,
+    "serat": 1
+  },
+  {
+    "nama": "Bentul, talas, kukus",
+    "energi": 71,
+    "protein": 2.3,
+    "lemak": 0.3,
+    "karbohidrat": 15.4,
+    "serat": 0.5
+  },
+  {
+    "nama": "Gadung, ubi, kukus",
+    "energi": 88,
+    "protein": 0.6,
+    "lemak": 0.3,
+    "karbohidrat": 20.9,
+    "serat": 0.9
+  },
+  {
+    "nama": "Ganyong, rebus",
+    "energi": 100,
+    "protein": 0.8,
+    "lemak": 0.2,
+    "karbohidrat": 23.8,
+    "serat": 0.9
+  },
+  {
+    "nama": "Ketela pohon/singkong kukus",
+    "energi": 153,
+    "protein": 1.2,
+    "lemak": 0.3,
+    "karbohidrat": 36.4,
+    "serat": 1.3
+  },
+  {
+    "nama": "Suweg, talas, kukus",
+    "energi": 93,
+    "protein": 1.5,
+    "lemak": 0.1,
+    "karbohidrat": 21.9,
+    "serat": 0.9
+  },
+  {
+    "nama": "Talas bogor, kukus",
+    "energi": 120,
+    "protein": 1.5,
+    "lemak": 0.3,
+    "karbohidrat": 28.2,
+    "serat": 0.7
+  },
+  {
+    "nama": "Ubi jalar, kuning, kukus",
+    "energi": 100,
+    "protein": 0.7,
+    "lemak": 0.3,
+    "karbohidrat": 23.8,
+    "serat": 1
+  },
+  {
+    "nama": "Ubi jalar tinta/ kemayung kukus",
+    "energi": 165,
+    "protein": 0.9,
+    "lemak": 0.2,
+    "karbohidrat": 39.8,
+    "serat": 1.1
+  },
+  {
+    "nama": "Bagea kelapa asin",
+    "energi": 450,
+    "protein": 3.2,
+    "lemak": 13.9,
+    "karbohidrat": 78.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bagea kelapa manis",
+    "energi": 452,
+    "protein": 1.3,
+    "lemak": 13.8,
+    "karbohidrat": 80.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bagea kenari asin",
+    "energi": 529,
+    "protein": 3.2,
+    "lemak": 29.1,
+    "karbohidrat": 63.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bagea kenari manis",
+    "energi": 523,
+    "protein": 3.2,
+    "lemak": 28.2,
+    "karbohidrat": 64.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bagea kw 1",
+    "energi": 416,
+    "protein": 6.5,
+    "lemak": 9.4,
+    "karbohidrat": 76.3,
+    "serat": 0.4
+  },
+  {
+    "nama": "Bagea kw 2",
+    "energi": 382,
+    "protein": 0.3,
+    "lemak": 3.5,
+    "karbohidrat": 87.2,
+    "serat": 0.9
+  },
+  {
+    "nama": "Beras Cerdas",
+    "energi": 350,
+    "protein": 2.7,
+    "lemak": 1.1,
+    "karbohidrat": 82.3,
+    "serat": 6.2
+  },
+  {
+    "nama": "Beras ganyong",
+    "energi": 364,
+    "protein": 3.4,
+    "lemak": 0.7,
+    "karbohidrat": 86.3,
+    "serat": 4.7
+  },
+  {
+    "nama": "Beras Siger",
+    "energi": 344,
+    "protein": 1.1,
+    "lemak": 0.2,
+    "karbohidrat": 28.3,
+    "serat": 5.6
+  },
+  {
+    "nama": "Biji nangka/Biji salak",
+    "energi": 262,
+    "protein": 2.3,
+    "lemak": 5.4,
+    "karbohidrat": 51.1,
+    "serat": 8
+  },
+  {
+    "nama": "Bubur sagu",
+    "energi": 167,
+    "protein": 0.2,
+    "lemak": 4,
+    "karbohidrat": 33,
+    "serat": 0.0
+  },
+  {
+    "nama": "Cassavastick",
+    "energi": 460,
+    "protein": 0.8,
+    "lemak": 18.7,
+    "karbohidrat": 17.2,
+    "serat": 1.6
+  },
+  {
+    "nama": "Ceriping getuk singkong",
+    "energi": 462,
+    "protein": 1.2,
+    "lemak": 20.7,
+    "karbohidrat": 67.7,
+    "serat": 0.6
+  },
+  {
+    "nama": "Gatot",
+    "energi": 347,
+    "protein": 1.3,
+    "lemak": 0.7,
+    "karbohidrat": 83.8,
+    "serat": 5.8
+  },
+  {
+    "nama": "Geblek",
+    "energi": 195,
+    "protein": 0.4,
+    "lemak": 1.7,
+    "karbohidrat": 44.4,
+    "serat": 3.6
+  },
+  {
+    "nama": "Getuk goreng",
+    "energi": 360,
+    "protein": 1.3,
+    "lemak": 6.4,
+    "karbohidrat": 74.3,
+    "serat": 0.8
+  },
+  {
+    "nama": "Getuk singkong",
+    "energi": 204,
+    "protein": 0.5,
+    "lemak": 1.4,
+    "karbohidrat": 47.4,
+    "serat": 0.8
+  },
+  {
+    "nama": "Gurandil",
+    "energi": 218,
+    "protein": 0.5,
+    "lemak": 2.5,
+    "karbohidrat": 48.5,
+    "serat": 3.1
+  },
+  {
+    "nama": "Kabuto",
+    "energi": 250,
+    "protein": 2.6,
+    "lemak": 2.5,
+    "karbohidrat": 35.4,
+    "serat": 1.8
+  },
+  {
+    "nama": "Kapurung",
+    "energi": 41,
+    "protein": 2,
+    "lemak": 0.3,
+    "karbohidrat": 7.8,
+    "serat": 2
+  },
+  {
+    "nama": "Kecimpring singkong goreng",
+    "energi": 464,
+    "protein": 1.2,
+    "lemak": 18.6,
+    "karbohidrat": 73,
+    "serat": 1.3
+  },
+  {
+    "nama": "Keremes",
+    "energi": 475,
+    "protein": 1.6,
+    "lemak": 25.2,
+    "karbohidrat": 64.4,
+    "serat": 2.1
+  },
+  {
+    "nama": "Keripik gadung",
+    "energi": 446,
+    "protein": 2.8,
+    "lemak": 14.5,
+    "karbohidrat": 76,
+    "serat": 1.7
+  },
+  {
+    "nama": "Keripik kentang",
+    "energi": 448,
+    "protein": 2.7,
+    "lemak": 18.8,
+    "karbohidrat": 67.1,
+    "serat": 3.8
+  },
+  {
+    "nama": "Keripik singkong",
+    "energi": 478,
+    "protein": 0.9,
+    "lemak": 20.7,
+    "karbohidrat": 72,
+    "serat": 2
+  },
+  {
+    "nama": "Keripik singkong berbumbu",
+    "energi": 481,
+    "protein": 2.2,
+    "lemak": 19.7,
+    "karbohidrat": 73.6,
+    "serat": 1.6
+  },
+  {
+    "nama": "Keripik ubi",
+    "energi": 486,
+    "protein": 0.2,
+    "lemak": 23.9,
+    "karbohidrat": 67.6,
+    "serat": 14.3
+  },
+  {
+    "nama": "Kerupuk cumi goreng",
+    "energi": 444,
+    "protein": 6.9,
+    "lemak": 14.6,
+    "karbohidrat": 71.3,
+    "serat": 5
+  },
+  {
+    "nama": "Kerupuk kemplang (ikan) mentah",
+    "energi": 325,
+    "protein": 1.8,
+    "lemak": 0.4,
+    "karbohidrat": 78.5,
+    "serat": 4.5
+  },
+  {
+    "nama": "Kerupuk kemplang goreng",
+    "energi": 504,
+    "protein": 5.6,
+    "lemak": 28.1,
+    "karbohidrat": 57.1,
+    "serat": 0.3
+  },
+  {
+    "nama": "Kerupuk kemplang panggang",
+    "energi": 356,
+    "protein": 9.7,
+    "lemak": 1.1,
+    "karbohidrat": 76.9,
+    "serat": 1
+  },
+  {
+    "nama": "Kerupuk mie kuning goreng",
+    "energi": 476,
+    "protein": 0.1,
+    "lemak": 21.1,
+    "karbohidrat": 71.3,
+    "serat": 4.2
+  },
+  {
+    "nama": "Kerupuk udang goreng",
+    "energi": 477,
+    "protein": 4.7,
+    "lemak": 20.5,
+    "karbohidrat": 68.5,
+    "serat": 5
+  },
+  {
+    "nama": "Kue bangket",
+    "energi": 338,
+    "protein": 1.5,
+    "lemak": 1.2,
+    "karbohidrat": 80.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kue putu singkong",
+    "energi": 217,
+    "protein": 1.2,
+    "lemak": 0.5,
+    "karbohidrat": 53.2,
+    "serat": 2.4
+  },
+  {
+    "nama": "Lanting getuk",
+    "energi": 422,
+    "protein": 0.9,
+    "lemak": 10.8,
+    "karbohidrat": 80.4,
+    "serat": 1.4
+  },
+  {
+    "nama": "Mi golosor",
+    "energi": 71,
+    "protein": 0.2,
+    "lemak": 0.8,
+    "karbohidrat": 15.9,
+    "serat": 0.1
+  },
+  {
+    "nama": "Mie Bendo",
+    "energi": 353,
+    "protein": 0.3,
+    "lemak": 0.0,
+    "karbohidrat": 88,
+    "serat": 2.4
+  },
+  {
+    "nama": "Mie Sagu",
+    "energi": 190,
+    "protein": 0.2,
+    "lemak": 0.4,
+    "karbohidrat": 46.5,
+    "serat": 1.4
+  },
+  {
+    "nama": "Ongol-ongol sagu",
+    "energi": 111,
+    "protein": 0.3,
+    "lemak": 2.7,
+    "karbohidrat": 21.2,
+    "serat": 0.3
+  },
+  {
+    "nama": "Oyek",
+    "energi": 351,
+    "protein": 0.9,
+    "lemak": 0.9,
+    "karbohidrat": 84.9,
+    "serat": 4.3
+  },
+  {
+    "nama": "Papeda",
+    "energi": 61,
+    "protein": 0.2,
+    "lemak": 0.1,
+    "karbohidrat": 14.9,
+    "serat": 0.5
+  },
+  {
+    "nama": "Rasbi (Beras Ubi)",
+    "energi": 394,
+    "protein": 2.2,
+    "lemak": 8.8,
+    "karbohidrat": 76.6,
+    "serat": 6.8
+  },
+  {
+    "nama": "Rasi (Beras Singkong)",
+    "energi": 350,
+    "protein": 0.9,
+    "lemak": 0.4,
+    "karbohidrat": 85.7,
+    "serat": 14.4
+  },
+  {
+    "nama": "Sagu forno",
+    "energi": 291,
+    "protein": 0.5,
+    "lemak": 4,
+    "karbohidrat": 63.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sagu Lemak (Kue Sagon)",
+    "energi": 452,
+    "protein": 2.8,
+    "lemak": 14.8,
+    "karbohidrat": 76.8,
+    "serat": 1.1
+  },
+  {
+    "nama": "Sagu manis",
+    "energi": 287,
+    "protein": 0.5,
+    "lemak": 3.9,
+    "karbohidrat": 62.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sagu Rendang",
+    "energi": 364,
+    "protein": 0.1,
+    "lemak": 0.2,
+    "karbohidrat": 90.5,
+    "serat": 1.9
+  },
+  {
+    "nama": "Sagu sinole",
+    "energi": 354,
+    "protein": 0.8,
+    "lemak": 8.3,
+    "karbohidrat": 68.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Serimping talas kebumen",
+    "energi": 478,
+    "protein": 2.5,
+    "lemak": 21.2,
+    "karbohidrat": 69.2,
+    "serat": 1.7
+  },
+  {
+    "nama": "Tapai singkong",
+    "energi": 169,
+    "protein": 1.4,
+    "lemak": 0.3,
+    "karbohidrat": 40.2,
+    "serat": 2
+  },
+  {
+    "nama": "Tepung Arrowroot",
+    "energi": 355,
+    "protein": 0.7,
+    "lemak": 0.2,
+    "karbohidrat": 85.2,
+    "serat": 0.4
+  },
+  {
+    "nama": "Tepung Ganyong",
+    "energi": 353,
+    "protein": 0.8,
+    "lemak": 1.7,
+    "karbohidrat": 83.6,
+    "serat": 0.7
+  },
+  {
+    "nama": "Tepung Gaplek",
+    "energi": 345,
+    "protein": 2.4,
+    "lemak": 0.4,
+    "karbohidrat": 83.1,
+    "serat": 6.7
+  },
+  {
+    "nama": "Tepung kentang, kering",
+    "energi": 347,
+    "protein": 0.3,
+    "lemak": 0.1,
+    "karbohidrat": 85.6,
+    "serat": 0.4
+  },
+  {
+    "nama": "Tepung Mocaf",
+    "energi": 350,
+    "protein": 1.2,
+    "lemak": 0.6,
+    "karbohidrat": 85,
+    "serat": 6
+  },
+  {
+    "nama": "Tepung Sente",
+    "energi": 326,
+    "protein": 4,
+    "lemak": 0.4,
+    "karbohidrat": 76.7,
+    "serat": 8.5
+  },
+  {
+    "nama": "Tepung singkong/ Tapioka",
+    "energi": 363,
+    "protein": 1.1,
+    "lemak": 0.5,
+    "karbohidrat": 88.2,
+    "serat": 0.9
+  },
+  {
+    "nama": "Tepung Tales Beneng",
+    "energi": 332,
+    "protein": 5.7,
+    "lemak": 0.6,
+    "karbohidrat": 76.1,
+    "serat": 12.2
+  },
+  {
+    "nama": "Tepung Ubi Ungu",
+    "energi": 354,
+    "protein": 2.8,
+    "lemak": 0.6,
+    "karbohidrat": 84.4,
+    "serat": 12.9
+  },
+  {
+    "nama": "Tiwul",
+    "energi": 353,
+    "protein": 2.4,
+    "lemak": 1.1,
+    "karbohidrat": 83.4,
+    "serat": 6.5
+  },
+  {
+    "nama": "Tiwul Instan",
+    "energi": 395,
+    "protein": 3.2,
+    "lemak": 8.5,
+    "karbohidrat": 76.5,
+    "serat": 4.2
+  },
+  {
+    "nama": "Ubi Cilembu",
+    "energi": 186,
+    "protein": 1.9,
+    "lemak": 0.2,
+    "karbohidrat": 44.3,
+    "serat": 3.4
+  },
+  {
+    "nama": "Uli batatas",
+    "energi": 150,
+    "protein": 1.1,
+    "lemak": 4,
+    "karbohidrat": 27.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Arrowroot, segar",
+    "energi": 102,
+    "protein": 1,
+    "lemak": 0.2,
+    "karbohidrat": 24.1,
+    "serat": 1.7
+  },
+  {
+    "nama": "Batatas gembili, segar",
+    "energi": 76,
+    "protein": 1.1,
+    "lemak": 0.9,
+    "karbohidrat": 16,
+    "serat": 4.2
+  },
+  {
+    "nama": "Batatas kelapa, ubi, segar",
+    "energi": 89,
+    "protein": 1.1,
+    "lemak": 0.1,
+    "karbohidrat": 21,
+    "serat": 4
+  },
+  {
+    "nama": "Belitung, talas, segar",
+    "energi": 145,
+    "protein": 1.2,
+    "lemak": 0.4,
+    "karbohidrat": 34.2,
+    "serat": 1.5
+  },
+  {
+    "nama": "Bengkuang, segar",
+    "energi": 59,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 12.8,
+    "serat": 1
+  },
+  {
+    "nama": "Bentul (Komba), talas, segar",
+    "energi": 98,
+    "protein": 1.6,
+    "lemak": 0.7,
+    "karbohidrat": 20.9,
+    "serat": 0.7
+  },
+  {
+    "nama": "Gadeng/Gadung, kering",
+    "energi": 322,
+    "protein": 2.4,
+    "lemak": 0.6,
+    "karbohidrat": 76.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gadung, ubi, segar",
+    "energi": 100,
+    "protein": 0.9,
+    "lemak": 0.3,
+    "karbohidrat": 23.5,
+    "serat": 2.1
+  },
+  {
+    "nama": "Ganyong, segar",
+    "energi": 77,
+    "protein": 0.6,
+    "lemak": 0.2,
+    "karbohidrat": 18.4,
+    "serat": 0.8
+  },
+  {
+    "nama": "Gembili, ubi, segar",
+    "energi": 131,
+    "protein": 1.1,
+    "lemak": 0.2,
+    "karbohidrat": 31.3,
+    "serat": 1.1
+  },
+  {
+    "nama": "Hofa/Ubi hutan, segar",
+    "energi": 127,
+    "protein": 1.2,
+    "lemak": 0.5,
+    "karbohidrat": 29.5,
+    "serat": 3.4
+  },
+  {
+    "nama": "Kaburan, ubi, segar",
+    "energi": 133,
+    "protein": 1,
+    "lemak": 0.2,
+    "karbohidrat": 32.2,
+    "serat": 0.7
+  },
+  {
+    "nama": "Kentang, segar",
+    "energi": 62,
+    "protein": 2.1,
+    "lemak": 0.2,
+    "karbohidrat": 13.5,
+    "serat": 0.5
+  },
+  {
+    "nama": "Kentang hitam, segar",
+    "energi": 142,
+    "protein": 0.9,
+    "lemak": 0.4,
+    "karbohidrat": 33.7,
+    "serat": 5.4
+  },
+  {
+    "nama": "Keribang, ubi, segar",
+    "energi": 137,
+    "protein": 1.3,
+    "lemak": 1.1,
+    "karbohidrat": 29.8,
+    "serat": 0.6
+  },
+  {
+    "nama": "Ketela pohon/ singkong, segar",
+    "energi": 154,
+    "protein": 1,
+    "lemak": 0.3,
+    "karbohidrat": 36.8,
+    "serat": 0.9
+  },
+  {
+    "nama": "Lepok/Ubi rumput",
+    "energi": 181,
+    "protein": 2.8,
+    "lemak": 1.2,
+    "karbohidrat": 39.8,
+    "serat": 10.7
+  },
+  {
+    "nama": "Sagu aren, kering",
+    "energi": 355,
+    "protein": 0.6,
+    "lemak": 1.1,
+    "karbohidrat": 85.6,
+    "serat": 0.3
+  },
+  {
+    "nama": "Sagu aren, segar",
+    "energi": 231,
+    "protein": 0.6,
+    "lemak": 0.2,
+    "karbohidrat": 56.6,
+    "serat": 3.2
+  },
+  {
+    "nama": "Sagu kasbi segar",
+    "energi": 230,
+    "protein": 0.6,
+    "lemak": 0.2,
+    "karbohidrat": 56.5,
+    "serat": 3
+  },
+  {
+    "nama": "Sagu lempeng",
+    "energi": 347,
+    "protein": 0.9,
+    "lemak": 0.3,
+    "karbohidrat": 85.2,
+    "serat": 4.7
+  },
+  {
+    "nama": "Sagu singkong, kering",
+    "energi": 362,
+    "protein": 0.5,
+    "lemak": 0.3,
+    "karbohidrat": 86.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sente, talas, segar",
+    "energi": 353,
+    "protein": 0.7,
+    "lemak": 0.2,
+    "karbohidrat": 84.7,
+    "serat": 6.6
+  },
+  {
+    "nama": "Suweg, talas, segar",
+    "energi": 74,
+    "protein": 1.4,
+    "lemak": 0.1,
+    "karbohidrat": 17.2,
+    "serat": 1.4
+  },
+  {
+    "nama": "Talas bogor, segar",
+    "energi": 108,
+    "protein": 1.4,
+    "lemak": 0.4,
+    "karbohidrat": 25,
+    "serat": 0.9
+  },
+  {
+    "nama": "Talas pontianak, segar",
+    "energi": 163,
+    "protein": 2.3,
+    "lemak": 0.5,
+    "karbohidrat": 36.4,
+    "serat": 0.7
+  },
+  {
+    "nama": "Talas viqueque, segar",
+    "energi": 115,
+    "protein": 1.8,
+    "lemak": 0.5,
+    "karbohidrat": 25.9,
+    "serat": 8.6
+  },
+  {
+    "nama": "Ubi jalar, kuning, segar",
+    "energi": 119,
+    "protein": 0.5,
+    "lemak": 0.4,
+    "karbohidrat": 25.1,
+    "serat": 4.2
+  },
+  {
+    "nama": "Ubi jalar manis, segar",
+    "energi": 83,
+    "protein": 1.5,
+    "lemak": 0.2,
+    "karbohidrat": 18.8,
+    "serat": 0.6
+  },
+  {
+    "nama": "Ubi jalar merah, segar",
+    "energi": 151,
+    "protein": 1.6,
+    "lemak": 0.3,
+    "karbohidrat": 35.4,
+    "serat": 0.7
+  },
+  {
+    "nama": "Ubi jalar putih, segar",
+    "energi": 88,
+    "protein": 0.4,
+    "lemak": 0.4,
+    "karbohidrat": 20.6,
+    "serat": 4
+  },
+  {
+    "nama": "Ubi jalar tinta/ kemayung",
+    "energi": 108,
+    "protein": 0.5,
+    "lemak": 0.4,
+    "karbohidrat": 25.6,
+    "serat": 4.2
+  },
+  {
+    "nama": "Umbi Uwi, segar",
+    "energi": 120,
+    "protein": 2.8,
+    "lemak": 0.5,
+    "karbohidrat": 82.3,
+    "serat": 2.6
+  },
+  {
+    "nama": "Kacang belimbing (kecipir), rebus",
+    "energi": 204,
+    "protein": 16.9,
+    "lemak": 8.8,
+    "karbohidrat": 17.5,
+    "serat": 4.8
+  },
+  {
+    "nama": "Kacang bogor, goreng",
+    "energi": 479,
+    "protein": 12.7,
+    "lemak": 23.2,
+    "karbohidrat": 58.9,
+    "serat": 1.2
+  },
+  {
+    "nama": "Kacang bogor, rebus",
+    "energi": 161,
+    "protein": 7.7,
+    "lemak": 2.8,
+    "karbohidrat": 27.1,
+    "serat": 2
+  },
+  {
+    "nama": "Kacang gude, rebus",
+    "energi": 147,
+    "protein": 9,
+    "lemak": 0.5,
+    "karbohidrat": 27.5,
+    "serat": 3.4
+  },
+  {
+    "nama": "Kacang hijau, rebus",
+    "energi": 109,
+    "protein": 8.7,
+    "lemak": 0.5,
+    "karbohidrat": 18.3,
+    "serat": 1.5
+  },
+  {
+    "nama": "Kacang kedelai, goreng",
+    "energi": 521,
+    "protein": 32.2,
+    "lemak": 37.7,
+    "karbohidrat": 22.9,
+    "serat": 7.6
+  },
+  {
+    "nama": "Kacang kedelai, rebus",
+    "energi": 189,
+    "protein": 20.2,
+    "lemak": 8.2,
+    "karbohidrat": 12.7,
+    "serat": 1.6
+  },
+  {
+    "nama": "Kacang merah kering, rebus",
+    "energi": 158,
+    "protein": 10.3,
+    "lemak": 0.9,
+    "karbohidrat": 28.2,
+    "serat": 2.6
+  },
+  {
+    "nama": "Kacang merah segar, rebus",
+    "energi": 144,
+    "protein": 10,
+    "lemak": 1,
+    "karbohidrat": 24.7,
+    "serat": 3.5
+  },
+  {
+    "nama": "Kacang mete/biji jambu monyet, goreng",
+    "energi": 629,
+    "protein": 20.4,
+    "lemak": 56.3,
+    "karbohidrat": 19.8,
+    "serat": 1.1
+  },
+  {
+    "nama": "Kacang tanah rebus dg kulit",
+    "energi": 360,
+    "protein": 13.5,
+    "lemak": 31.2,
+    "karbohidrat": 12.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kacang tanah, goreng",
+    "energi": 564,
+    "protein": 25.5,
+    "lemak": 44.4,
+    "karbohidrat": 25.5,
+    "serat": 2.8
+  },
+  {
+    "nama": "Kacang tanah, rebus",
+    "energi": 220,
+    "protein": 10.6,
+    "lemak": 18,
+    "karbohidrat": 8,
+    "serat": 1
+  },
+  {
+    "nama": "Kacang tolo / tunggak, rebus",
+    "energi": 138,
+    "protein": 10.7,
+    "lemak": 1.1,
+    "karbohidrat": 22.6,
+    "serat": 0.9
+  },
+  {
+    "nama": "Ampas kacang hijau",
+    "energi": 96,
+    "protein": 3.7,
+    "lemak": 0.6,
+    "karbohidrat": 19.1,
+    "serat": 2.7
+  },
+  {
+    "nama": "Ampas tahu, mentah",
+    "energi": 67,
+    "protein": 5,
+    "lemak": 2.1,
+    "karbohidrat": 8.1,
+    "serat": 4.1
+  },
+  {
+    "nama": "Ampas tahu kukus",
+    "energi": 75,
+    "protein": 4.1,
+    "lemak": 2.1,
+    "karbohidrat": 10.7,
+    "serat": 5.1
+  },
+  {
+    "nama": "Ampas tahu, kering",
+    "energi": 414,
+    "protein": 26.6,
+    "lemak": 18.3,
+    "karbohidrat": 41.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pepes oncom ampas tahu",
+    "energi": 76,
+    "protein": 5.2,
+    "lemak": 1.8,
+    "karbohidrat": 10.6,
+    "serat": 2.2
+  },
+  {
+    "nama": "Bungkil biji karet",
+    "energi": 333,
+    "protein": 29.3,
+    "lemak": 3.3,
+    "karbohidrat": 50,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bungkil kacang tanah",
+    "energi": 336,
+    "protein": 37.4,
+    "lemak": 13,
+    "karbohidrat": 30.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bungkil kelapa",
+    "energi": 368,
+    "protein": 23,
+    "lemak": 15,
+    "karbohidrat": 40,
+    "serat": 0.0
+  },
+  {
+    "nama": "Dodol banjarmasin",
+    "energi": 368,
+    "protein": 2.6,
+    "lemak": 8.6,
+    "karbohidrat": 70,
+    "serat": 0.5
+  },
+  {
+    "nama": "Emping (kerupuk melinjo)",
+    "energi": 345,
+    "protein": 12,
+    "lemak": 1.5,
+    "karbohidrat": 71.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Emping komak",
+    "energi": 355,
+    "protein": 17.8,
+    "lemak": 4.6,
+    "karbohidrat": 60.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Enting-enting gepuk hello kity",
+    "energi": 538,
+    "protein": 13.6,
+    "lemak": 30.3,
+    "karbohidrat": 52.6,
+    "serat": 0.2
+  },
+  {
+    "nama": "Enting-enting gepuk kacang tanah",
+    "energi": 524,
+    "protein": 13.3,
+    "lemak": 29.2,
+    "karbohidrat": 52,
+    "serat": 0.2
+  },
+  {
+    "nama": "Enting-enting wijen",
+    "energi": 565,
+    "protein": 18.2,
+    "lemak": 38.4,
+    "karbohidrat": 36.8,
+    "serat": 1.9
+  },
+  {
+    "nama": "Geplak",
+    "energi": 350,
+    "protein": 1.4,
+    "lemak": 14.4,
+    "karbohidrat": 53.6,
+    "serat": 1.8
+  },
+  {
+    "nama": "Geplak jahe",
+    "energi": 462,
+    "protein": 3.1,
+    "lemak": 24.4,
+    "karbohidrat": 57.7,
+    "serat": 3.3
+  },
+  {
+    "nama": "Kacang atom",
+    "energi": 533,
+    "protein": 27.8,
+    "lemak": 38.1,
+    "karbohidrat": 28.8,
+    "serat": 2.5
+  },
+  {
+    "nama": "Kacang goyang",
+    "energi": 516,
+    "protein": 14.7,
+    "lemak": 31.1,
+    "karbohidrat": 44.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kacang negara",
+    "energi": 480,
+    "protein": 18.4,
+    "lemak": 19.1,
+    "karbohidrat": 58.5,
+    "serat": 11.7
+  },
+  {
+    "nama": "Kacang sukro",
+    "energi": 484,
+    "protein": 8.8,
+    "lemak": 26.1,
+    "karbohidrat": 57.7,
+    "serat": 1.8
+  },
+  {
+    "nama": "Kacang tanah sari",
+    "energi": 561,
+    "protein": 25.5,
+    "lemak": 43.8,
+    "karbohidrat": 26,
+    "serat": 2.2
+  },
+  {
+    "nama": "Keju kacang tanah (peanut butter)",
+    "energi": 590,
+    "protein": 27,
+    "lemak": 49,
+    "karbohidrat": 20.9,
+    "serat": 1.6
+  },
+  {
+    "nama": "Kembang tahu",
+    "energi": 380,
+    "protein": 48.9,
+    "lemak": 13.8,
+    "karbohidrat": 23.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kembang tahu rebus",
+    "energi": 90,
+    "protein": 10.7,
+    "lemak": 4,
+    "karbohidrat": 4.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Keripik oncom",
+    "energi": 598,
+    "protein": 8.3,
+    "lemak": 43.8,
+    "karbohidrat": 42.6,
+    "serat": 3.3
+  },
+  {
+    "nama": "Keripik tempe",
+    "energi": 581,
+    "protein": 12.1,
+    "lemak": 40.6,
+    "karbohidrat": 41.7,
+    "serat": 2.2
+  },
+  {
+    "nama": "Keripik tempe abadi besar",
+    "energi": 556,
+    "protein": 15.8,
+    "lemak": 37.1,
+    "karbohidrat": 39.8,
+    "serat": 3.5
+  },
+  {
+    "nama": "Keripik tempe abadi murni",
+    "energi": 542,
+    "protein": 40.3,
+    "lemak": 42.4,
+    "karbohidrat": 11.6,
+    "serat": 2.2
+  },
+  {
+    "nama": "Keripik tempe abadi sedang",
+    "energi": 510,
+    "protein": 12.3,
+    "lemak": 27.9,
+    "karbohidrat": 52.4,
+    "serat": 3.6
+  },
+  {
+    "nama": "Keripik tempe abadi telur",
+    "energi": 529,
+    "protein": 20.8,
+    "lemak": 31.7,
+    "karbohidrat": 40.2,
+    "serat": 3
+  },
+  {
+    "nama": "Keripik tempe abadi prima",
+    "energi": 540,
+    "protein": 16.7,
+    "lemak": 33.9,
+    "karbohidrat": 42,
+    "serat": 2.2
+  },
+  {
+    "nama": "Kwaci",
+    "energi": 515,
+    "protein": 30.6,
+    "lemak": 42.1,
+    "karbohidrat": 13.8,
+    "serat": 13.6
+  },
+  {
+    "nama": "Melinjo emping tebal goreng manis",
+    "energi": 439,
+    "protein": 10,
+    "lemak": 16.4,
+    "karbohidrat": 65.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Melinjo emping tebal, goreng asin",
+    "energi": 431,
+    "protein": 11.1,
+    "lemak": 16.2,
+    "karbohidrat": 63,
+    "serat": 0.0
+  },
+  {
+    "nama": "Melinjo emping tipis goreng",
+    "energi": 485,
+    "protein": 11.5,
+    "lemak": 24.5,
+    "karbohidrat": 59.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Moon tahu",
+    "energi": 128,
+    "protein": 8,
+    "lemak": 10,
+    "karbohidrat": 1.3,
+    "serat": 0.2
+  },
+  {
+    "nama": "Oncom",
+    "energi": 187,
+    "protein": 13,
+    "lemak": 6,
+    "karbohidrat": 22.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Oncom ampas kacang hijau",
+    "energi": 376,
+    "protein": 14.9,
+    "lemak": 6,
+    "karbohidrat": 65.7,
+    "serat": 12.3
+  },
+  {
+    "nama": "Oncom kacang hijau + singkong",
+    "energi": 351,
+    "protein": 11,
+    "lemak": 5.3,
+    "karbohidrat": 65.9,
+    "serat": 9
+  },
+  {
+    "nama": "Oncom kacang tanah pepes",
+    "energi": 132,
+    "protein": 12.7,
+    "lemak": 3.8,
+    "karbohidrat": 13.7,
+    "serat": 3.1
+  },
+  {
+    "nama": "Rempeyek kacang tanah",
+    "energi": 513,
+    "protein": 17.5,
+    "lemak": 32.5,
+    "karbohidrat": 44.3,
+    "serat": 1.7
+  },
+  {
+    "nama": "Rempeyek kacang tolo",
+    "energi": 451,
+    "protein": 11.2,
+    "lemak": 20.2,
+    "karbohidrat": 59.7,
+    "serat": 1.8
+  },
+  {
+    "nama": "Rempeyek kacang uci",
+    "energi": 497,
+    "protein": 17,
+    "lemak": 27.6,
+    "karbohidrat": 50.8,
+    "serat": 2.4
+  },
+  {
+    "nama": "Sayur lebui",
+    "energi": 64,
+    "protein": 2.1,
+    "lemak": 0.6,
+    "karbohidrat": 12.5,
+    "serat": 5.7
+  },
+  {
+    "nama": "Saridele, bubuk",
+    "energi": 344,
+    "protein": 30,
+    "lemak": 20,
+    "karbohidrat": 43,
+    "serat": 6.2
+  },
+  {
+    "nama": "Susu kedelai",
+    "energi": 41,
+    "protein": 3.5,
+    "lemak": 2.5,
+    "karbohidrat": 5,
+    "serat": 0.2
+  },
+  {
+    "nama": "Tahu, mentah",
+    "energi": 80,
+    "protein": 10.9,
+    "lemak": 4.7,
+    "karbohidrat": 0.8,
+    "serat": 0.1
+  },
+  {
+    "nama": "Tahu goreng",
+    "energi": 115,
+    "protein": 9.7,
+    "lemak": 8.5,
+    "karbohidrat": 2.5,
+    "serat": 0.1
+  },
+  {
+    "nama": "Tahu telur",
+    "energi": 328,
+    "protein": 12.6,
+    "lemak": 19.9,
+    "karbohidrat": 24.6,
+    "serat": 0.4
+  },
+  {
+    "nama": "Takwa",
+    "energi": 148,
+    "protein": 13.8,
+    "lemak": 8.5,
+    "karbohidrat": 4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tauco",
+    "energi": 184,
+    "protein": 11.4,
+    "lemak": 5.5,
+    "karbohidrat": 22.2,
+    "serat": 1.9
+  },
+  {
+    "nama": "Tauco cap beruang, cake",
+    "energi": 347,
+    "protein": 7.4,
+    "lemak": 5.2,
+    "karbohidrat": 67.6,
+    "serat": 3.2
+  },
+  {
+    "nama": "Tauco cap DAS, cake",
+    "energi": 358,
+    "protein": 7.5,
+    "lemak": 4.3,
+    "karbohidrat": 70.4,
+    "serat": 3.1
+  },
+  {
+    "nama": "Tauco cap meong",
+    "energi": 159,
+    "protein": 7.4,
+    "lemak": 4.9,
+    "karbohidrat": 21.3,
+    "serat": 1.6
+  },
+  {
+    "nama": "Tauji cap singa",
+    "energi": 277,
+    "protein": 9.1,
+    "lemak": 4.7,
+    "karbohidrat": 49.6,
+    "serat": 1.2
+  },
+  {
+    "nama": "Tempe bongkrek",
+    "energi": 119,
+    "protein": 4.4,
+    "lemak": 3.5,
+    "karbohidrat": 18.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tempe gembus P3G",
+    "energi": 73,
+    "protein": 5.7,
+    "lemak": 1.3,
+    "karbohidrat": 10.3,
+    "serat": 4.2
+  },
+  {
+    "nama": "Tempe gembus yogya",
+    "energi": 76,
+    "protein": 6.8,
+    "lemak": 0.7,
+    "karbohidrat": 10.6,
+    "serat": 5.3
+  },
+  {
+    "nama": "Tempe kacang babi",
+    "energi": 139,
+    "protein": 12.5,
+    "lemak": 0.8,
+    "karbohidrat": 21.9,
+    "serat": 1.8
+  },
+  {
+    "nama": "Tempe kecipir (kacang belimbing)",
+    "energi": 212,
+    "protein": 17.5,
+    "lemak": 10,
+    "karbohidrat": 12.9,
+    "serat": 2.9
+  },
+  {
+    "nama": "Tempe kedelai + jagung",
+    "energi": 143,
+    "protein": 12,
+    "lemak": 5.5,
+    "karbohidrat": 11.4,
+    "serat": 1.9
+  },
+  {
+    "nama": "Tempe kedelai murni, goreng",
+    "energi": 350,
+    "protein": 24.5,
+    "lemak": 26.6,
+    "karbohidrat": 10.4,
+    "serat": 4.2
+  },
+  {
+    "nama": "Tempe kedelai murni, mentah",
+    "energi": 201,
+    "protein": 20.8,
+    "lemak": 8.8,
+    "karbohidrat": 13.5,
+    "serat": 1.4
+  },
+  {
+    "nama": "Tempe koro benguk",
+    "energi": 141,
+    "protein": 10.2,
+    "lemak": 1.3,
+    "karbohidrat": 23.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tempe lamtoro",
+    "energi": 128,
+    "protein": 10.7,
+    "lemak": 0.5,
+    "karbohidrat": 21.3,
+    "serat": 7.1
+  },
+  {
+    "nama": "Tempe lamtoro var. gung dengan kulit",
+    "energi": 146,
+    "protein": 11.7,
+    "lemak": 2.3,
+    "karbohidrat": 19.6,
+    "serat": 7.6
+  },
+  {
+    "nama": "Tempe lamtoro var. gung tanpa kulit",
+    "energi": 131,
+    "protein": 18,
+    "lemak": 0.8,
+    "karbohidrat": 13,
+    "serat": 1.3
+  },
+  {
+    "nama": "Tempe pasar",
+    "energi": 150,
+    "protein": 14,
+    "lemak": 7.7,
+    "karbohidrat": 9.1,
+    "serat": 1.4
+  },
+  {
+    "nama": "Tempe pasar goreng",
+    "energi": 336,
+    "protein": 20,
+    "lemak": 28,
+    "karbohidrat": 7.8,
+    "serat": 3.4
+  },
+  {
+    "nama": "Tepung hunkwe (pati kacang ijo)",
+    "energi": 364,
+    "protein": 4.5,
+    "lemak": 1,
+    "karbohidrat": 83.5,
+    "serat": 16.1
+  },
+  {
+    "nama": "Tepung Jalejo",
+    "energi": 388,
+    "protein": 19,
+    "lemak": 7.5,
+    "karbohidrat": 61.2,
+    "serat": 5.8
+  },
+  {
+    "nama": "Tepung kacang kedelai",
+    "energi": 347,
+    "protein": 35.9,
+    "lemak": 20.6,
+    "karbohidrat": 29.9,
+    "serat": 5.8
+  },
+  {
+    "nama": "Kacang arab, kering",
+    "energi": 330,
+    "protein": 23.8,
+    "lemak": 1.4,
+    "karbohidrat": 60.2,
+    "serat": 17.4
+  },
+  {
+    "nama": "Kacang babi, kering",
+    "energi": 341,
+    "protein": 30.4,
+    "lemak": 3.2,
+    "karbohidrat": 51.3,
+    "serat": 4.5
+  },
+  {
+    "nama": "Kacang belimbing (kecipir), kering",
+    "energi": 400,
+    "protein": 34.4,
+    "lemak": 16.9,
+    "karbohidrat": 34.1,
+    "serat": 10.7
+  },
+  {
+    "nama": "Kacang beracun, segar",
+    "energi": 118,
+    "protein": 4.4,
+    "lemak": 1.5,
+    "karbohidrat": 21.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kacang bogor, kering",
+    "energi": 370,
+    "protein": 16,
+    "lemak": 6,
+    "karbohidrat": 65,
+    "serat": 26.3
+  },
+  {
+    "nama": "Kacang bogor, segar",
+    "energi": 165,
+    "protein": 7.7,
+    "lemak": 3.1,
+    "karbohidrat": 27.4,
+    "serat": 2.5
+  },
+  {
+    "nama": "Kacang endel, biji, kering",
+    "energi": 331,
+    "protein": 25,
+    "lemak": 1,
+    "karbohidrat": 58,
+    "serat": 23.6
+  },
+  {
+    "nama": "Kacang ercis, segar",
+    "energi": 129,
+    "protein": 12.4,
+    "lemak": 0.7,
+    "karbohidrat": 18.3,
+    "serat": 28.6
+  },
+  {
+    "nama": "Kacang galing, segar",
+    "energi": 336,
+    "protein": 23.1,
+    "lemak": 1.7,
+    "karbohidrat": 59.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kacang gude, biji, kering",
+    "energi": 316,
+    "protein": 20.7,
+    "lemak": 1,
+    "karbohidrat": 58,
+    "serat": 4.6
+  },
+  {
+    "nama": "Kacang gude, biji, segar",
+    "energi": 114,
+    "protein": 7,
+    "lemak": 0.6,
+    "karbohidrat": 20.8,
+    "serat": 4.4
+  },
+  {
+    "nama": "Kacang hijau var. bakti, kering",
+    "energi": 350,
+    "protein": 17.1,
+    "lemak": 1.8,
+    "karbohidrat": 70.7,
+    "serat": 5.7
+  },
+  {
+    "nama": "Kacang hijau var. siwalik, kering",
+    "energi": 339,
+    "protein": 20.8,
+    "lemak": 2.1,
+    "karbohidrat": 64.6,
+    "serat": 7.4
+  },
+  {
+    "nama": "Kacang hijau, kering",
+    "energi": 323,
+    "protein": 22.9,
+    "lemak": 1.5,
+    "karbohidrat": 56.8,
+    "serat": 7.5
+  },
+  {
+    "nama": "Kacang hitam, kering",
+    "energi": 346,
+    "protein": 16.6,
+    "lemak": 1.7,
+    "karbohidrat": 66.1,
+    "serat": 22.8
+  },
+  {
+    "nama": "Kacang kapri, segar",
+    "energi": 98,
+    "protein": 6.7,
+    "lemak": 0.4,
+    "karbohidrat": 17.7,
+    "serat": 6.2
+  },
+  {
+    "nama": "Kacang kedelai, kering",
+    "energi": 381,
+    "protein": 40.4,
+    "lemak": 16.7,
+    "karbohidrat": 24.9,
+    "serat": 3.2
+  },
+  {
+    "nama": "Kacang kedelai, segar",
+    "energi": 286,
+    "protein": 30.2,
+    "lemak": 15.6,
+    "karbohidrat": 30.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kacang kincai, kering",
+    "energi": 444,
+    "protein": 19.9,
+    "lemak": 16,
+    "karbohidrat": 55,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kacang komak, segar",
+    "energi": 327,
+    "protein": 16.4,
+    "lemak": 4.3,
+    "karbohidrat": 55.8,
+    "serat": 0.5
+  },
+  {
+    "nama": "Kacang kuning, kering",
+    "energi": 355,
+    "protein": 17,
+    "lemak": 2.5,
+    "karbohidrat": 66,
+    "serat": 15.1
+  },
+  {
+    "nama": "Kacang lebui /iris, kering",
+    "energi": 346,
+    "protein": 16.5,
+    "lemak": 1.5,
+    "karbohidrat": 66.6,
+    "serat": 37.3
+  },
+  {
+    "nama": "Kacang mentega, kering",
+    "energi": 344,
+    "protein": 16.7,
+    "lemak": 2.1,
+    "karbohidrat": 64.6,
+    "serat": 13
+  },
+  {
+    "nama": "Kacang merah/banda, kering",
+    "energi": 350,
+    "protein": 13.9,
+    "lemak": 3,
+    "karbohidrat": 66.9,
+    "serat": 26.3
+  },
+  {
+    "nama": "Kacang merah tua, kering",
+    "energi": 280,
+    "protein": 16.7,
+    "lemak": 1.6,
+    "karbohidrat": 63.2,
+    "serat": 4.6
+  },
+  {
+    "nama": "Kacang merah, kering",
+    "energi": 314,
+    "protein": 22.1,
+    "lemak": 1.1,
+    "karbohidrat": 56.2,
+    "serat": 4
+  },
+  {
+    "nama": "Kacang merah, segar",
+    "energi": 171,
+    "protein": 11,
+    "lemak": 2.2,
+    "karbohidrat": 28,
+    "serat": 2.1
+  },
+  {
+    "nama": "Kacang mete/biji jambu monyet, segar",
+    "energi": 616,
+    "protein": 16.3,
+    "lemak": 48.4,
+    "karbohidrat": 28.7,
+    "serat": 0.9
+  },
+  {
+    "nama": "Kacang panjang, biji, kering",
+    "energi": 357,
+    "protein": 17.3,
+    "lemak": 1.5,
+    "karbohidrat": 68.6,
+    "serat": 10.6
+  },
+  {
+    "nama": "Kacang tanah sangan",
+    "energi": 560,
+    "protein": 29.5,
+    "lemak": 43,
+    "karbohidrat": 24.1,
+    "serat": 2.9
+  },
+  {
+    "nama": "Kacang tanah sangan tanpa selaput",
+    "energi": 559,
+    "protein": 26.9,
+    "lemak": 44.2,
+    "karbohidrat": 23.6,
+    "serat": 2.6
+  },
+  {
+    "nama": "Kacang tanah, kering",
+    "energi": 525,
+    "protein": 27.9,
+    "lemak": 42.7,
+    "karbohidrat": 17.4,
+    "serat": 2.4
+  },
+  {
+    "nama": "Kacang tolo / tunggak, kering",
+    "energi": 331,
+    "protein": 24.4,
+    "lemak": 1.9,
+    "karbohidrat": 56.6,
+    "serat": 1.6
+  },
+  {
+    "nama": "Kacang tunis, kering",
+    "energi": 351,
+    "protein": 12.2,
+    "lemak": 1.2,
+    "karbohidrat": 72.9,
+    "serat": 29.5
+  },
+  {
+    "nama": "Kacang uci, kering",
+    "energi": 358,
+    "protein": 23.4,
+    "lemak": 2.4,
+    "karbohidrat": 60.6,
+    "serat": 7.4
+  },
+  {
+    "nama": "Kacang urei, kering",
+    "energi": 354,
+    "protein": 12.8,
+    "lemak": 1.8,
+    "karbohidrat": 69.3,
+    "serat": 26.1
+  },
+  {
+    "nama": "Kenari banda, kering",
+    "energi": 616,
+    "protein": 13.9,
+    "lemak": 56.2,
+    "karbohidrat": 13.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kenari, kering",
+    "energi": 657,
+    "protein": 15,
+    "lemak": 66,
+    "karbohidrat": 13,
+    "serat": 0.0
+  },
+  {
+    "nama": "Komak polong, segar",
+    "energi": 99,
+    "protein": 3.3,
+    "lemak": 0.1,
+    "karbohidrat": 21.2,
+    "serat": 10.3
+  },
+  {
+    "nama": "Koro andong, kering",
+    "energi": 356,
+    "protein": 20.5,
+    "lemak": 4.1,
+    "karbohidrat": 61.6,
+    "serat": 7
+  },
+  {
+    "nama": "Koro benguk, biji, kering",
+    "energi": 332,
+    "protein": 24,
+    "lemak": 3,
+    "karbohidrat": 55,
+    "serat": 5.6
+  },
+  {
+    "nama": "Koro kerupuk, biji, segar",
+    "energi": 125,
+    "protein": 8.3,
+    "lemak": 0.7,
+    "karbohidrat": 22.1,
+    "serat": 2.2
+  },
+  {
+    "nama": "Koro loke, biji, segar",
+    "energi": 33,
+    "protein": 2.7,
+    "lemak": 0.2,
+    "karbohidrat": 7.9,
+    "serat": 3.5
+  },
+  {
+    "nama": "Koro roay, kering",
+    "energi": 344,
+    "protein": 12.5,
+    "lemak": 2.1,
+    "karbohidrat": 69.4,
+    "serat": 7.5
+  },
+  {
+    "nama": "Koro wedus, biji, kering",
+    "energi": 338,
+    "protein": 22.2,
+    "lemak": 1.5,
+    "karbohidrat": 61,
+    "serat": 5.8
+  },
+  {
+    "nama": "Lamtoro biji, muda, segar",
+    "energi": 85,
+    "protein": 5.7,
+    "lemak": 0.3,
+    "karbohidrat": 15.4,
+    "serat": 10.8
+  },
+  {
+    "nama": "Lamtoro biji, tua, segar",
+    "energi": 148,
+    "protein": 10.6,
+    "lemak": 0.5,
+    "karbohidrat": 26.2,
+    "serat": 17
+  },
+  {
+    "nama": "Lamtoro var. gung tanpa kulit",
+    "energi": 367,
+    "protein": 46.4,
+    "lemak": 5.4,
+    "karbohidrat": 32.5,
+    "serat": 2.6
+  },
+  {
+    "nama": "Lamtoro var. lokal dengan kulit",
+    "energi": 336,
+    "protein": 23.8,
+    "lemak": 1.2,
+    "karbohidrat": 59.7,
+    "serat": 15.4
+  },
+  {
+    "nama": "Nangka, biji, segar",
+    "energi": 165,
+    "protein": 4.2,
+    "lemak": 0.1,
+    "karbohidrat": 36.7,
+    "serat": 1.8
+  },
+  {
+    "nama": "Saga merah terkupas, mentah",
+    "energi": 449,
+    "protein": 30.6,
+    "lemak": 25.5,
+    "karbohidrat": 31.9,
+    "serat": 3.5
+  },
+  {
+    "nama": "Wijen, mentah",
+    "energi": 568,
+    "protein": 19.3,
+    "lemak": 51.1,
+    "karbohidrat": 18.1,
+    "serat": 3.6
+  },
+  {
+    "nama": "Bayam, kukus",
+    "energi": 30,
+    "protein": 1.3,
+    "lemak": 0.7,
+    "karbohidrat": 5.8,
+    "serat": 1.2
+  },
+  {
+    "nama": "Bayam, rebus",
+    "energi": 23,
+    "protein": 1.2,
+    "lemak": 0.6,
+    "karbohidrat": 3.7,
+    "serat": 1.1
+  },
+  {
+    "nama": "Buncis, rebus",
+    "energi": 30,
+    "protein": 2.2,
+    "lemak": 0.2,
+    "karbohidrat": 6.4,
+    "serat": 1.5
+  },
+  {
+    "nama": "Daun kacang panjang, kukus",
+    "energi": 40,
+    "protein": 3.7,
+    "lemak": 0.3,
+    "karbohidrat": 8,
+    "serat": 1.8
+  },
+  {
+    "nama": "Daun katuk, rebus",
+    "energi": 53,
+    "protein": 5.3,
+    "lemak": 0.9,
+    "karbohidrat": 9.1,
+    "serat": 1.2
+  },
+  {
+    "nama": "Daun kelor, rebus",
+    "energi": 61,
+    "protein": 6.1,
+    "lemak": 0.9,
+    "karbohidrat": 10,
+    "serat": 0.9
+  },
+  {
+    "nama": "Daun mengkudu, kukus",
+    "energi": 63,
+    "protein": 3.8,
+    "lemak": 1.5,
+    "karbohidrat": 11.5,
+    "serat": 2.4
+  },
+  {
+    "nama": "Daun singkong, rebus",
+    "energi": 31,
+    "protein": 3.7,
+    "lemak": 0.6,
+    "karbohidrat": 4.8,
+    "serat": 1.6
+  },
+  {
+    "nama": "Daun talas, rebus",
+    "energi": 27,
+    "protein": 1.3,
+    "lemak": 0.2,
+    "karbohidrat": 5.9,
+    "serat": 1.6
+  },
+  {
+    "nama": "Daun ubi merah, kukus",
+    "energi": 56,
+    "protein": 3.1,
+    "lemak": 0.3,
+    "karbohidrat": 13,
+    "serat": 1.5
+  },
+  {
+    "nama": "Kacang panjang, kukus",
+    "energi": 39,
+    "protein": 3,
+    "lemak": 0.6,
+    "karbohidrat": 7.6,
+    "serat": 1.7
+  },
+  {
+    "nama": "Kacang panjang, rebus",
+    "energi": 30,
+    "protein": 2.3,
+    "lemak": 0.4,
+    "karbohidrat": 5.8,
+    "serat": 1.4
+  },
+  {
+    "nama": "Kangkung, kukus",
+    "energi": 30,
+    "protein": 3.2,
+    "lemak": 0.7,
+    "karbohidrat": 4.7,
+    "serat": 1.8
+  },
+  {
+    "nama": "Kangkung, rebus",
+    "energi": 22,
+    "protein": 2.5,
+    "lemak": 0.6,
+    "karbohidrat": 3.1,
+    "serat": 1.2
+  },
+  {
+    "nama": "Paria putih, kukus",
+    "energi": 16,
+    "protein": 0.8,
+    "lemak": 0.2,
+    "karbohidrat": 3.4,
+    "serat": 1.2
+  },
+  {
+    "nama": "Selada, rebus",
+    "energi": 19,
+    "protein": 2.7,
+    "lemak": 0.2,
+    "karbohidrat": 2.9,
+    "serat": 0.7
+  },
+  {
+    "nama": "Taoge, goreng",
+    "energi": 88,
+    "protein": 3.2,
+    "lemak": 2.1,
+    "karbohidrat": 14,
+    "serat": 0.7
+  },
+  {
+    "nama": "Taoge, seduh",
+    "energi": 28,
+    "protein": 3,
+    "lemak": 0.8,
+    "karbohidrat": 4,
+    "serat": 1
+  },
+  {
+    "nama": "Terung panjang, kukus",
+    "energi": 23,
+    "protein": 1.8,
+    "lemak": 0.1,
+    "karbohidrat": 4.9,
+    "serat": 0.4
+  },
+  {
+    "nama": "Wortel, rebus",
+    "energi": 28,
+    "protein": 0.7,
+    "lemak": 0.5,
+    "karbohidrat": 6.3,
+    "serat": 0.8
+  },
+  {
+    "nama": "Wortel, kukus",
+    "energi": 37,
+    "protein": 1,
+    "lemak": 0.6,
+    "karbohidrat": 8.3,
+    "serat": 1.1
+  },
+  {
+    "nama": "Asinan Bogor, sayuran",
+    "energi": 98,
+    "protein": 3.9,
+    "lemak": 2.6,
+    "karbohidrat": 14.8,
+    "serat": 0.5
+  },
+  {
+    "nama": "Anyang, sayur",
+    "energi": 126,
+    "protein": 3.4,
+    "lemak": 7.9,
+    "karbohidrat": 10.3,
+    "serat": 5.4
+  },
+  {
+    "nama": "Ares, sayur",
+    "energi": 113,
+    "protein": 0.9,
+    "lemak": 7.2,
+    "karbohidrat": 11.2,
+    "serat": 4.7
+  },
+  {
+    "nama": "Arwan sirsir",
+    "energi": 277,
+    "protein": 2.4,
+    "lemak": 25,
+    "karbohidrat": 10.7,
+    "serat": 4.6
+  },
+  {
+    "nama": "Beberuk",
+    "energi": 65,
+    "protein": 1.1,
+    "lemak": 5.2,
+    "karbohidrat": 3.5,
+    "serat": 3.1
+  },
+  {
+    "nama": "Botok lamtoro",
+    "energi": 186,
+    "protein": 11.7,
+    "lemak": 9.7,
+    "karbohidrat": 13,
+    "serat": 2.1
+  },
+  {
+    "nama": "Buntil daun talas",
+    "energi": 141,
+    "protein": 4.4,
+    "lemak": 10.2,
+    "karbohidrat": 8,
+    "serat": 1.8
+  },
+  {
+    "nama": "Cammetutu",
+    "energi": 102,
+    "protein": 3.2,
+    "lemak": 6,
+    "karbohidrat": 8.7,
+    "serat": 4.3
+  },
+  {
+    "nama": "Cap cai, sayur",
+    "energi": 97,
+    "protein": 5.8,
+    "lemak": 6.3,
+    "karbohidrat": 4.2,
+    "serat": 0.6
+  },
+  {
+    "nama": "Gado-gado",
+    "energi": 137,
+    "protein": 6.1,
+    "lemak": 3.2,
+    "karbohidrat": 21,
+    "serat": 1.1
+  },
+  {
+    "nama": "Gudeg, sayur",
+    "energi": 160,
+    "protein": 3.3,
+    "lemak": 9.2,
+    "karbohidrat": 16,
+    "serat": 2.3
+  },
+  {
+    "nama": "Gulai pakis",
+    "energi": 143,
+    "protein": 4,
+    "lemak": 11.4,
+    "karbohidrat": 6,
+    "serat": 1.4
+  },
+  {
+    "nama": "Gulai pliek",
+    "energi": 176,
+    "protein": 7.3,
+    "lemak": 14.9,
+    "karbohidrat": 3.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kadada katembe",
+    "energi": 110,
+    "protein": 4.5,
+    "lemak": 6.9,
+    "karbohidrat": 7.1,
+    "serat": 3.9
+  },
+  {
+    "nama": "Kaparende, sayur",
+    "energi": 38,
+    "protein": 2.4,
+    "lemak": 2,
+    "karbohidrat": 2.6,
+    "serat": 1.5
+  },
+  {
+    "nama": "Karedok, sayur",
+    "energi": 92,
+    "protein": 2.2,
+    "lemak": 3.3,
+    "karbohidrat": 14.1,
+    "serat": 1.4
+  },
+  {
+    "nama": "Keripik bayam",
+    "energi": 586,
+    "protein": 4.9,
+    "lemak": 40.6,
+    "karbohidrat": 50.2,
+    "serat": 0.5
+  },
+  {
+    "nama": "Kotiu hinela tawang nggole",
+    "energi": 46,
+    "protein": 2.2,
+    "lemak": 1.5,
+    "karbohidrat": 6,
+    "serat": 3.8
+  },
+  {
+    "nama": "Lema/Rebung asam",
+    "energi": 15,
+    "protein": 1,
+    "lemak": 0.4,
+    "karbohidrat": 1.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lilin bungkus gedi",
+    "energi": 79,
+    "protein": 2.3,
+    "lemak": 5.2,
+    "karbohidrat": 5.8,
+    "serat": 2.5
+  },
+  {
+    "nama": "Olah-olah",
+    "energi": 9,
+    "protein": 2.1,
+    "lemak": 6,
+    "karbohidrat": 7.1,
+    "serat": 4.4
+  },
+  {
+    "nama": "Paku hinela wulelenggapaya",
+    "energi": 77,
+    "protein": 3.5,
+    "lemak": 4.6,
+    "karbohidrat": 5.4,
+    "serat": 3.6
+  },
+  {
+    "nama": "Pelecing kangkung",
+    "energi": 75,
+    "protein": 2.5,
+    "lemak": 2.8,
+    "karbohidrat": 10,
+    "serat": 5.4
+  },
+  {
+    "nama": "Purundawa",
+    "energi": 25,
+    "protein": 1.5,
+    "lemak": 0.5,
+    "karbohidrat": 3.6,
+    "serat": 1.7
+  },
+  {
+    "nama": "Rujak cingur",
+    "energi": 153,
+    "protein": 11.3,
+    "lemak": 8.4,
+    "karbohidrat": 8,
+    "serat": 1.4
+  },
+  {
+    "nama": "Sayur asem",
+    "energi": 29,
+    "protein": 0.7,
+    "lemak": 0.6,
+    "karbohidrat": 5,
+    "serat": 0.6
+  },
+  {
+    "nama": "Sayur bunga pepaya",
+    "energi": 49,
+    "protein": 1.7,
+    "lemak": 0.3,
+    "karbohidrat": 9.8,
+    "serat": 2.7
+  },
+  {
+    "nama": "Sayur garu",
+    "energi": 178,
+    "protein": 2.6,
+    "lemak": 13.9,
+    "karbohidrat": 10.6,
+    "serat": 8.4
+  },
+  {
+    "nama": "Sayur kohu-kohu",
+    "energi": 133,
+    "protein": 7.3,
+    "lemak": 6.6,
+    "karbohidrat": 11.2,
+    "serat": 1.2
+  },
+  {
+    "nama": "Sayur lilin-terubuk",
+    "energi": 36,
+    "protein": 2.7,
+    "lemak": 0.7,
+    "karbohidrat": 4.8,
+    "serat": 1.4
+  },
+  {
+    "nama": "Sayur ndusuk",
+    "energi": 49,
+    "protein": 3.1,
+    "lemak": 2.5,
+    "karbohidrat": 3.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sayur sop",
+    "energi": 27,
+    "protein": 1.3,
+    "lemak": 2,
+    "karbohidrat": 1,
+    "serat": 0.3
+  },
+  {
+    "nama": "Sayur umbut kelapa",
+    "energi": 67,
+    "protein": 5.2,
+    "lemak": 2.9,
+    "karbohidrat": 5.1,
+    "serat": 1.4
+  },
+  {
+    "nama": "Sayur umbut rotan",
+    "energi": 57,
+    "protein": 5.4,
+    "lemak": 2.6,
+    "karbohidrat": 3.1,
+    "serat": 1.6
+  },
+  {
+    "nama": "Shabu-shabu",
+    "energi": 88,
+    "protein": 3.2,
+    "lemak": 8,
+    "karbohidrat": 0.8,
+    "serat": 0.9
+  },
+  {
+    "nama": "Semur jengkol",
+    "energi": 212,
+    "protein": 6,
+    "lemak": 10,
+    "karbohidrat": 29.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tinira ninahu nggaluku",
+    "energi": 33,
+    "protein": 1.2,
+    "lemak": 1.3,
+    "karbohidrat": 4.1,
+    "serat": 3.1
+  },
+  {
+    "nama": "Tumis bayam bersantan",
+    "energi": 48,
+    "protein": 1.4,
+    "lemak": 4.2,
+    "karbohidrat": 2.6,
+    "serat": 0.5
+  },
+  {
+    "nama": "Waluh balamak",
+    "energi": 45,
+    "protein": 0.8,
+    "lemak": 0.9,
+    "karbohidrat": 8.1,
+    "serat": 7.9
+  },
+  {
+    "nama": "Woku ubi",
+    "energi": 143,
+    "protein": 3.1,
+    "lemak": 7.8,
+    "karbohidrat": 15,
+    "serat": 7
+  },
+  {
+    "nama": "Akar tonjong, segar",
+    "energi": 45,
+    "protein": 1.1,
+    "lemak": 0.4,
+    "karbohidrat": 10.8,
+    "serat": 1.2
+  },
+  {
+    "nama": "Ale,toge, segar",
+    "energi": 37,
+    "protein": 4.4,
+    "lemak": 0.5,
+    "karbohidrat": 3.8,
+    "serat": 1.7
+  },
+  {
+    "nama": "Andaliman, segar",
+    "energi": 99,
+    "protein": 4.6,
+    "lemak": 1,
+    "karbohidrat": 18,
+    "serat": 8.5
+  },
+  {
+    "nama": "Andewi, segar",
+    "energi": 226,
+    "protein": 1.6,
+    "lemak": 0.2,
+    "karbohidrat": 5.3,
+    "serat": 4.1
+  },
+  {
+    "nama": "Bakung, segar",
+    "energi": 27,
+    "protein": 2,
+    "lemak": 0.2,
+    "karbohidrat": 4.2,
+    "serat": 3.8
+  },
+  {
+    "nama": "Baligo, segar",
+    "energi": 15,
+    "protein": 0.4,
+    "lemak": 0.2,
+    "karbohidrat": 3,
+    "serat": 0.4
+  },
+  {
+    "nama": "Bawang bombay, segar",
+    "energi": 43,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 10.3,
+    "serat": 2
+  },
+  {
+    "nama": "Bayam, segar",
+    "energi": 16,
+    "protein": 0.9,
+    "lemak": 0.4,
+    "karbohidrat": 2.9,
+    "serat": 0.7
+  },
+  {
+    "nama": "Bayam merah, segar",
+    "energi": 41,
+    "protein": 2.2,
+    "lemak": 0.8,
+    "karbohidrat": 6.3,
+    "serat": 2.2
+  },
+  {
+    "nama": "Bit, segar",
+    "energi": 41,
+    "protein": 1.6,
+    "lemak": 0.1,
+    "karbohidrat": 9.6,
+    "serat": 2.6
+  },
+  {
+    "nama": "Buah kelor",
+    "energi": 38,
+    "protein": 1.5,
+    "lemak": 0.2,
+    "karbohidrat": 7.5,
+    "serat": 3.2
+  },
+  {
+    "nama": "Buah merah",
+    "energi": 87,
+    "protein": 2.6,
+    "lemak": 2.7,
+    "karbohidrat": 13.1,
+    "serat": 4
+  },
+  {
+    "nama": "Buncis, segar",
+    "energi": 34,
+    "protein": 2.4,
+    "lemak": 0.3,
+    "karbohidrat": 7.2,
+    "serat": 1.9
+  },
+  {
+    "nama": "Bunga pepaya, segar",
+    "energi": 45,
+    "protein": 2.6,
+    "lemak": 0.3,
+    "karbohidrat": 8.1,
+    "serat": 1.6
+  },
+  {
+    "nama": "Bunga turi, segar",
+    "energi": 42,
+    "protein": 2,
+    "lemak": 1.1,
+    "karbohidrat": 6.1,
+    "serat": 3.3
+  },
+  {
+    "nama": "Caisin, segar",
+    "energi": 20,
+    "protein": 1.7,
+    "lemak": 0.4,
+    "karbohidrat": 3.4,
+    "serat": 1.2
+  },
+  {
+    "nama": "Daun bangun-bangun, segar",
+    "energi": 27,
+    "protein": 1.3,
+    "lemak": 0.6,
+    "karbohidrat": 4,
+    "serat": 1
+  },
+  {
+    "nama": "Daun bawang merah, segar",
+    "energi": 41,
+    "protein": 2,
+    "lemak": 0.3,
+    "karbohidrat": 7.8,
+    "serat": 2.1
+  },
+  {
+    "nama": "Daun bebuas, segar",
+    "energi": 41,
+    "protein": 2.7,
+    "lemak": 1,
+    "karbohidrat": 7.3,
+    "serat": 2.1
+  },
+  {
+    "nama": "Daun belem, segar",
+    "energi": 50,
+    "protein": 4.4,
+    "lemak": 1.4,
+    "karbohidrat": 7.8,
+    "serat": 1.9
+  },
+  {
+    "nama": "Daun bluntas, segar",
+    "energi": 44,
+    "protein": 1.8,
+    "lemak": 0.5,
+    "karbohidrat": 9.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Daun gandaria, segar",
+    "energi": 63,
+    "protein": 3.1,
+    "lemak": 0.3,
+    "karbohidrat": 14,
+    "serat": 2.1
+  },
+  {
+    "nama": "Daun gedi besar, segar",
+    "energi": 58,
+    "protein": 2.9,
+    "lemak": 0.7,
+    "karbohidrat": 10,
+    "serat": 3.3
+  },
+  {
+    "nama": "Daun gedi kecil, segar",
+    "energi": 61,
+    "protein": 3.2,
+    "lemak": 0.7,
+    "karbohidrat": 10.4,
+    "serat": 3.4
+  },
+  {
+    "nama": "Daun gelang, segar",
+    "energi": 30,
+    "protein": 1.3,
+    "lemak": 0.7,
+    "karbohidrat": 5.8,
+    "serat": 1.3
+  },
+  {
+    "nama": "Daun gunda bali, segar",
+    "energi": 50,
+    "protein": 4.6,
+    "lemak": 0.9,
+    "karbohidrat": 7,
+    "serat": 1.4
+  },
+  {
+    "nama": "Daun gunda serang, segar",
+    "energi": 62,
+    "protein": 4.2,
+    "lemak": 0.9,
+    "karbohidrat": 9.2,
+    "serat": 1.3
+  },
+  {
+    "nama": "Daun jambu mete muda, segar",
+    "energi": 78,
+    "protein": 4.6,
+    "lemak": 0.5,
+    "karbohidrat": 16.2,
+    "serat": 3
+  },
+  {
+    "nama": "Daun jampang, segar",
+    "energi": 34,
+    "protein": 3.8,
+    "lemak": 0.5,
+    "karbohidrat": 5.3,
+    "serat": 1.4
+  },
+  {
+    "nama": "Daun jawaw seluang, segar",
+    "energi": 93,
+    "protein": 5,
+    "lemak": 1.3,
+    "karbohidrat": 15.3,
+    "serat": 3.9
+  },
+  {
+    "nama": "Daun jonghe, segar",
+    "energi": 27,
+    "protein": 2.1,
+    "lemak": 0.7,
+    "karbohidrat": 4.4,
+    "serat": 2
+  },
+  {
+    "nama": "Daun kacang ma, segar",
+    "energi": 36,
+    "protein": 2.9,
+    "lemak": 0.6,
+    "karbohidrat": 6.8,
+    "serat": 1.8
+  },
+  {
+    "nama": "Daun kacang panjang, segar",
+    "energi": 30,
+    "protein": 3.1,
+    "lemak": 0.3,
+    "karbohidrat": 5.8,
+    "serat": 1.7
+  },
+  {
+    "nama": "Daun kasbi/singkong karet, segar",
+    "energi": 92,
+    "protein": 4,
+    "lemak": 3.6,
+    "karbohidrat": 10.9,
+    "serat": 5.8
+  },
+  {
+    "nama": "Daun katuk, segar",
+    "energi": 59,
+    "protein": 6.4,
+    "lemak": 1,
+    "karbohidrat": 9.9,
+    "serat": 1.5
+  },
+  {
+    "nama": "Daun kecipir, segar",
+    "energi": 52,
+    "protein": 5,
+    "lemak": 0.5,
+    "karbohidrat": 8.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Daun kedondong, segar",
+    "energi": 59,
+    "protein": 3.5,
+    "lemak": 0.3,
+    "karbohidrat": 13.4,
+    "serat": 10.7
+  },
+  {
+    "nama": "Daun kelor, segar",
+    "energi": 92,
+    "protein": 5.1,
+    "lemak": 1.6,
+    "karbohidrat": 14.3,
+    "serat": 8.2
+  },
+  {
+    "nama": "Daun kemangi, segar",
+    "energi": 43,
+    "protein": 5.5,
+    "lemak": 0.3,
+    "karbohidrat": 7.5,
+    "serat": 8.4
+  },
+  {
+    "nama": "Daun kenikir, segar",
+    "energi": 45,
+    "protein": 3.7,
+    "lemak": 0.5,
+    "karbohidrat": 6.6,
+    "serat": 5.8
+  },
+  {
+    "nama": "Daun kesum, segar",
+    "energi": 48,
+    "protein": 4.5,
+    "lemak": 0.8,
+    "karbohidrat": 9.1,
+    "serat": 1.6
+  },
+  {
+    "nama": "Daun kol sawi, segar",
+    "energi": 22,
+    "protein": 2.1,
+    "lemak": 0.5,
+    "karbohidrat": 3.6,
+    "serat": 0.9
+  },
+  {
+    "nama": "Daun koro, segar",
+    "energi": 23,
+    "protein": 3,
+    "lemak": 0.3,
+    "karbohidrat": 3.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Daun kubis, segar",
+    "energi": 51,
+    "protein": 2.5,
+    "lemak": 1.1,
+    "karbohidrat": 8,
+    "serat": 3.4
+  },
+  {
+    "nama": "Daun kumak, segar",
+    "energi": 14,
+    "protein": 1.3,
+    "lemak": 0.3,
+    "karbohidrat": 2.3,
+    "serat": 0.9
+  },
+  {
+    "nama": "Daun labu siam, segar",
+    "energi": 34,
+    "protein": 4,
+    "lemak": 0.4,
+    "karbohidrat": 4.7,
+    "serat": 3.5
+  },
+  {
+    "nama": "Daun labu waluh/kuning, segar",
+    "energi": 34,
+    "protein": 3.6,
+    "lemak": 0.6,
+    "karbohidrat": 4.5,
+    "serat": 2.9
+  },
+  {
+    "nama": "Daun lamtoro, segar",
+    "energi": 87,
+    "protein": 8.3,
+    "lemak": 1.8,
+    "karbohidrat": 14.4,
+    "serat": 3.3
+  },
+  {
+    "nama": "Daun leilem, segar",
+    "energi": 76,
+    "protein": 2.8,
+    "lemak": 0.2,
+    "karbohidrat": 15.8,
+    "serat": 3.1
+  },
+  {
+    "nama": "Daun leunca, segar",
+    "energi": 49,
+    "protein": 4.7,
+    "lemak": 0.5,
+    "karbohidrat": 8.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Daun lobak, segar",
+    "energi": 30,
+    "protein": 2.3,
+    "lemak": 0.4,
+    "karbohidrat": 5.8,
+    "serat": 3.2
+  },
+  {
+    "nama": "Daun lompong talas, segar",
+    "energi": 44,
+    "protein": 3,
+    "lemak": 0.8,
+    "karbohidrat": 7.4,
+    "serat": 3.3
+  },
+  {
+    "nama": "Daun mangkokan, segar",
+    "energi": 57,
+    "protein": 3.7,
+    "lemak": 0.3,
+    "karbohidrat": 11.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Daun matel ambon, segar",
+    "energi": 71,
+    "protein": 6.8,
+    "lemak": 1.6,
+    "karbohidrat": 11.5,
+    "serat": 4.6
+  },
+  {
+    "nama": "Daun melinjo, segar",
+    "energi": 104,
+    "protein": 5,
+    "lemak": 1.3,
+    "karbohidrat": 21.3,
+    "serat": 10.3
+  },
+  {
+    "nama": "Daun mengkudu, segar",
+    "energi": 65,
+    "protein": 4,
+    "lemak": 1.7,
+    "karbohidrat": 11.4,
+    "serat": 3.9
+  },
+  {
+    "nama": "Daun ndusuk, segar",
+    "energi": 166,
+    "protein": 1.7,
+    "lemak": 0.5,
+    "karbohidrat": 38.8,
+    "serat": 10.7
+  },
+  {
+    "nama": "Daun oyong, segar",
+    "energi": 22,
+    "protein": 1,
+    "lemak": 0.1,
+    "karbohidrat": 5.3,
+    "serat": 2
+  },
+  {
+    "nama": "Daun pakis, segar",
+    "energi": 39,
+    "protein": 4.5,
+    "lemak": 0.4,
+    "karbohidrat": 6.9,
+    "serat": 2
+  },
+  {
+    "nama": "Daun pakis longgiho, segar",
+    "energi": 54,
+    "protein": 2.2,
+    "lemak": 3.6,
+    "karbohidrat": 3.1,
+    "serat": 2.1
+  },
+  {
+    "nama": "Daun pakis wambateu, segar",
+    "energi": 53,
+    "protein": 3.4,
+    "lemak": 1.2,
+    "karbohidrat": 7.2,
+    "serat": 4.8
+  },
+  {
+    "nama": "Daun paku, segar",
+    "energi": 29,
+    "protein": 3.4,
+    "lemak": 0.1,
+    "karbohidrat": 6.5,
+    "serat": 4.3
+  },
+  {
+    "nama": "Daun pangi,segar",
+    "energi": 104,
+    "protein": 3.9,
+    "lemak": 0.6,
+    "karbohidrat": 17.9,
+    "serat": 8.3
+  },
+  {
+    "nama": "Daun pare, segar",
+    "energi": 49,
+    "protein": 2.7,
+    "lemak": 1,
+    "karbohidrat": 8.4,
+    "serat": 3
+  },
+  {
+    "nama": "Daun pepaya, segar",
+    "energi": 87,
+    "protein": 8,
+    "lemak": 2,
+    "karbohidrat": 11.9,
+    "serat": 1.5
+  },
+  {
+    "nama": "Daun pohpohan, segar",
+    "energi": 37,
+    "protein": 2.5,
+    "lemak": 0.8,
+    "karbohidrat": 6.9,
+    "serat": 2.6
+  },
+  {
+    "nama": "Daun selasih, segar",
+    "energi": 62,
+    "protein": 4,
+    "lemak": 0.5,
+    "karbohidrat": 10.5,
+    "serat": 5.3
+  },
+  {
+    "nama": "Daun semanggi, segar",
+    "energi": 45,
+    "protein": 4.4,
+    "lemak": 0.5,
+    "karbohidrat": 8.5,
+    "serat": 1.9
+  },
+  {
+    "nama": "Daun simpur, segar",
+    "energi": 53,
+    "protein": 3.2,
+    "lemak": 2.5,
+    "karbohidrat": 7.6,
+    "serat": 1.6
+  },
+  {
+    "nama": "Daun singkil, segar",
+    "energi": 68,
+    "protein": 2,
+    "lemak": 1,
+    "karbohidrat": 15.2,
+    "serat": 3.3
+  },
+  {
+    "nama": "Daun singkong, segar",
+    "energi": 50,
+    "protein": 6.2,
+    "lemak": 1.1,
+    "karbohidrat": 7.1,
+    "serat": 2.4
+  },
+  {
+    "nama": "Daun singkong ambon, segar",
+    "energi": 144,
+    "protein": 12.7,
+    "lemak": 1.2,
+    "karbohidrat": 25.2,
+    "serat": 10.2
+  },
+  {
+    "nama": "Daun singkong ampenan, segar",
+    "energi": 50,
+    "protein": 6.2,
+    "lemak": 1.1,
+    "karbohidrat": 7.1,
+    "serat": 2.4
+  },
+  {
+    "nama": "Daun singkong kopang, segar",
+    "energi": 74,
+    "protein": 6.3,
+    "lemak": 0.7,
+    "karbohidrat": 10.7,
+    "serat": 4.6
+  },
+  {
+    "nama": "Daun sintrong, segar",
+    "energi": 36,
+    "protein": 2.6,
+    "lemak": 0.9,
+    "karbohidrat": 6.1,
+    "serat": 1.7
+  },
+  {
+    "nama": "Daun talas, segar",
+    "energi": 59,
+    "protein": 3,
+    "lemak": 0.4,
+    "karbohidrat": 13.5,
+    "serat": 3
+  },
+  {
+    "nama": "Daun tespong, segar",
+    "energi": 70,
+    "protein": 2.9,
+    "lemak": 0.3,
+    "karbohidrat": 13.9,
+    "serat": 2.3
+  },
+  {
+    "nama": "Daun ubi kuning, segar",
+    "energi": 62,
+    "protein": 3.7,
+    "lemak": 0.3,
+    "karbohidrat": 11.1,
+    "serat": 6.4
+  },
+  {
+    "nama": "Daun ubi merah, segar",
+    "energi": 48,
+    "protein": 3,
+    "lemak": 0.3,
+    "karbohidrat": 10.8,
+    "serat": 1.4
+  },
+  {
+    "nama": "Daun ubi putih, segar",
+    "energi": 46,
+    "protein": 2.8,
+    "lemak": 0.2,
+    "karbohidrat": 8.2,
+    "serat": 4.8
+  },
+  {
+    "nama": "Daun ubi tinta, segar",
+    "energi": 55,
+    "protein": 1.7,
+    "lemak": 0.1,
+    "karbohidrat": 11.9,
+    "serat": 7.6
+  },
+  {
+    "nama": "Eceng, segar",
+    "energi": 19,
+    "protein": 1,
+    "lemak": 0.2,
+    "karbohidrat": 3.8,
+    "serat": 1.8
+  },
+  {
+    "nama": "Gambas (oyong), segar",
+    "energi": 19,
+    "protein": 0.8,
+    "lemak": 0.2,
+    "karbohidrat": 4.1,
+    "serat": 1.3
+  },
+  {
+    "nama": "Genjer, segar",
+    "energi": 35,
+    "protein": 1.7,
+    "lemak": 0.2,
+    "karbohidrat": 7.7,
+    "serat": 2.5
+  },
+  {
+    "nama": "Jagung muda / semi, segar",
+    "energi": 35,
+    "protein": 2.2,
+    "lemak": 0.1,
+    "karbohidrat": 7.4,
+    "serat": 1.9
+  },
+  {
+    "nama": "Jamur encik",
+    "energi": 296,
+    "protein": 9.4,
+    "lemak": 1.1,
+    "karbohidrat": 62,
+    "serat": 0.0
+  },
+  {
+    "nama": "Jamur kuping, kering",
+    "energi": 294,
+    "protein": 16,
+    "lemak": 0.9,
+    "karbohidrat": 64.6,
+    "serat": 46.5
+  },
+  {
+    "nama": "Jamur kuping, segar",
+    "energi": 21,
+    "protein": 3.8,
+    "lemak": 0.6,
+    "karbohidrat": 0.9,
+    "serat": 5.1
+  },
+  {
+    "nama": "Jamur merang, segar",
+    "energi": 30,
+    "protein": 3.5,
+    "lemak": 0.2,
+    "karbohidrat": 4,
+    "serat": 2.4
+  },
+  {
+    "nama": "Jamur tiram, segar",
+    "energi": 30,
+    "protein": 1.9,
+    "lemak": 0.1,
+    "karbohidrat": 5.5,
+    "serat": 3.6
+  },
+  {
+    "nama": "Jamur sagu",
+    "energi": 48,
+    "protein": 1.9,
+    "lemak": 3.2,
+    "karbohidrat": 2.8,
+    "serat": 1
+  },
+  {
+    "nama": "Jantung pisang, segar",
+    "energi": 32,
+    "protein": 1.2,
+    "lemak": 0.3,
+    "karbohidrat": 7.1,
+    "serat": 3.2
+  },
+  {
+    "nama": "Jengkol, segar",
+    "energi": 192,
+    "protein": 5.4,
+    "lemak": 0.3,
+    "karbohidrat": 40.7,
+    "serat": 1.5
+  },
+  {
+    "nama": "Jotang, segar",
+    "energi": 34,
+    "protein": 1.9,
+    "lemak": 0.3,
+    "karbohidrat": 7.1,
+    "serat": 3.5
+  },
+  {
+    "nama": "Kabau, segar",
+    "energi": 130,
+    "protein": 6.7,
+    "lemak": 0.3,
+    "karbohidrat": 25.2,
+    "serat": 2.9
+  },
+  {
+    "nama": "Kacang mekah, polong, segar",
+    "energi": 22,
+    "protein": 1.1,
+    "lemak": 1,
+    "karbohidrat": 3.4,
+    "serat": 1.1
+  },
+  {
+    "nama": "Kacang panjang, segar",
+    "energi": 31,
+    "protein": 2.3,
+    "lemak": 0.1,
+    "karbohidrat": 5.3,
+    "serat": 2.7
+  },
+  {
+    "nama": "Kacang ranti polong",
+    "energi": 37,
+    "protein": 3.1,
+    "lemak": 0.2,
+    "karbohidrat": 7.9,
+    "serat": 2.5
+  },
+  {
+    "nama": "Kalakai, segar",
+    "energi": 38,
+    "protein": 2.4,
+    "lemak": 0.2,
+    "karbohidrat": 6.6,
+    "serat": 5.8
+  },
+  {
+    "nama": "Kangkung, segar",
+    "energi": 28,
+    "protein": 3.4,
+    "lemak": 0.7,
+    "karbohidrat": 3.9,
+    "serat": 2
+  },
+  {
+    "nama": "Kangkung tondano",
+    "energi": 43,
+    "protein": 1.8,
+    "lemak": 0.2,
+    "karbohidrat": 8.4,
+    "serat": 4.3
+  },
+  {
+    "nama": "Kapri muda, segar",
+    "energi": 45,
+    "protein": 3.3,
+    "lemak": 0.2,
+    "karbohidrat": 9,
+    "serat": 1.8
+  },
+  {
+    "nama": "Karawila",
+    "energi": 25,
+    "protein": 2.3,
+    "lemak": 0.2,
+    "karbohidrat": 3.5,
+    "serat": 2.1
+  },
+  {
+    "nama": "Kecipir muda, segar",
+    "energi": 32,
+    "protein": 2.9,
+    "lemak": 0.2,
+    "karbohidrat": 5.8,
+    "serat": 5.5
+  },
+  {
+    "nama": "Kecombrang, segar",
+    "energi": 34,
+    "protein": 0.9,
+    "lemak": 1,
+    "karbohidrat": 6.7,
+    "serat": 2.6
+  },
+  {
+    "nama": "Kelawi,kluwih, segar",
+    "energi": 118,
+    "protein": 1.5,
+    "lemak": 0.3,
+    "karbohidrat": 27.2,
+    "serat": 5
+  },
+  {
+    "nama": "Kembang turi, segar",
+    "energi": 51,
+    "protein": 1.8,
+    "lemak": 0.6,
+    "karbohidrat": 9.6,
+    "serat": 5
+  },
+  {
+    "nama": "Kerokot, segar",
+    "energi": 26,
+    "protein": 1.7,
+    "lemak": 0.4,
+    "karbohidrat": 3.8,
+    "serat": 1
+  },
+  {
+    "nama": "Ketimun, segar",
+    "energi": 8,
+    "protein": 0.2,
+    "lemak": 0.2,
+    "karbohidrat": 1.4,
+    "serat": 0.3
+  },
+  {
+    "nama": "Ketimun krai, segar",
+    "energi": 10,
+    "protein": 0.5,
+    "lemak": 0.2,
+    "karbohidrat": 2,
+    "serat": 0.6
+  },
+  {
+    "nama": "Ketimun madura, segar",
+    "energi": 9,
+    "protein": 0.5,
+    "lemak": 0.1,
+    "karbohidrat": 1.9,
+    "serat": 0.7
+  },
+  {
+    "nama": "Komak, segar",
+    "energi": 99,
+    "protein": 3.3,
+    "lemak": 0.1,
+    "karbohidrat": 21.2,
+    "serat": 10.3
+  },
+  {
+    "nama": "Kembang Kol",
+    "energi": 25,
+    "protein": 2.4,
+    "lemak": 0.2,
+    "karbohidrat": 4.9,
+    "serat": 1.6
+  },
+  {
+    "nama": "Kol merah, kol putih",
+    "energi": 29,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 5.3,
+    "serat": 1.9
+  },
+  {
+    "nama": "Koro kerupuk, polong",
+    "energi": 128,
+    "protein": 8.3,
+    "lemak": 0.7,
+    "karbohidrat": 22.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Koro wedus, polong",
+    "energi": 46,
+    "protein": 3,
+    "lemak": 0.3,
+    "karbohidrat": 7.9,
+    "serat": 3.3
+  },
+  {
+    "nama": "Kucai, segar",
+    "energi": 45,
+    "protein": 2.2,
+    "lemak": 0.3,
+    "karbohidrat": 10.3,
+    "serat": 4.8
+  },
+  {
+    "nama": "Kucai muda (Lokio), segar",
+    "energi": 42,
+    "protein": 3.8,
+    "lemak": 0.6,
+    "karbohidrat": 7.8,
+    "serat": 4.9
+  },
+  {
+    "nama": "Kulit melinjo",
+    "energi": 111,
+    "protein": 4.5,
+    "lemak": 1.1,
+    "karbohidrat": 20.7,
+    "serat": 5
+  },
+  {
+    "nama": "Kundur, segar",
+    "energi": 22,
+    "protein": 0.4,
+    "lemak": 0.2,
+    "karbohidrat": 4.7,
+    "serat": 1.3
+  },
+  {
+    "nama": "Labu air, segar",
+    "energi": 19,
+    "protein": 0.6,
+    "lemak": 0.2,
+    "karbohidrat": 3.8,
+    "serat": 0.6
+  },
+  {
+    "nama": "Labu kuning, segar",
+    "energi": 51,
+    "protein": 1.7,
+    "lemak": 0.5,
+    "karbohidrat": 10,
+    "serat": 2.7
+  },
+  {
+    "nama": "Labu siam, segar",
+    "energi": 30,
+    "protein": 0.6,
+    "lemak": 0.1,
+    "karbohidrat": 6.7,
+    "serat": 6.2
+  },
+  {
+    "nama": "Labu waluh, segar",
+    "energi": 32,
+    "protein": 1.1,
+    "lemak": 0.1,
+    "karbohidrat": 6.6,
+    "serat": 0.5
+  },
+  {
+    "nama": "Lantar, segar",
+    "energi": 34,
+    "protein": 2.2,
+    "lemak": 0.3,
+    "karbohidrat": 5.5,
+    "serat": 2.9
+  },
+  {
+    "nama": "Lobak, segar",
+    "energi": 21,
+    "protein": 0.9,
+    "lemak": 0.1,
+    "karbohidrat": 4.2,
+    "serat": 1.4
+  },
+  {
+    "nama": "Lumai/Leunca, segar",
+    "energi": 38,
+    "protein": 1.1,
+    "lemak": 0.3,
+    "karbohidrat": 7.6,
+    "serat": 2
+  },
+  {
+    "nama": "Melinjo, segar",
+    "energi": 66,
+    "protein": 5,
+    "lemak": 0.7,
+    "karbohidrat": 13.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Mostarda metan - sawi hijau",
+    "energi": 33,
+    "protein": 2.3,
+    "lemak": 0.5,
+    "karbohidrat": 4.7,
+    "serat": 1.8
+  },
+  {
+    "nama": "Nangka muda, segar",
+    "energi": 57,
+    "protein": 2,
+    "lemak": 0.4,
+    "karbohidrat": 11.3,
+    "serat": 8.3
+  },
+  {
+    "nama": "Paria putih, segar",
+    "energi": 19,
+    "protein": 1,
+    "lemak": 0.4,
+    "karbohidrat": 3.6,
+    "serat": 1.3
+  },
+  {
+    "nama": "Pepare ular, segar",
+    "energi": 19,
+    "protein": 0.6,
+    "lemak": 0.1,
+    "karbohidrat": 3.9,
+    "serat": 1
+  },
+  {
+    "nama": "Pepaya muda, segar",
+    "energi": 29,
+    "protein": 2.1,
+    "lemak": 0.1,
+    "karbohidrat": 4.9,
+    "serat": 2.1
+  },
+  {
+    "nama": "Petai, segar",
+    "energi": 92,
+    "protein": 5.4,
+    "lemak": 1.1,
+    "karbohidrat": 15.2,
+    "serat": 2
+  },
+  {
+    "nama": "Peterseli, segar",
+    "energi": 53,
+    "protein": 3.7,
+    "lemak": 1,
+    "karbohidrat": 9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pucuk lumai/daun leunca, segar",
+    "energi": 33,
+    "protein": 4.5,
+    "lemak": 0.4,
+    "karbohidrat": 2.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Putri malu, segar",
+    "energi": 76,
+    "protein": 3.6,
+    "lemak": 0.3,
+    "karbohidrat": 14.6,
+    "serat": 7.1
+  },
+  {
+    "nama": "Rebung, segar",
+    "energi": 25,
+    "protein": 0.8,
+    "lemak": 0.1,
+    "karbohidrat": 5.3,
+    "serat": 9.7
+  },
+  {
+    "nama": "Rimbang, segar",
+    "energi": 75,
+    "protein": 1.6,
+    "lemak": 0.6,
+    "karbohidrat": 15.8,
+    "serat": 10
+  },
+  {
+    "nama": "Rumput laut",
+    "energi": 41,
+    "protein": 1.4,
+    "lemak": 0.3,
+    "karbohidrat": 8.1,
+    "serat": 2.2
+  },
+  {
+    "nama": "Sawi, segar",
+    "energi": 28,
+    "protein": 2.3,
+    "lemak": 0.3,
+    "karbohidrat": 4,
+    "serat": 2.5
+  },
+  {
+    "nama": "Sawi putih / pecai, segar",
+    "energi": 9,
+    "protein": 1,
+    "lemak": 0.1,
+    "karbohidrat": 1.7,
+    "serat": 0.8
+  },
+  {
+    "nama": "Sawi taiwan, segar",
+    "energi": 30,
+    "protein": 1.9,
+    "lemak": 0.5,
+    "karbohidrat": 4.4,
+    "serat": 2.7
+  },
+  {
+    "nama": "Sawi tanah, segar",
+    "energi": 19,
+    "protein": 1.3,
+    "lemak": 0.2,
+    "karbohidrat": 2.9,
+    "serat": 2.2
+  },
+  {
+    "nama": "Selada, segar",
+    "energi": 18,
+    "protein": 1.2,
+    "lemak": 0.2,
+    "karbohidrat": 2.9,
+    "serat": 1.8
+  },
+  {
+    "nama": "Selada air, segar",
+    "energi": 17,
+    "protein": 3.1,
+    "lemak": 0.2,
+    "karbohidrat": 2.2,
+    "serat": 0.7
+  },
+  {
+    "nama": "Seledri, segar",
+    "energi": 23,
+    "protein": 1,
+    "lemak": 0.1,
+    "karbohidrat": 4.6,
+    "serat": 2
+  },
+  {
+    "nama": "Taoge, segar",
+    "energi": 34,
+    "protein": 3.7,
+    "lemak": 1.2,
+    "karbohidrat": 4.3,
+    "serat": 1.1
+  },
+  {
+    "nama": "Taoge kacang kedelai, segar",
+    "energi": 76,
+    "protein": 9,
+    "lemak": 2.6,
+    "karbohidrat": 6.4,
+    "serat": 0.7
+  },
+  {
+    "nama": "Taoge kacang tunggak, segar",
+    "energi": 40,
+    "protein": 5,
+    "lemak": 0.2,
+    "karbohidrat": 5.8,
+    "serat": 2.6
+  },
+  {
+    "nama": "Tebu terubuk (lilin), segar",
+    "energi": 30,
+    "protein": 4.6,
+    "lemak": 0.4,
+    "karbohidrat": 3,
+    "serat": 0.8
+  },
+  {
+    "nama": "Tekokak, segar",
+    "energi": 34,
+    "protein": 2,
+    "lemak": 0.1,
+    "karbohidrat": 7.9,
+    "serat": 4.9
+  },
+  {
+    "nama": "Tekokak, kering",
+    "energi": 302,
+    "protein": 8.3,
+    "lemak": 1.7,
+    "karbohidrat": 72.6,
+    "serat": 21.2
+  },
+  {
+    "nama": "Terong, segar",
+    "energi": 28,
+    "protein": 1.1,
+    "lemak": 0.2,
+    "karbohidrat": 5.5,
+    "serat": 2.1
+  },
+  {
+    "nama": "Terong asam, segar",
+    "energi": 37,
+    "protein": 2,
+    "lemak": 0.4,
+    "karbohidrat": 6.3,
+    "serat": 3.2
+  },
+  {
+    "nama": "Terung belanda, segar",
+    "energi": 52,
+    "protein": 2.1,
+    "lemak": 1.1,
+    "karbohidrat": 8.6,
+    "serat": 1.4
+  },
+  {
+    "nama": "Terung bengkulu, segar",
+    "energi": 52,
+    "protein": 1.1,
+    "lemak": 0.4,
+    "karbohidrat": 11.2,
+    "serat": 3.2
+  },
+  {
+    "nama": "Terong hintalo, segar",
+    "energi": 45,
+    "protein": 1.9,
+    "lemak": 0.8,
+    "karbohidrat": 7.5,
+    "serat": 5.1
+  },
+  {
+    "nama": "Terung panjang",
+    "energi": 25,
+    "protein": 2.1,
+    "lemak": 0.1,
+    "karbohidrat": 5.3,
+    "serat": 0.5
+  },
+  {
+    "nama": "Tomat, air (sari), segar",
+    "energi": 20,
+    "protein": 1,
+    "lemak": 0.2,
+    "karbohidrat": 3.5,
+    "serat": 0.4
+  },
+  {
+    "nama": "Tomat merah, segar",
+    "energi": 24,
+    "protein": 1.3,
+    "lemak": 0.5,
+    "karbohidrat": 4.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tomat muda, segar",
+    "energi": 24,
+    "protein": 2,
+    "lemak": 0.7,
+    "karbohidrat": 3.3,
+    "serat": 1.8
+  },
+  {
+    "nama": "Uceng/ bunga melinjo, segar",
+    "energi": 82,
+    "protein": 5.8,
+    "lemak": 1.3,
+    "karbohidrat": 11.7,
+    "serat": 4.8
+  },
+  {
+    "nama": "Umbut kelapa, segar",
+    "energi": 39,
+    "protein": 2,
+    "lemak": 0.2,
+    "karbohidrat": 7.2,
+    "serat": 2.5
+  },
+  {
+    "nama": "Umbut rotan",
+    "energi": 34,
+    "protein": 2.4,
+    "lemak": 0.3,
+    "karbohidrat": 5.5,
+    "serat": 2.2
+  },
+  {
+    "nama": "Wortel, segar",
+    "energi": 36,
+    "protein": 1,
+    "lemak": 0.6,
+    "karbohidrat": 7.9,
+    "serat": 1
+  },
+  {
+    "nama": "Barongko",
+    "energi": 159,
+    "protein": 3.1,
+    "lemak": 5.8,
+    "karbohidrat": 23.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Dodol nanas",
+    "energi": 338,
+    "protein": 1.5,
+    "lemak": 1.2,
+    "karbohidrat": 80.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Getuk pisang",
+    "energi": 144,
+    "protein": 1.1,
+    "lemak": 0.4,
+    "karbohidrat": 34.1,
+    "serat": 0.4
+  },
+  {
+    "nama": "Keripik lampung",
+    "energi": 485,
+    "protein": 1.7,
+    "lemak": 22.2,
+    "karbohidrat": 69.7,
+    "serat": 0.6
+  },
+  {
+    "nama": "Ledre pisang",
+    "energi": 405,
+    "protein": 4.8,
+    "lemak": 5.1,
+    "karbohidrat": 84.9,
+    "serat": 0.4
+  },
+  {
+    "nama": "Lempog durian",
+    "energi": 320,
+    "protein": 3.5,
+    "lemak": 5.7,
+    "karbohidrat": 63.7,
+    "serat": 4.9
+  },
+  {
+    "nama": "Loka anjoro",
+    "energi": 163,
+    "protein": 1.1,
+    "lemak": 4.3,
+    "karbohidrat": 30,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rica-rica taipa",
+    "energi": 49,
+    "protein": 1.6,
+    "lemak": 0.3,
+    "karbohidrat": 10,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rujak aceh",
+    "energi": 82,
+    "protein": 0.4,
+    "lemak": 0.3,
+    "karbohidrat": 19.7,
+    "serat": 2.4
+  },
+  {
+    "nama": "Sale kesemek",
+    "energi": 296,
+    "protein": 1.1,
+    "lemak": 0.6,
+    "karbohidrat": 71.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sale pisang siam",
+    "energi": 281,
+    "protein": 2.4,
+    "lemak": 0.7,
+    "karbohidrat": 66.1,
+    "serat": 1
+  },
+  {
+    "nama": "Sale pisang, cilacap",
+    "energi": 295,
+    "protein": 2.3,
+    "lemak": 2.1,
+    "karbohidrat": 66.9,
+    "serat": 1.3
+  },
+  {
+    "nama": "Sanggara belanda",
+    "energi": 242,
+    "protein": 6.4,
+    "lemak": 7.1,
+    "karbohidrat": 38.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tepung Pisang",
+    "energi": 338,
+    "protein": 2.9,
+    "lemak": 0.4,
+    "karbohidrat": 80.6,
+    "serat": 5.3
+  },
+  {
+    "nama": "Tepung Sukun",
+    "energi": 353,
+    "protein": 2.9,
+    "lemak": 0.5,
+    "karbohidrat": 84.4,
+    "serat": 3.7
+  },
+  {
+    "nama": "Alpukat, segar",
+    "energi": 85,
+    "protein": 0.9,
+    "lemak": 6.5,
+    "karbohidrat": 7.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Anggur hutan, segar",
+    "energi": 30,
+    "protein": 0.5,
+    "lemak": 0.2,
+    "karbohidrat": 6.8,
+    "serat": 1.2
+  },
+  {
+    "nama": "Apel malang, segar",
+    "energi": 57,
+    "protein": 0.5,
+    "lemak": 0.4,
+    "karbohidrat": 12.8,
+    "serat": 0.8
+  },
+  {
+    "nama": "Apel, segar",
+    "energi": 58,
+    "protein": 0.3,
+    "lemak": 0.4,
+    "karbohidrat": 14.9,
+    "serat": 2.6
+  },
+  {
+    "nama": "Arbai, segar",
+    "energi": 37,
+    "protein": 0.8,
+    "lemak": 0.5,
+    "karbohidrat": 8.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Belimbing, segar",
+    "energi": 36,
+    "protein": 0.4,
+    "lemak": 0.4,
+    "karbohidrat": 8.8,
+    "serat": 3.3
+  },
+  {
+    "nama": "Biwah, segar",
+    "energi": 51,
+    "protein": 0.3,
+    "lemak": 0.1,
+    "karbohidrat": 12.1,
+    "serat": 0.7
+  },
+  {
+    "nama": "Buah atung, segar",
+    "energi": 23,
+    "protein": 0.8,
+    "lemak": 0.2,
+    "karbohidrat": 5.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Buah kelenting, segar",
+    "energi": 110,
+    "protein": 1.4,
+    "lemak": 2.1,
+    "karbohidrat": 21.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Buah kom, segar",
+    "energi": 264,
+    "protein": 4,
+    "lemak": 1.1,
+    "karbohidrat": 59.6,
+    "serat": 9
+  },
+  {
+    "nama": "Buah mentega (Bisbul), segar",
+    "energi": 39,
+    "protein": 0.7,
+    "lemak": 0.2,
+    "karbohidrat": 9.7,
+    "serat": 2
+  },
+  {
+    "nama": "Buah Naga Merah, segar",
+    "energi": 71,
+    "protein": 1.7,
+    "lemak": 3.1,
+    "karbohidrat": 9.1,
+    "serat": 3.2
+  },
+  {
+    "nama": "Buah Naga Putih, segar",
+    "energi": 56,
+    "protein": 0.8,
+    "lemak": 1,
+    "karbohidrat": 10.9,
+    "serat": 3.2
+  },
+  {
+    "nama": "Buah negri, segar",
+    "energi": 55,
+    "protein": 1.2,
+    "lemak": 0.1,
+    "karbohidrat": 12.2,
+    "serat": 5.2
+  },
+  {
+    "nama": "Buah nona, segar",
+    "energi": 101,
+    "protein": 1.7,
+    "lemak": 0.6,
+    "karbohidrat": 25.2,
+    "serat": 2.8
+  },
+  {
+    "nama": "Buah rotan, segar",
+    "energi": 78,
+    "protein": 0.6,
+    "lemak": 0.3,
+    "karbohidrat": 18.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Buah rukam, segar",
+    "energi": 113,
+    "protein": 0.8,
+    "lemak": 0.3,
+    "karbohidrat": 26.8,
+    "serat": 7.7
+  },
+  {
+    "nama": "Buah ruruhi, segar",
+    "energi": 29,
+    "protein": 2.1,
+    "lemak": 0.7,
+    "karbohidrat": 3.6,
+    "serat": 2.6
+  },
+  {
+    "nama": "Buah tuppa, segar",
+    "energi": 67,
+    "protein": 0.4,
+    "lemak": 0.2,
+    "karbohidrat": 15.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Carica papaya, segar",
+    "energi": 24,
+    "protein": 1.9,
+    "lemak": 0.2,
+    "karbohidrat": 3.7,
+    "serat": 1
+  },
+  {
+    "nama": "Cempedak, segar",
+    "energi": 116,
+    "protein": 3,
+    "lemak": 0.4,
+    "karbohidrat": 28.6,
+    "serat": 3.4
+  },
+  {
+    "nama": "Duku, segar",
+    "energi": 63,
+    "protein": 1,
+    "lemak": 0.2,
+    "karbohidrat": 16.1,
+    "serat": 4.3
+  },
+  {
+    "nama": "Durian, segar",
+    "energi": 134,
+    "protein": 2.5,
+    "lemak": 3,
+    "karbohidrat": 28,
+    "serat": 3.5
+  },
+  {
+    "nama": "Duwet, segar",
+    "energi": 80,
+    "protein": 0.5,
+    "lemak": 0.6,
+    "karbohidrat": 18.2,
+    "serat": 0.9
+  },
+  {
+    "nama": "Embacang, segar",
+    "energi": 98,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 25.4,
+    "serat": 1.9
+  },
+  {
+    "nama": "Encung asam, segar",
+    "energi": 122,
+    "protein": 3.5,
+    "lemak": 4.5,
+    "karbohidrat": 17.5,
+    "serat": 9.3
+  },
+  {
+    "nama": "Erbis, segar",
+    "energi": 70,
+    "protein": 0.6,
+    "lemak": 0.0,
+    "karbohidrat": 18.9,
+    "serat": 7.7
+  },
+  {
+    "nama": "Gandaria masak",
+    "energi": 68,
+    "protein": 0.7,
+    "lemak": 0.1,
+    "karbohidrat": 18,
+    "serat": 2.2
+  },
+  {
+    "nama": "Gatep, segar",
+    "energi": 191,
+    "protein": 4.5,
+    "lemak": 1.5,
+    "karbohidrat": 39.7,
+    "serat": 13.4
+  },
+  {
+    "nama": "Jambu air, segar",
+    "energi": 46,
+    "protein": 0.6,
+    "lemak": 0.2,
+    "karbohidrat": 11.8,
+    "serat": 2.1
+  },
+  {
+    "nama": "Jambu biji",
+    "energi": 49,
+    "protein": 0.9,
+    "lemak": 0.3,
+    "karbohidrat": 12.2,
+    "serat": 2.4
+  },
+  {
+    "nama": "Jambu biji putih tidak berbiji",
+    "energi": 61,
+    "protein": 0.9,
+    "lemak": 0.3,
+    "karbohidrat": 15.4,
+    "serat": 4.5
+  },
+  {
+    "nama": "Jambu bol, segar",
+    "energi": 49,
+    "protein": 2.3,
+    "lemak": 0.2,
+    "karbohidrat": 9.6,
+    "serat": 3.5
+  },
+  {
+    "nama": "Jambu monyet, segar",
+    "energi": 64,
+    "protein": 0.7,
+    "lemak": 0.6,
+    "karbohidrat": 15.8,
+    "serat": 1.2
+  },
+  {
+    "nama": "Jeruk bali, segar",
+    "energi": 48,
+    "protein": 0.6,
+    "lemak": 0.2,
+    "karbohidrat": 12.4,
+    "serat": 0.8
+  },
+  {
+    "nama": "Jeruk banjar, segar",
+    "energi": 61,
+    "protein": 0.8,
+    "lemak": 0.2,
+    "karbohidrat": 14.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Jeruk garut-keprok",
+    "energi": 44,
+    "protein": 0.8,
+    "lemak": 0.3,
+    "karbohidrat": 10.9,
+    "serat": 1.6
+  },
+  {
+    "nama": "Jeruk Kalamansi, segar",
+    "energi": 39,
+    "protein": 0.3,
+    "lemak": 0.3,
+    "karbohidrat": 8.9,
+    "serat": 2.3
+  },
+  {
+    "nama": "Jeruk manis, segar",
+    "energi": 45,
+    "protein": 0.9,
+    "lemak": 0.2,
+    "karbohidrat": 11.2,
+    "serat": 1.4
+  },
+  {
+    "nama": "Jeruk nipis, segar",
+    "energi": 44,
+    "protein": 0.5,
+    "lemak": 0.2,
+    "karbohidrat": 10,
+    "serat": 0.4
+  },
+  {
+    "nama": "Jeruk ragi, segar",
+    "energi": 49,
+    "protein": 0.7,
+    "lemak": 0.2,
+    "karbohidrat": 11.1,
+    "serat": 0.5
+  },
+  {
+    "nama": "Kawista, segar",
+    "energi": 120,
+    "protein": 3.5,
+    "lemak": 2.5,
+    "karbohidrat": 20.8,
+    "serat": 4.6
+  },
+  {
+    "nama": "Kedondong masak, segar",
+    "energi": 46,
+    "protein": 1,
+    "lemak": 0.1,
+    "karbohidrat": 10.3,
+    "serat": 2.6
+  },
+  {
+    "nama": "Kedondong, segar",
+    "energi": 47,
+    "protein": 0.5,
+    "lemak": 0.2,
+    "karbohidrat": 10.4,
+    "serat": 2.7
+  },
+  {
+    "nama": "Kelapa hutan, kering",
+    "energi": 623,
+    "protein": 2,
+    "lemak": 52.1,
+    "karbohidrat": 36.5,
+    "serat": 15.3
+  },
+  {
+    "nama": "Kelapa muda, daging, segar",
+    "energi": 68,
+    "protein": 1,
+    "lemak": 0.9,
+    "karbohidrat": 14,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kemang, segar",
+    "energi": 48,
+    "protein": 1,
+    "lemak": 0.2,
+    "karbohidrat": 11.9,
+    "serat": 1.7
+  },
+  {
+    "nama": "Kesemek, segar",
+    "energi": 78,
+    "protein": 0.8,
+    "lemak": 0.4,
+    "karbohidrat": 20,
+    "serat": 0.6
+  },
+  {
+    "nama": "Kokosan, segar",
+    "energi": 86,
+    "protein": 1.6,
+    "lemak": 0.2,
+    "karbohidrat": 13,
+    "serat": 1.4
+  },
+  {
+    "nama": "Kranji, segar",
+    "energi": 315,
+    "protein": 2.1,
+    "lemak": 1.4,
+    "karbohidrat": 73.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Langsat, segar",
+    "energi": 56,
+    "protein": 0.9,
+    "lemak": 0.2,
+    "karbohidrat": 14.3,
+    "serat": 1.4
+  },
+  {
+    "nama": "Lemon, segar",
+    "energi": 34,
+    "protein": 0.5,
+    "lemak": 0.8,
+    "karbohidrat": 6.2,
+    "serat": 0.1
+  },
+  {
+    "nama": "Lontar, segar",
+    "energi": 27,
+    "protein": 0.4,
+    "lemak": 0.2,
+    "karbohidrat": 6,
+    "serat": 1.6
+  },
+  {
+    "nama": "Mangga, segar",
+    "energi": 52,
+    "protein": 0.7,
+    "lemak": 0.0,
+    "karbohidrat": 12.3,
+    "serat": 1.6
+  },
+  {
+    "nama": "Mangga benggala, segar",
+    "energi": 63,
+    "protein": 2.4,
+    "lemak": 0.4,
+    "karbohidrat": 12.4,
+    "serat": 5.8
+  },
+  {
+    "nama": "Mangga gedung, segar",
+    "energi": 44,
+    "protein": 0.7,
+    "lemak": 0.2,
+    "karbohidrat": 11.2,
+    "serat": 1.6
+  },
+  {
+    "nama": "Mangga golek, segar",
+    "energi": 63,
+    "protein": 0.5,
+    "lemak": 0.2,
+    "karbohidrat": 16.7,
+    "serat": 2.3
+  },
+  {
+    "nama": "Mangga harumanis, segar",
+    "energi": 46,
+    "protein": 0.4,
+    "lemak": 0.2,
+    "karbohidrat": 11.9,
+    "serat": 1.7
+  },
+  {
+    "nama": "Mangga indramayu, segar",
+    "energi": 72,
+    "protein": 0.8,
+    "lemak": 0.2,
+    "karbohidrat": 18.7,
+    "serat": 2.5
+  },
+  {
+    "nama": "Mangga kopek, segar",
+    "energi": 56,
+    "protein": 0.4,
+    "lemak": 0.2,
+    "karbohidrat": 14.6,
+    "serat": 2
+  },
+  {
+    "nama": "Mangga kwini, segar",
+    "energi": 86,
+    "protein": 0.7,
+    "lemak": 0.5,
+    "karbohidrat": 19.8,
+    "serat": 6.5
+  },
+  {
+    "nama": "Mangga manalagi, segar",
+    "energi": 133,
+    "protein": 1,
+    "lemak": 0.1,
+    "karbohidrat": 32.1,
+    "serat": 11.8
+  },
+  {
+    "nama": "Mangga muda, segar",
+    "energi": 59,
+    "protein": 0.5,
+    "lemak": 0.4,
+    "karbohidrat": 15.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Manggis, segar",
+    "energi": 63,
+    "protein": 0.6,
+    "lemak": 0.6,
+    "karbohidrat": 15.6,
+    "serat": 1.5
+  },
+  {
+    "nama": "Markisa, segar",
+    "energi": 144,
+    "protein": 3.5,
+    "lemak": 1.2,
+    "karbohidrat": 29.8,
+    "serat": 11.4
+  },
+  {
+    "nama": "Matoa, segar",
+    "energi": 90,
+    "protein": 1.2,
+    "lemak": 0.1,
+    "karbohidrat": 21.1,
+    "serat": 0.5
+  },
+  {
+    "nama": "Melon, segar",
+    "energi": 37,
+    "protein": 0.6,
+    "lemak": 0.4,
+    "karbohidrat": 7.8,
+    "serat": 1
+  },
+  {
+    "nama": "Menteng, segar",
+    "energi": 65,
+    "protein": 1.7,
+    "lemak": 0.3,
+    "karbohidrat": 16.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Nanas palembang, segar",
+    "energi": 58,
+    "protein": 0.7,
+    "lemak": 0.2,
+    "karbohidrat": 13.3,
+    "serat": 1.6
+  },
+  {
+    "nama": "Nanas, segar",
+    "energi": 40,
+    "protein": 0.6,
+    "lemak": 0.3,
+    "karbohidrat": 9.9,
+    "serat": 0.6
+  },
+  {
+    "nama": "Nangka masak pohon, segar",
+    "energi": 106,
+    "protein": 1.2,
+    "lemak": 0.3,
+    "karbohidrat": 27.6,
+    "serat": 3.7
+  },
+  {
+    "nama": "Pala, daging, segar",
+    "energi": 42,
+    "protein": 0.3,
+    "lemak": 0.2,
+    "karbohidrat": 10.9,
+    "serat": 0.5
+  },
+  {
+    "nama": "Pepaya, segar",
+    "energi": 46,
+    "protein": 0.5,
+    "lemak": 12,
+    "karbohidrat": 12.2,
+    "serat": 1.6
+  },
+  {
+    "nama": "Pisang ambon, segar",
+    "energi": 108,
+    "protein": 1,
+    "lemak": 0.8,
+    "karbohidrat": 24.3,
+    "serat": 1.9
+  },
+  {
+    "nama": "Pisang angleng (pisang ampyang), segar",
+    "energi": 68,
+    "protein": 1.3,
+    "lemak": 0.2,
+    "karbohidrat": 17.2,
+    "serat": 0.8
+  },
+  {
+    "nama": "Pisang ayam, segar",
+    "energi": 120,
+    "protein": 1.1,
+    "lemak": 0.2,
+    "karbohidrat": 26.8,
+    "serat": 4.1
+  },
+  {
+    "nama": "Pisang gapi, segar",
+    "energi": 127,
+    "protein": 2.1,
+    "lemak": 0.3,
+    "karbohidrat": 31.1,
+    "serat": 11.7
+  },
+  {
+    "nama": "Pisang goroho, segar",
+    "energi": 115,
+    "protein": 1.9,
+    "lemak": 0.2,
+    "karbohidrat": 27.9,
+    "serat": 4.6
+  },
+  {
+    "nama": "Pisang hijau, segar",
+    "energi": 117,
+    "protein": 2,
+    "lemak": 0.3,
+    "karbohidrat": 28.9,
+    "serat": 0.4
+  },
+  {
+    "nama": "Pisang kayu, segar",
+    "energi": 100,
+    "protein": 1.4,
+    "lemak": 0.5,
+    "karbohidrat": 23.6,
+    "serat": 2.6
+  },
+  {
+    "nama": "Pisang kepok, segar",
+    "energi": 109,
+    "protein": 0.8,
+    "lemak": 0.5,
+    "karbohidrat": 26.3,
+    "serat": 5.7
+  },
+  {
+    "nama": "Pisang ketip, segar",
+    "energi": 145,
+    "protein": 1.1,
+    "lemak": 0.3,
+    "karbohidrat": 34.5,
+    "serat": 6.6
+  },
+  {
+    "nama": "Pisang kidang, segar",
+    "energi": 96,
+    "protein": 1,
+    "lemak": 0.2,
+    "karbohidrat": 22.5,
+    "serat": 0.6
+  },
+  {
+    "nama": "Pisang lampung, segar",
+    "energi": 99,
+    "protein": 1.3,
+    "lemak": 0.2,
+    "karbohidrat": 25.6,
+    "serat": 4.3
+  },
+  {
+    "nama": "Pisang mas bali ampenan, segar",
+    "energi": 92,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 21,
+    "serat": 3.7
+  },
+  {
+    "nama": "Pisang mas bali kopang, segar",
+    "energi": 127,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 31.8,
+    "serat": 3.7
+  },
+  {
+    "nama": "Pisang mas, segar",
+    "energi": 127,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 33.6,
+    "serat": 1.4
+  },
+  {
+    "nama": "Pisang raja sereh, segar",
+    "energi": 108,
+    "protein": 1.3,
+    "lemak": 0.3,
+    "karbohidrat": 28.2,
+    "serat": 0.7
+  },
+  {
+    "nama": "Pisang raja, segar",
+    "energi": 120,
+    "protein": 1.2,
+    "lemak": 0.2,
+    "karbohidrat": 31.8,
+    "serat": 5.3
+  },
+  {
+    "nama": "Pisang rotan, segar",
+    "energi": 98,
+    "protein": 1.3,
+    "lemak": 1.2,
+    "karbohidrat": 20.5,
+    "serat": 1
+  },
+  {
+    "nama": "Pisang talas, segar",
+    "energi": 113,
+    "protein": 1.2,
+    "lemak": 0.2,
+    "karbohidrat": 26.7,
+    "serat": 4.4
+  },
+  {
+    "nama": "Pisang tujuh bulan",
+    "energi": 94,
+    "protein": 0.6,
+    "lemak": 0.2,
+    "karbohidrat": 22.5,
+    "serat": 3.7
+  },
+  {
+    "nama": "Pisang ua, segar",
+    "energi": 128,
+    "protein": 0.8,
+    "lemak": 0.5,
+    "karbohidrat": 30.2,
+    "serat": 8.1
+  },
+  {
+    "nama": "Pisang uli, segar",
+    "energi": 134,
+    "protein": 1.1,
+    "lemak": 0.5,
+    "karbohidrat": 35.5,
+    "serat": 1.4
+  },
+  {
+    "nama": "Purut, segar",
+    "energi": 76,
+    "protein": 4.1,
+    "lemak": 1.1,
+    "karbohidrat": 15.2,
+    "serat": 1.7
+  },
+  {
+    "nama": "Rambutan binjai, segar",
+    "energi": 76,
+    "protein": 0.5,
+    "lemak": 0.2,
+    "karbohidrat": 18,
+    "serat": 3.8
+  },
+  {
+    "nama": "Rambutan, segar",
+    "energi": 69,
+    "protein": 0.9,
+    "lemak": 0.1,
+    "karbohidrat": 18.1,
+    "serat": 0.8
+  },
+  {
+    "nama": "Salak bali, segar",
+    "energi": 57,
+    "protein": 0.5,
+    "lemak": 0.1,
+    "karbohidrat": 13.6,
+    "serat": 1.3
+  },
+  {
+    "nama": "Salak medan, segar",
+    "energi": 55,
+    "protein": 0.4,
+    "lemak": 0.2,
+    "karbohidrat": 12.8,
+    "serat": 3.2
+  },
+  {
+    "nama": "Salak pondoh, segar",
+    "energi": 87,
+    "protein": 0.8,
+    "lemak": 0.4,
+    "karbohidrat": 20.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Salak, segar",
+    "energi": 77,
+    "protein": 0.4,
+    "lemak": 0.0,
+    "karbohidrat": 20.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sawo duren, segar",
+    "energi": 64,
+    "protein": 1,
+    "lemak": 3.1,
+    "karbohidrat": 8,
+    "serat": 0.8
+  },
+  {
+    "nama": "Sawo kecik, segar",
+    "energi": 111,
+    "protein": 0.9,
+    "lemak": 2.3,
+    "karbohidrat": 21.6,
+    "serat": 1
+  },
+  {
+    "nama": "Sawo Manila, segar",
+    "energi": 92,
+    "protein": 0.5,
+    "lemak": 1.1,
+    "karbohidrat": 22.4,
+    "serat": 9.5
+  },
+  {
+    "nama": "Semangka, segar",
+    "energi": 28,
+    "protein": 0.5,
+    "lemak": 0.2,
+    "karbohidrat": 6.9,
+    "serat": 0.4
+  },
+  {
+    "nama": "Sirsak, segar",
+    "energi": 65,
+    "protein": 1,
+    "lemak": 0.3,
+    "karbohidrat": 16.3,
+    "serat": 3.2
+  },
+  {
+    "nama": "Sowa, segar",
+    "energi": 48,
+    "protein": 1.6,
+    "lemak": 0.6,
+    "karbohidrat": 9.1,
+    "serat": 45
+  },
+  {
+    "nama": "Srikaya, segar",
+    "energi": 63,
+    "protein": 1.1,
+    "lemak": 0.5,
+    "karbohidrat": 13.9,
+    "serat": 2.1
+  },
+  {
+    "nama": "Sukun muda, segar",
+    "energi": 119,
+    "protein": 1.4,
+    "lemak": 0.2,
+    "karbohidrat": 28.1,
+    "serat": 1.4
+  },
+  {
+    "nama": "Sukun tua, segar",
+    "energi": 126,
+    "protein": 1.6,
+    "lemak": 0.2,
+    "karbohidrat": 24.5,
+    "serat": 1.5
+  },
+  {
+    "nama": "Vigus, segar",
+    "energi": 44,
+    "protein": 2.4,
+    "lemak": 0.1,
+    "karbohidrat": 8.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Wani, segar",
+    "energi": 74,
+    "protein": 0.8,
+    "lemak": 0.3,
+    "karbohidrat": 17.1,
+    "serat": 3.1
+  },
+  {
+    "nama": "Mentimun Suri, segar",
+    "energi": 16,
+    "protein": 1.3,
+    "lemak": 0,
+    "karbohidrat": 2.1,
+    "serat": 0.9
+  },
+  {
+    "nama": "Blewah, segar",
+    "energi": 34,
+    "protein": 0.8,
+    "lemak": 0.2,
+    "karbohidrat": 8.2,
+    "serat": 0.9
+  },
+  {
+    "nama": "Ayam, ampela, goreng",
+    "energi": 270,
+    "protein": 32.3,
+    "lemak": 11.2,
+    "karbohidrat": 9.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam, usus, goreng",
+    "energi": 473,
+    "protein": 45.2,
+    "lemak": 26.3,
+    "karbohidrat": 13.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bebek, daging, goreng",
+    "energi": 300,
+    "protein": 24,
+    "lemak": 20.7,
+    "karbohidrat": 4.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Buaya, daging, dendeng, mentah",
+    "energi": 365,
+    "protein": 49.6,
+    "lemak": 4.8,
+    "karbohidrat": 30.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ham",
+    "energi": 384,
+    "protein": 16.9,
+    "lemak": 35,
+    "karbohidrat": 0.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Itik alabio, daging, dendeng, mentah",
+    "energi": 496,
+    "protein": 30.3,
+    "lemak": 33.5,
+    "karbohidrat": 18.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kerupuk urat",
+    "energi": 588,
+    "protein": 53.7,
+    "lemak": 40.9,
+    "karbohidrat": 1.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Menjangan, daging, dendeng, mentah",
+    "energi": 322,
+    "protein": 55.8,
+    "lemak": 2,
+    "karbohidrat": 22.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Punai, daging, goreng",
+    "energi": 224,
+    "protein": 26.2,
+    "lemak": 11.3,
+    "karbohidrat": 4.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rusa, daging, dendeng, mentah",
+    "energi": 536,
+    "protein": 40.5,
+    "lemak": 41.5,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, abon",
+    "energi": 212,
+    "protein": 18,
+    "lemak": 10.6,
+    "karbohidrat": 59.3,
+    "serat": 7.5
+  },
+  {
+    "nama": "Sapi, abon, asli",
+    "energi": 358,
+    "protein": 14.6,
+    "lemak": 16.1,
+    "karbohidrat": 38.6,
+    "serat": 2.5
+  },
+  {
+    "nama": "Sapi, daging, asap",
+    "energi": 182,
+    "protein": 32,
+    "lemak": 6,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, daging, dendeng, mentah",
+    "energi": 301,
+    "protein": 55,
+    "lemak": 9,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, daging, kornet",
+    "energi": 289,
+    "protein": 16,
+    "lemak": 25,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, daging, sosis (Worst)",
+    "energi": 448,
+    "protein": 14.5,
+    "lemak": 42.3,
+    "karbohidrat": 2.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, hati, sosis (liverworst)",
+    "energi": 274,
+    "protein": 16,
+    "lemak": 22,
+    "karbohidrat": 3,
+    "serat": 2.3
+  },
+  {
+    "nama": "Sapi, paru, dendeng, mentah",
+    "energi": 360,
+    "protein": 57.3,
+    "lemak": 6,
+    "karbohidrat": 19.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, paru, goreng",
+    "energi": 268,
+    "protein": 23.9,
+    "lemak": 12.7,
+    "karbohidrat": 14.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ulat sagu, panggang",
+    "energi": 380,
+    "protein": 11.9,
+    "lemak": 30.3,
+    "karbohidrat": 14.9,
+    "serat": 4.8
+  },
+  {
+    "nama": "Ayam goreng church texas, dada",
+    "energi": 338,
+    "protein": 35.2,
+    "lemak": 20.6,
+    "karbohidrat": 0.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng church,texas paha",
+    "energi": 287,
+    "protein": 31,
+    "lemak": 15.7,
+    "karbohidrat": 1.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng church texas, sayap",
+    "energi": 295,
+    "protein": 34,
+    "lemak": 16,
+    "karbohidrat": 1.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng kalasan, paha",
+    "energi": 275,
+    "protein": 37.4,
+    "lemak": 12.2,
+    "karbohidrat": 1.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng kentucky, dada",
+    "energi": 298,
+    "protein": 34.2,
+    "lemak": 16.8,
+    "karbohidrat": 0.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng Kentucky, paha",
+    "energi": 286,
+    "protein": 32.1,
+    "lemak": 16.1,
+    "karbohidrat": 1.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng Kentucky,sayap",
+    "energi": 297,
+    "protein": 35.9,
+    "lemak": 15.2,
+    "karbohidrat": 1.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng mbok berek dada",
+    "energi": 295,
+    "protein": 39.2,
+    "lemak": 13.6,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng pasundan, dada",
+    "energi": 246,
+    "protein": 37.9,
+    "lemak": 9,
+    "karbohidrat": 0.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng pasundan, paha",
+    "energi": 245,
+    "protein": 33.1,
+    "lemak": 11.4,
+    "karbohidrat": 0.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng pioneer, dada",
+    "energi": 295,
+    "protein": 37.4,
+    "lemak": 14.7,
+    "karbohidrat": 0.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng sukabumi, dada",
+    "energi": 244,
+    "protein": 36.7,
+    "lemak": 9.2,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam goreng sukabumi, paha",
+    "energi": 283,
+    "protein": 35.7,
+    "lemak": 14.3,
+    "karbohidrat": 0.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam taliwang, masakan",
+    "energi": 264,
+    "protein": 18.2,
+    "lemak": 20.1,
+    "karbohidrat": 2.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Babi hutan masak rica, masakan",
+    "energi": 491,
+    "protein": 24.6,
+    "lemak": 16.3,
+    "karbohidrat": 0.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Beef burger",
+    "energi": 258,
+    "protein": 10.6,
+    "lemak": 9.5,
+    "karbohidrat": 32.5,
+    "serat": 0.4
+  },
+  {
+    "nama": "Beef teriyaki, masakan",
+    "energi": 151,
+    "protein": 8.6,
+    "lemak": 3.1,
+    "karbohidrat": 22.3,
+    "serat": 0.3
+  },
+  {
+    "nama": "Beef yakiniku, masakan",
+    "energi": 132,
+    "protein": 9.8,
+    "lemak": 1.1,
+    "karbohidrat": 20.7,
+    "serat": 0.3
+  },
+  {
+    "nama": "Brongkos",
+    "energi": 141,
+    "protein": 15.3,
+    "lemak": 3.3,
+    "karbohidrat": 12.6,
+    "serat": 1
+  },
+  {
+    "nama": "Bulgogi, masakan",
+    "energi": 72,
+    "protein": 11.4,
+    "lemak": 4.9,
+    "karbohidrat": 1.4,
+    "serat": 1.7
+  },
+  {
+    "nama": "Chicken teriyaki, masakan",
+    "energi": 168,
+    "protein": 13,
+    "lemak": 9.6,
+    "karbohidrat": 7.5,
+    "serat": 0.8
+  },
+  {
+    "nama": "Chikiniku, masakan",
+    "energi": 143,
+    "protein": 9.8,
+    "lemak": 1.4,
+    "karbohidrat": 22.8,
+    "serat": 0.4
+  },
+  {
+    "nama": "Coto mangkasara, kuda, masakan",
+    "energi": 96,
+    "protein": 6.8,
+    "lemak": 5.9,
+    "karbohidrat": 3.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Coto mangkasara, sapi, masakan",
+    "energi": 84,
+    "protein": 6,
+    "lemak": 6,
+    "karbohidrat": 1.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Djibokum, masakan",
+    "energi": 248,
+    "protein": 10,
+    "lemak": 2.3,
+    "karbohidrat": 40.9,
+    "serat": 0.1
+  },
+  {
+    "nama": "Empal (daging) Goreng, masakan",
+    "energi": 248,
+    "protein": 36.2,
+    "lemak": 6.9,
+    "karbohidrat": 10.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gulai kambing",
+    "energi": 126,
+    "protein": 4.2,
+    "lemak": 9.4,
+    "karbohidrat": 6.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Jangang bintatoeng, masakan",
+    "energi": 107,
+    "protein": 5.3,
+    "lemak": 2.2,
+    "karbohidrat": 16.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kalio ayam, masakan",
+    "energi": 203,
+    "protein": 16,
+    "lemak": 13.5,
+    "karbohidrat": 4.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kalio jeroan, masakan",
+    "energi": 163,
+    "protein": 16.5,
+    "lemak": 9,
+    "karbohidrat": 4.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kalio kikil (tunjang), masakan",
+    "energi": 122,
+    "protein": 13.8,
+    "lemak": 5.7,
+    "karbohidrat": 3.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kalio otak, masakan",
+    "energi": 157,
+    "protein": 8.1,
+    "lemak": 8.8,
+    "karbohidrat": 11.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lawar babi, masakan",
+    "energi": 174,
+    "protein": 17,
+    "lemak": 10,
+    "karbohidrat": 3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lawar penyu, masakan",
+    "energi": 141,
+    "protein": 23,
+    "lemak": 1.5,
+    "karbohidrat": 7.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lawara jangang, masakan",
+    "energi": 159,
+    "protein": 5,
+    "lemak": 10.9,
+    "karbohidrat": 10.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Naan maran sapi, masakan",
+    "energi": 478,
+    "protein": 38.3,
+    "lemak": 33.9,
+    "karbohidrat": 5.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Nasu likku, masakan",
+    "energi": 196,
+    "protein": 14.5,
+    "lemak": 8.3,
+    "karbohidrat": 15.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Oramu ninahu ndawa olaho, masakan",
+    "energi": 117,
+    "protein": 13.7,
+    "lemak": 5,
+    "karbohidrat": 4.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Paniki masak santan, masakan",
+    "energi": 460,
+    "protein": 28.5,
+    "lemak": 35.2,
+    "karbohidrat": 7.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pelolah manuk, masakan",
+    "energi": 219,
+    "protein": 19.7,
+    "lemak": 13.6,
+    "karbohidrat": 4.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rawon, masakan",
+    "energi": 60,
+    "protein": 5.4,
+    "lemak": 2.5,
+    "karbohidrat": 4,
+    "serat": 0.3
+  },
+  {
+    "nama": "Rendang sapi, masakan",
+    "energi": 193,
+    "protein": 22.6,
+    "lemak": 7.9,
+    "karbohidrat": 7.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "RW, anjing, masakan",
+    "energi": 198,
+    "protein": 24.6,
+    "lemak": 10.7,
+    "karbohidrat": 0.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sate, penyu, masakan",
+    "energi": 179,
+    "protein": 22.5,
+    "lemak": 3.5,
+    "karbohidrat": 13.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sate pusut, masakan",
+    "energi": 274,
+    "protein": 12.9,
+    "lemak": 18.6,
+    "karbohidrat": 13.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Penyu, serapah, masakan",
+    "energi": 174,
+    "protein": 13.1,
+    "lemak": 12.2,
+    "karbohidrat": 2.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sie reuboh, masakan",
+    "energi": 474,
+    "protein": 11.2,
+    "lemak": 42.5,
+    "karbohidrat": 11.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sop buntut, masakan",
+    "energi": 71,
+    "protein": 7.5,
+    "lemak": 3.6,
+    "karbohidrat": 2.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sop daging sapi, masakan",
+    "energi": 49,
+    "protein": 5.8,
+    "lemak": 0.5,
+    "karbohidrat": 5.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sop kaki sapi, masakan",
+    "energi": 68,
+    "protein": 9,
+    "lemak": 1.9,
+    "karbohidrat": 3.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sop kambing, masakan",
+    "energi": 34,
+    "protein": 5.5,
+    "lemak": 0.8,
+    "karbohidrat": 1.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sop konro, masakan",
+    "energi": 71,
+    "protein": 7.4,
+    "lemak": 2.6,
+    "karbohidrat": 4.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sop saudara, masakan",
+    "energi": 89,
+    "protein": 7.2,
+    "lemak": 5,
+    "karbohidrat": 3.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Soto bandung, masakan",
+    "energi": 42,
+    "protein": 3.9,
+    "lemak": 1.7,
+    "karbohidrat": 2.8,
+    "serat": 0.4
+  },
+  {
+    "nama": "Soto banjar, masakan",
+    "energi": 110,
+    "protein": 2.9,
+    "lemak": 9.5,
+    "karbohidrat": 3.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Soto betawi, masakan",
+    "energi": 135,
+    "protein": 2.5,
+    "lemak": 8.8,
+    "karbohidrat": 11.5,
+    "serat": 0.5
+  },
+  {
+    "nama": "Soto jeroan, masakan",
+    "energi": 92,
+    "protein": 11.8,
+    "lemak": 4.3,
+    "karbohidrat": 1.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Soto kudus, masakan",
+    "energi": 38,
+    "protein": 2.6,
+    "lemak": 2.3,
+    "karbohidrat": 1.8,
+    "serat": 0.2
+  },
+  {
+    "nama": "Soto madura, masakan",
+    "energi": 60,
+    "protein": 3.5,
+    "lemak": 4.5,
+    "karbohidrat": 1.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Soto padang, masakan",
+    "energi": 127,
+    "protein": 5.9,
+    "lemak": 6.6,
+    "karbohidrat": 11,
+    "serat": 0.7
+  },
+  {
+    "nama": "Soto pekalongan, masakan",
+    "energi": 94,
+    "protein": 3,
+    "lemak": 6.8,
+    "karbohidrat": 5.1,
+    "serat": 0.3
+  },
+  {
+    "nama": "Soto pemalang, masakan",
+    "energi": 75,
+    "protein": 3.6,
+    "lemak": 5.2,
+    "karbohidrat": 3.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Soto sukaraja, masakan",
+    "energi": 80,
+    "protein": 3.2,
+    "lemak": 3.5,
+    "karbohidrat": 9,
+    "serat": 0.3
+  },
+  {
+    "nama": "Soto sulung, masakan",
+    "energi": 86,
+    "protein": 2.3,
+    "lemak": 8.5,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sukiyaki, masakan",
+    "energi": 75,
+    "protein": 5.6,
+    "lemak": 0.4,
+    "karbohidrat": 12.2,
+    "serat": 0.2
+  },
+  {
+    "nama": "Tedong pallu basa, masakan",
+    "energi": 83,
+    "protein": 10.4,
+    "lemak": 3.4,
+    "karbohidrat": 2.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tikus rica, masakan",
+    "energi": 257,
+    "protein": 18.8,
+    "lemak": 18.5,
+    "karbohidrat": 3.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tinoransa, masakan",
+    "energi": 516,
+    "protein": 17.7,
+    "lemak": 49.5,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Anak sapi, daging, gemuk, segar",
+    "energi": 184,
+    "protein": 18.8,
+    "lemak": 14,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Anak sapi, daging, kurus, segar",
+    "energi": 174,
+    "protein": 19.6,
+    "lemak": 10,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Anak sapi, daging, sedang, segar",
+    "energi": 190,
+    "protein": 19.1,
+    "lemak": 12,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Angsa, daging, segar",
+    "energi": 349,
+    "protein": 16.4,
+    "lemak": 31.5,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam, daging, segar",
+    "energi": 298,
+    "protein": 18.2,
+    "lemak": 25,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam, dideh/darah, segar",
+    "energi": 75,
+    "protein": 13.8,
+    "lemak": 1.9,
+    "karbohidrat": 0.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ayam, hati, segar",
+    "energi": 261,
+    "protein": 27.4,
+    "lemak": 16.1,
+    "karbohidrat": 1.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Babi, daging, gemuk,segar",
+    "energi": 453,
+    "protein": 11.9,
+    "lemak": 45,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Babi, daging, kurus, segar",
+    "energi": 371,
+    "protein": 14.1,
+    "lemak": 35,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Babi, ginjal, segar",
+    "energi": 110,
+    "protein": 16.3,
+    "lemak": 4.6,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Babi, hati, segar",
+    "energi": 129,
+    "protein": 19.7,
+    "lemak": 4.8,
+    "karbohidrat": 1.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bebek (itik), daging, segar",
+    "energi": 321,
+    "protein": 16,
+    "lemak": 28.6,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bebek alabio, daging, segar",
+    "energi": 303,
+    "protein": 11.3,
+    "lemak": 27,
+    "karbohidrat": 3.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Belibis, daging, segar",
+    "energi": 131,
+    "protein": 20.2,
+    "lemak": 4.3,
+    "karbohidrat": 2.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Burung, sarang, segar",
+    "energi": 281,
+    "protein": 37.5,
+    "lemak": 0.3,
+    "karbohidrat": 32.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Domba, daging, gemuk, segar",
+    "energi": 317,
+    "protein": 15.7,
+    "lemak": 27.7,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Domba, daging, kurus, segar",
+    "energi": 202,
+    "protein": 17.1,
+    "lemak": 14.8,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Domba, ginjal, segar",
+    "energi": 100,
+    "protein": 16.6,
+    "lemak": 3.3,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kambing, daging, segar",
+    "energi": 149,
+    "protein": 16.6,
+    "lemak": 9.2,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kelinci, daging, segar",
+    "energi": 142,
+    "protein": 16.9,
+    "lemak": 7.8,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kerbau, daging, segar",
+    "energi": 79,
+    "protein": 18.7,
+    "lemak": 0.5,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kuda, daging, segar",
+    "energi": 113,
+    "protein": 18.1,
+    "lemak": 4.1,
+    "karbohidrat": 0.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, babat, segar",
+    "energi": 108,
+    "protein": 17.6,
+    "lemak": 4.2,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, daging, gemuk, segar",
+    "energi": 273,
+    "protein": 17.5,
+    "lemak": 22,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, daging, kurus, segar",
+    "energi": 174,
+    "protein": 19.6,
+    "lemak": 10,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, daging, lemak sedang, segar",
+    "energi": 201,
+    "protein": 18.8,
+    "lemak": 14,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, daleman, segar",
+    "energi": 183,
+    "protein": 12,
+    "lemak": 14.4,
+    "karbohidrat": 1.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, dideh/darah",
+    "energi": 98,
+    "protein": 21.9,
+    "lemak": 1.1,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, ginjal, segar",
+    "energi": 137,
+    "protein": 15,
+    "lemak": 8.1,
+    "karbohidrat": 0.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, keleponan, segar",
+    "energi": 84,
+    "protein": 10.5,
+    "lemak": 4.6,
+    "karbohidrat": 0.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, liver, segar",
+    "energi": 132,
+    "protein": 19.7,
+    "lemak": 3.2,
+    "karbohidrat": 6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, otak, segar",
+    "energi": 123,
+    "protein": 10.4,
+    "lemak": 8.6,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sapi, usus, segar",
+    "energi": 126,
+    "protein": 14,
+    "lemak": 7.2,
+    "karbohidrat": 1.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ulat sagu segar",
+    "energi": 241,
+    "protein": 5.8,
+    "lemak": 21.6,
+    "karbohidrat": 5.8,
+    "serat": 2.8
+  },
+  {
+    "nama": "Bekicot, dendeng, mentah",
+    "energi": 441,
+    "protein": 48.7,
+    "lemak": 20.3,
+    "karbohidrat": 15.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Belut, goreng",
+    "energi": 417,
+    "protein": 25.9,
+    "lemak": 19.4,
+    "karbohidrat": 32,
+    "serat": 0.0
+  },
+  {
+    "nama": "Cumi-cumi, goreng",
+    "energi": 265,
+    "protein": 40.6,
+    "lemak": 10.1,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan asin, kering",
+    "energi": 193,
+    "protein": 42,
+    "lemak": 1.5,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan bandeng presto, masakan",
+    "energi": 296,
+    "protein": 17.1,
+    "lemak": 20.3,
+    "karbohidrat": 11.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan baung bakar",
+    "energi": 144,
+    "protein": 17.8,
+    "lemak": 5.8,
+    "karbohidrat": 5.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Belida bakar",
+    "energi": 128,
+    "protein": 18,
+    "lemak": 3,
+    "karbohidrat": 7.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan cakalang asap, mentah",
+    "energi": 204,
+    "protein": 34.2,
+    "lemak": 5.6,
+    "karbohidrat": 1.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan cakalang asin, mentah",
+    "energi": 198,
+    "protein": 36.5,
+    "lemak": 2.2,
+    "karbohidrat": 5.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan calo/ peda, mentah",
+    "energi": 81,
+    "protein": 11.4,
+    "lemak": 1.9,
+    "karbohidrat": 3.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Gabus asap, mentah",
+    "energi": 261,
+    "protein": 38.1,
+    "lemak": 2.3,
+    "karbohidrat": 21.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Gabus, kering",
+    "energi": 268,
+    "protein": 58,
+    "lemak": 4,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan gete, goreng",
+    "energi": 267,
+    "protein": 23.1,
+    "lemak": 19.4,
+    "karbohidrat": 0.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan hiu, kering",
+    "energi": 298,
+    "protein": 46.3,
+    "lemak": 3.6,
+    "karbohidrat": 20.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan katombo, asin",
+    "energi": 162,
+    "protein": 31.7,
+    "lemak": 2.8,
+    "karbohidrat": 0.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kayu, kering",
+    "energi": 302,
+    "protein": 70.7,
+    "lemak": 1.9,
+    "karbohidrat": 0.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Lais bakar",
+    "energi": 147,
+    "protein": 17.5,
+    "lemak": 6.5,
+    "karbohidrat": 5.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan lomak asin, mentah",
+    "energi": 258,
+    "protein": 40.3,
+    "lemak": 2.3,
+    "karbohidrat": 18.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Mas pepes",
+    "energi": 209,
+    "protein": 15.2,
+    "lemak": 11.3,
+    "karbohidrat": 11.8,
+    "serat": 0.5
+  },
+  {
+    "nama": "Ikan mujahir goreng",
+    "energi": 416,
+    "protein": 46.9,
+    "lemak": 23.9,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Mujahir pepes",
+    "energi": 121,
+    "protein": 21.7,
+    "lemak": 2.8,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan mujahir, dendeng, mentah",
+    "energi": 582,
+    "protein": 68.3,
+    "lemak": 15.2,
+    "karbohidrat": 37.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Papuyu, bakar",
+    "energi": 152,
+    "protein": 17.6,
+    "lemak": 6.1,
+    "karbohidrat": 6.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Patin, bakar",
+    "energi": 144,
+    "protein": 17.5,
+    "lemak": 6.3,
+    "karbohidrat": 4.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan peda banjar, mentah",
+    "energi": 156,
+    "protein": 28,
+    "lemak": 4,
+    "karbohidrat": 2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan pepetek, mentah",
+    "energi": 176,
+    "protein": 32,
+    "lemak": 4.4,
+    "karbohidrat": 2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Pindang banjar, mentah",
+    "energi": 157,
+    "protein": 28,
+    "lemak": 4.2,
+    "karbohidrat": 1.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Pindang benggol, mentah",
+    "energi": 170,
+    "protein": 31,
+    "lemak": 4.2,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Pindang layang, mentah",
+    "energi": 153,
+    "protein": 30,
+    "lemak": 2.8,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Pindang selar, mentah",
+    "energi": 142,
+    "protein": 27,
+    "lemak": 3,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sale lais, mentah",
+    "energi": 415,
+    "protein": 61.3,
+    "lemak": 17.6,
+    "karbohidrat": 2.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan saluang, kering, mentah",
+    "energi": 284,
+    "protein": 34.1,
+    "lemak": 9.9,
+    "karbohidrat": 14.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sanggang, masakan",
+    "energi": 240,
+    "protein": 21.7,
+    "lemak": 7.7,
+    "karbohidrat": 20.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan selar kuning, cue, mentah",
+    "energi": 138,
+    "protein": 27,
+    "lemak": 3.3,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan selar, kering, mentah",
+    "energi": 194,
+    "protein": 38,
+    "lemak": 3.5,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sepat, kering, mentah",
+    "energi": 289,
+    "protein": 38,
+    "lemak": 14,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sunu, asin, mentah",
+    "energi": 199,
+    "protein": 34.1,
+    "lemak": 3.8,
+    "karbohidrat": 7.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan, tepung, mentah",
+    "energi": 316,
+    "protein": 60.1,
+    "lemak": 6.5,
+    "karbohidrat": 22.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Teri nasi, kering, mentah",
+    "energi": 144,
+    "protein": 32.5,
+    "lemak": 0.6,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Teri, bubuk, mentah",
+    "energi": 277,
+    "protein": 60,
+    "lemak": 2.3,
+    "karbohidrat": 1.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan teri, kering, mentah",
+    "energi": 170,
+    "protein": 33.4,
+    "lemak": 3,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Teri, kering, tawar, mentah",
+    "energi": 331,
+    "protein": 68.7,
+    "lemak": 4.2,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Teri, tepung, mentah",
+    "energi": 347,
+    "protein": 48.8,
+    "lemak": 6.4,
+    "karbohidrat": 19.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kerang, asap, mentah",
+    "energi": 393,
+    "protein": 38.9,
+    "lemak": 13.3,
+    "karbohidrat": 29.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kerang, dendeng, mentah",
+    "energi": 357,
+    "protein": 41.1,
+    "lemak": 10,
+    "karbohidrat": 25.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rebon, kering, mentah",
+    "energi": 299,
+    "protein": 59.4,
+    "lemak": 3.6,
+    "karbohidrat": 3.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rebung laut, mentah",
+    "energi": 320,
+    "protein": 7.2,
+    "lemak": 4.2,
+    "karbohidrat": 63.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rusip",
+    "energi": 110,
+    "protein": 11.5,
+    "lemak": 2,
+    "karbohidrat": 11.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sardines dalam kaleng",
+    "energi": 338,
+    "protein": 21.1,
+    "lemak": 27,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Teripang, dendeng, mentah",
+    "energi": 462,
+    "protein": 39.1,
+    "lemak": 32.4,
+    "karbohidrat": 3.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Udang kering, mentah",
+    "energi": 278,
+    "protein": 62.6,
+    "lemak": 4.1,
+    "karbohidrat": 2.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Udang papay, mentah",
+    "energi": 273,
+    "protein": 47.8,
+    "lemak": 3.8,
+    "karbohidrat": 12.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Abon haruwan",
+    "energi": 513,
+    "protein": 23.7,
+    "lemak": 37,
+    "karbohidrat": 21.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Abon ikan",
+    "energi": 435,
+    "protein": 27.2,
+    "lemak": 20.2,
+    "karbohidrat": 36.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Betok wadi, masakan",
+    "energi": 145,
+    "protein": 16.3,
+    "lemak": 7,
+    "karbohidrat": 4.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bou ninahu ndamate, masakan",
+    "energi": 79,
+    "protein": 6.3,
+    "lemak": 1,
+    "karbohidrat": 1.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bouiki ninahu nggaluku, masakan",
+    "energi": 94,
+    "protein": 7.8,
+    "lemak": 2.2,
+    "karbohidrat": 10.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Cakalang asar (asap papua)",
+    "energi": 155,
+    "protein": 20.1,
+    "lemak": 3.8,
+    "karbohidrat": 10.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Dendeng belut, goreng",
+    "energi": 382,
+    "protein": 55.7,
+    "lemak": 14.1,
+    "karbohidrat": 8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Dendeng mujahir, goreng",
+    "energi": 598,
+    "protein": 74.3,
+    "lemak": 26.9,
+    "karbohidrat": 9.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Fillet o-fish",
+    "energi": 270,
+    "protein": 12.3,
+    "lemak": 15.9,
+    "karbohidrat": 19.3,
+    "serat": 0.2
+  },
+  {
+    "nama": "Gete kuah asam, masakan",
+    "energi": 75,
+    "protein": 8.2,
+    "lemak": 2,
+    "karbohidrat": 6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gulai asam keueung, masakan",
+    "energi": 52,
+    "protein": 10,
+    "lemak": 0.5,
+    "karbohidrat": 1.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gulai ikan paya, masakan",
+    "energi": 148,
+    "protein": 10,
+    "lemak": 9.8,
+    "karbohidrat": 5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gulai ikan, masakan",
+    "energi": 106,
+    "protein": 16.5,
+    "lemak": 3.3,
+    "karbohidrat": 2.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gulai keumamah, masakan",
+    "energi": 110,
+    "protein": 5.9,
+    "lemak": 8.2,
+    "karbohidrat": 3.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gulai tiram, masakan",
+    "energi": 132,
+    "protein": 9,
+    "lemak": 7.2,
+    "karbohidrat": 7.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gurame asem manis, masakan",
+    "energi": 192,
+    "protein": 12.7,
+    "lemak": 10.1,
+    "karbohidrat": 12.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan asar merah, masakan",
+    "energi": 146,
+    "protein": 17.7,
+    "lemak": 5.9,
+    "karbohidrat": 5.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Jambal goreng",
+    "energi": 286,
+    "protein": 48.5,
+    "lemak": 9.2,
+    "karbohidrat": 2.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Jukku pallu kaloa, masakan",
+    "energi": 15,
+    "protein": 15.2,
+    "lemak": 4.3,
+    "karbohidrat": 8.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kaholeo, masakan",
+    "energi": 413,
+    "protein": 28.7,
+    "lemak": 19.8,
+    "karbohidrat": 29.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lawara penjah, masakan",
+    "energi": 207,
+    "protein": 7.4,
+    "lemak": 15.4,
+    "karbohidrat": 9.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Model, masakan",
+    "energi": 79,
+    "protein": 2.2,
+    "lemak": 4,
+    "karbohidrat": 8.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Mujahir acar kuning, masakan",
+    "energi": 330,
+    "protein": 17.8,
+    "lemak": 23.4,
+    "karbohidrat": 12.1,
+    "serat": 1.1
+  },
+  {
+    "nama": "Parede baleh, masakan",
+    "energi": 87,
+    "protein": 10.5,
+    "lemak": 2.5,
+    "karbohidrat": 5.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pempek adaan",
+    "energi": 162,
+    "protein": 4.9,
+    "lemak": 3,
+    "karbohidrat": 27.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pempek belida",
+    "energi": 156,
+    "protein": 4.2,
+    "lemak": 1.4,
+    "karbohidrat": 31.6,
+    "serat": 0.2
+  },
+  {
+    "nama": "Pempek kapal selam",
+    "energi": 152,
+    "protein": 4.5,
+    "lemak": 2.3,
+    "karbohidrat": 28.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pempek kelesan",
+    "energi": 211,
+    "protein": 12.3,
+    "lemak": 6.1,
+    "karbohidrat": 26.6,
+    "serat": 0.4
+  },
+  {
+    "nama": "Pempek kulit",
+    "energi": 243,
+    "protein": 5.2,
+    "lemak": 7.3,
+    "karbohidrat": 39.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pempek telur",
+    "energi": 156,
+    "protein": 4.7,
+    "lemak": 2.7,
+    "karbohidrat": 28.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pempek tenggiri",
+    "energi": 173,
+    "protein": 7.2,
+    "lemak": 1.2,
+    "karbohidrat": 33.4,
+    "serat": 0.2
+  },
+  {
+    "nama": "Pencok lele, masakan",
+    "energi": 372,
+    "protein": 7.8,
+    "lemak": 36.3,
+    "karbohidrat": 3.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pinda, masakan",
+    "energi": 107,
+    "protein": 15.9,
+    "lemak": 0.6,
+    "karbohidrat": 0.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Pindang kenari, masakan",
+    "energi": 124,
+    "protein": 9.5,
+    "lemak": 9.6,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Saboko gurita, masakan",
+    "energi": 87,
+    "protein": 15.7,
+    "lemak": 1.5,
+    "karbohidrat": 2.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Saboko saltan, masakan",
+    "energi": 113,
+    "protein": 17.1,
+    "lemak": 3.6,
+    "karbohidrat": 3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Saboko sardin, masakan",
+    "energi": 110,
+    "protein": 12.9,
+    "lemak": 4.3,
+    "karbohidrat": 4.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sate Bandeng",
+    "energi": 283,
+    "protein": 12.1,
+    "lemak": 16.8,
+    "karbohidrat": 20.9,
+    "serat": 2
+  },
+  {
+    "nama": "Sepi, masakan",
+    "energi": 88,
+    "protein": 7.9,
+    "lemak": 1.6,
+    "karbohidrat": 10.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tekwan",
+    "energi": 53,
+    "protein": 1.9,
+    "lemak": 0.9,
+    "karbohidrat": 9.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Teri balado, masakan",
+    "energi": 365,
+    "protein": 23.7,
+    "lemak": 22.3,
+    "karbohidrat": 17.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tumis bandeng",
+    "energi": 189,
+    "protein": 11.3,
+    "lemak": 15.7,
+    "karbohidrat": 0.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Tumis keumamah",
+    "energi": 300,
+    "protein": 14.5,
+    "lemak": 20,
+    "karbohidrat": 15.5,
+    "serat": 4.5
+  },
+  {
+    "nama": "Ikan bader, segar",
+    "energi": 193,
+    "protein": 19,
+    "lemak": 13,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan balong, segar",
+    "energi": 107,
+    "protein": 16.5,
+    "lemak": 3.9,
+    "karbohidrat": 1.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan bambangan, segar",
+    "energi": 112,
+    "protein": 20,
+    "lemak": 1.3,
+    "karbohidrat": 3.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan bandeng, segar",
+    "energi": 123,
+    "protein": 20,
+    "lemak": 4.8,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan banjar, segar",
+    "energi": 111,
+    "protein": 19.4,
+    "lemak": 0.9,
+    "karbohidrat": 4.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan baronang, segar",
+    "energi": 78,
+    "protein": 14.5,
+    "lemak": 0.6,
+    "karbohidrat": 3.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan batung, segar",
+    "energi": 115,
+    "protein": 14.5,
+    "lemak": 4.6,
+    "karbohidrat": 4.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan baung, segar",
+    "energi": 123,
+    "protein": 15.1,
+    "lemak": 5.5,
+    "karbohidrat": 3.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan bawal, segar",
+    "energi": 91,
+    "protein": 19,
+    "lemak": 1.7,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Belida, segar",
+    "energi": 80,
+    "protein": 14.7,
+    "lemak": 1.4,
+    "karbohidrat": 2.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Belut, segar",
+    "energi": 70,
+    "protein": 14.6,
+    "lemak": 0.8,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Belut,laut, segar",
+    "energi": 93,
+    "protein": 12.8,
+    "lemak": 1.5,
+    "karbohidrat": 6.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan beunteur, segar",
+    "energi": 109,
+    "protein": 17,
+    "lemak": 4,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan biawan, segar",
+    "energi": 90,
+    "protein": 14.9,
+    "lemak": 2.5,
+    "karbohidrat": 2.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan bili, segar",
+    "energi": 88,
+    "protein": 14.2,
+    "lemak": 0.7,
+    "karbohidrat": 6.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan bubara, segar",
+    "energi": 100,
+    "protein": 14.7,
+    "lemak": 2.4,
+    "karbohidrat": 4.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan bulan-bulan, segar",
+    "energi": 134,
+    "protein": 25.5,
+    "lemak": 1.3,
+    "karbohidrat": 5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan, cakalang, segar",
+    "energi": 107,
+    "protein": 19.6,
+    "lemak": 0.7,
+    "karbohidrat": 5.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan cakalang, hati, segar",
+    "energi": 120,
+    "protein": 11.3,
+    "lemak": 3.9,
+    "karbohidrat": 10,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan cakalang, jantung, segar",
+    "energi": 116,
+    "protein": 11.2,
+    "lemak": 1.2,
+    "karbohidrat": 10.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan cakalang, perut, segar",
+    "energi": 86,
+    "protein": 10.2,
+    "lemak": 1.1,
+    "karbohidrat": 8.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Cumi-cumi, segar",
+    "energi": 75,
+    "protein": 16.1,
+    "lemak": 0.7,
+    "karbohidrat": 0.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan daun, segar",
+    "energi": 101,
+    "protein": 11.5,
+    "lemak": 4.1,
+    "karbohidrat": 4.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan ekor kuning, segar",
+    "energi": 108,
+    "protein": 22.3,
+    "lemak": 1.2,
+    "karbohidrat": 2.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan gabus, segar",
+    "energi": 80,
+    "protein": 16.2,
+    "lemak": 0.5,
+    "karbohidrat": 2.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Heu, segar",
+    "energi": 81,
+    "protein": 10,
+    "lemak": 1.6,
+    "karbohidrat": 6.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan hitam, segar",
+    "energi": 101,
+    "protein": 10.3,
+    "lemak": 3.7,
+    "karbohidrat": 6.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan hiu, segar",
+    "energi": 57,
+    "protein": 10.7,
+    "lemak": 0.3,
+    "karbohidrat": 2.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kacangan, segar",
+    "energi": 77,
+    "protein": 15.6,
+    "lemak": 0.9,
+    "karbohidrat": 1.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kakap, segar",
+    "energi": 92,
+    "protein": 20,
+    "lemak": 0.7,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kakatua, segar",
+    "energi": 82,
+    "protein": 11.4,
+    "lemak": 1.2,
+    "karbohidrat": 6.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kalaban, segar",
+    "energi": 77,
+    "protein": 16.4,
+    "lemak": 0.7,
+    "karbohidrat": 1.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Kamera, segar",
+    "energi": 86,
+    "protein": 19.7,
+    "lemak": 0.8,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kapar, segar",
+    "energi": 132,
+    "protein": 17,
+    "lemak": 6.7,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kawalinya, segar",
+    "energi": 110,
+    "protein": 12.6,
+    "lemak": 4.2,
+    "karbohidrat": 5.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan oci, kembung, segar",
+    "energi": 125,
+    "protein": 21.3,
+    "lemak": 3.4,
+    "karbohidrat": 2.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Keong, segar",
+    "energi": 64,
+    "protein": 12,
+    "lemak": 1,
+    "karbohidrat": 2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kepiting, segar",
+    "energi": 151,
+    "protein": 13.8,
+    "lemak": 3.8,
+    "karbohidrat": 14.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kerang, segar",
+    "energi": 101,
+    "protein": 14.4,
+    "lemak": 2.6,
+    "karbohidrat": 3.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan keru-keru, segar",
+    "energi": 93,
+    "protein": 16.5,
+    "lemak": 2.1,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan kima, segar",
+    "energi": 70,
+    "protein": 10.8,
+    "lemak": 0.7,
+    "karbohidrat": 5.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kodok, segar",
+    "energi": 73,
+    "protein": 16.4,
+    "lemak": 0.3,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kura-kura, segar",
+    "energi": 83,
+    "protein": 19.1,
+    "lemak": 0.2,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kuro, segar",
+    "energi": 87,
+    "protein": 16,
+    "lemak": 2.2,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan lais, segar",
+    "energi": 161,
+    "protein": 11.9,
+    "lemak": 11.5,
+    "karbohidrat": 2.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan layang, segar",
+    "energi": 109,
+    "protein": 22,
+    "lemak": 1.7,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan layur, segar",
+    "energi": 82,
+    "protein": 18,
+    "lemak": 1,
+    "karbohidrat": 0.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan lehoma, segar",
+    "energi": 90,
+    "protein": 20.4,
+    "lemak": 0.9,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan lemuru, segar",
+    "energi": 112,
+    "protein": 20,
+    "lemak": 3,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan lidah, segar",
+    "energi": 104,
+    "protein": 15.6,
+    "lemak": 3.2,
+    "karbohidrat": 2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lokan, segar",
+    "energi": 217,
+    "protein": 11,
+    "lemak": 1.7,
+    "karbohidrat": 5.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan malalugis, segar",
+    "energi": 99,
+    "protein": 20.6,
+    "lemak": 1.4,
+    "karbohidrat": 0.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan mamar merah, segar",
+    "energi": 115,
+    "protein": 15.3,
+    "lemak": 4,
+    "karbohidrat": 4.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan mas, segar",
+    "energi": 86,
+    "protein": 16,
+    "lemak": 2,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan mayong, segar",
+    "energi": 97,
+    "protein": 17.9,
+    "lemak": 2,
+    "karbohidrat": 0.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan mujahir, segar",
+    "energi": 89,
+    "protein": 18.7,
+    "lemak": 1,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan nasu metti, segar",
+    "energi": 154,
+    "protein": 16.8,
+    "lemak": 5,
+    "karbohidrat": 10.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan paling, segar",
+    "energi": 303,
+    "protein": 14,
+    "lemak": 27,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan papuyu/ betok, segar",
+    "energi": 120,
+    "protein": 14.3,
+    "lemak": 4.9,
+    "karbohidrat": 4.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Patin, segar",
+    "energi": 132,
+    "protein": 17,
+    "lemak": 6.6,
+    "karbohidrat": 1.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan pomo, segar",
+    "energi": 147,
+    "protein": 22.5,
+    "lemak": 5.2,
+    "karbohidrat": 2.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Puntin, segar",
+    "energi": 76,
+    "protein": 14.4,
+    "lemak": 1.1,
+    "karbohidrat": 2.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rajungan, segar",
+    "energi": 76,
+    "protein": 12.1,
+    "lemak": 2,
+    "karbohidrat": 2.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Rebon, udang kecil, segar",
+    "energi": 81,
+    "protein": 16.2,
+    "lemak": 1.2,
+    "karbohidrat": 0.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan saluang, segar",
+    "energi": 113,
+    "protein": 13.9,
+    "lemak": 4.9,
+    "karbohidrat": 3.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sarden, segar",
+    "energi": 109,
+    "protein": 19.9,
+    "lemak": 1.8,
+    "karbohidrat": 3.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan selar, segar",
+    "energi": 100,
+    "protein": 18.8,
+    "lemak": 2.2,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sepat, segar",
+    "energi": 84,
+    "protein": 15.2,
+    "lemak": 0.6,
+    "karbohidrat": 4.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sidat, segar",
+    "energi": 81,
+    "protein": 11.4,
+    "lemak": 1.9,
+    "karbohidrat": 3.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan sunu, segar",
+    "energi": 111,
+    "protein": 13.3,
+    "lemak": 3.4,
+    "karbohidrat": 6.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan tahuman, segar",
+    "energi": 88,
+    "protein": 15.9,
+    "lemak": 0.9,
+    "karbohidrat": 4.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan Sale, segar",
+    "energi": 534,
+    "protein": 40.2,
+    "lemak": 39.3,
+    "karbohidrat": 4.9,
+    "serat": 2
+  },
+  {
+    "nama": "Ikan tarmon, segar",
+    "energi": 96,
+    "protein": 19.5,
+    "lemak": 1.1,
+    "karbohidrat": 2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan telan, segar",
+    "energi": 95,
+    "protein": 15.8,
+    "lemak": 0.7,
+    "karbohidrat": 6.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan tembang, segar",
+    "energi": 204,
+    "protein": 16,
+    "lemak": 15,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan tempahas, segar",
+    "energi": 101,
+    "protein": 15.1,
+    "lemak": 4.1,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan terbang, segar",
+    "energi": 98,
+    "protein": 19.6,
+    "lemak": 1.7,
+    "karbohidrat": 1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan teri, segar",
+    "energi": 74,
+    "protein": 10.3,
+    "lemak": 1.4,
+    "karbohidrat": 4.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan titang, segar",
+    "energi": 82,
+    "protein": 17.4,
+    "lemak": 0.4,
+    "karbohidrat": 2.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan tongkol, segar",
+    "energi": 100,
+    "protein": 13.7,
+    "lemak": 1.5,
+    "karbohidrat": 8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan turi, segar",
+    "energi": 96,
+    "protein": 19.2,
+    "lemak": 2,
+    "karbohidrat": 0.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Udang, besar, segar",
+    "energi": 56,
+    "protein": 11.4,
+    "lemak": 0.6,
+    "karbohidrat": 1.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Udang galah, segar",
+    "energi": 81,
+    "protein": 16.5,
+    "lemak": 0.3,
+    "karbohidrat": 3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Udang, segar",
+    "energi": 91,
+    "protein": 21,
+    "lemak": 0.2,
+    "karbohidrat": 0.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur ayam, dadar, masakan",
+    "energi": 251,
+    "protein": 16.3,
+    "lemak": 19.4,
+    "karbohidrat": 1.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur bebek, asin, mentah",
+    "energi": 179,
+    "protein": 13.6,
+    "lemak": 13.3,
+    "karbohidrat": 4.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur bebek, dadar, masakan",
+    "energi": 301,
+    "protein": 20,
+    "lemak": 23.7,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Ikan, telur, asin, mentah",
+    "energi": 358,
+    "protein": 20.7,
+    "lemak": 26.4,
+    "karbohidrat": 9.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Bayau mi balu, masakan",
+    "energi": 313,
+    "protein": 6,
+    "lemak": 12.2,
+    "karbohidrat": 44.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Cucuru bayau, masakan",
+    "energi": 349,
+    "protein": 6.8,
+    "lemak": 18.7,
+    "karbohidrat": 38.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kalio telur, masakan",
+    "energi": 193,
+    "protein": 10.6,
+    "lemak": 12.4,
+    "karbohidrat": 9.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur ayam kampung, segar",
+    "energi": 174,
+    "protein": 10.8,
+    "lemak": 14,
+    "karbohidrat": 1.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur ayam ras, segar",
+    "energi": 154,
+    "protein": 12.4,
+    "lemak": 10.8,
+    "karbohidrat": 0.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur ayam ras, bagian kuning, segar",
+    "energi": 355,
+    "protein": 16.3,
+    "lemak": 31.9,
+    "karbohidrat": 0.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur ayam ras, bagian putih, segar",
+    "energi": 50,
+    "protein": 10.8,
+    "lemak": 0.0,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur bebek alabio, segar",
+    "energi": 187,
+    "protein": 11.8,
+    "lemak": 14.2,
+    "karbohidrat": 3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur bebek, bagian kuning, segar",
+    "energi": 386,
+    "protein": 17,
+    "lemak": 35,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur bebek, bagian putih, segar",
+    "energi": 54,
+    "protein": 11,
+    "lemak": 0.0,
+    "karbohidrat": 0.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur bebek tambak, segar",
+    "energi": 187,
+    "protein": 10.9,
+    "lemak": 12.4,
+    "karbohidrat": 7.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur burung maleo, segar",
+    "energi": 436,
+    "protein": 26.5,
+    "lemak": 36.3,
+    "karbohidrat": 0.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur penyu, segar",
+    "energi": 136,
+    "protein": 8.6,
+    "lemak": 10.1,
+    "karbohidrat": 2.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Telur burung puyuh, segar",
+    "energi": 116,
+    "protein": 10.7,
+    "lemak": 7,
+    "karbohidrat": 1.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Es krim",
+    "energi": 210,
+    "protein": 4,
+    "lemak": 12.5,
+    "karbohidrat": 20.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Hangop",
+    "energi": 65,
+    "protein": 10,
+    "lemak": 1,
+    "karbohidrat": 3.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Keju",
+    "energi": 326,
+    "protein": 22.8,
+    "lemak": 20.3,
+    "karbohidrat": 13.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kwark (Quark)",
+    "energi": 242,
+    "protein": 19,
+    "lemak": 17,
+    "karbohidrat": 3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu asam untuk bayi, bubuk",
+    "energi": 418,
+    "protein": 19,
+    "lemak": 9,
+    "karbohidrat": 65.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu bubuk",
+    "energi": 513,
+    "protein": 24.6,
+    "lemak": 30,
+    "karbohidrat": 36.2,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu kental manis",
+    "energi": 343,
+    "protein": 8.2,
+    "lemak": 10,
+    "karbohidrat": 55,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu kental tak manis",
+    "energi": 138,
+    "protein": 7,
+    "lemak": 7.9,
+    "karbohidrat": 9.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu skim, bubuk",
+    "energi": 359,
+    "protein": 35.6,
+    "lemak": 1,
+    "karbohidrat": 52,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu skim, segar",
+    "energi": 36,
+    "protein": 3.5,
+    "lemak": 0.1,
+    "karbohidrat": 5.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Yoghurt, segar",
+    "energi": 52,
+    "protein": 3.3,
+    "lemak": 2.5,
+    "karbohidrat": 4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kepala susu - krim, segar",
+    "energi": 204,
+    "protein": 2.6,
+    "lemak": 20,
+    "karbohidrat": 4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu ibu - ASI",
+    "energi": 62,
+    "protein": 1.5,
+    "lemak": 3.2,
+    "karbohidrat": 7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu kambing, segar",
+    "energi": 64,
+    "protein": 4.3,
+    "lemak": 2.3,
+    "karbohidrat": 6.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu kerbau, segar",
+    "energi": 160,
+    "protein": 6.3,
+    "lemak": 12,
+    "karbohidrat": 7.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu kuda, segar",
+    "energi": 40,
+    "protein": 2,
+    "lemak": 1.1,
+    "karbohidrat": 5.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Susu sapi, segar",
+    "energi": 61,
+    "protein": 3.2,
+    "lemak": 3.5,
+    "karbohidrat": 4.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Margarin",
+    "energi": 720,
+    "protein": 0.6,
+    "lemak": 81,
+    "karbohidrat": 0.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Mentega",
+    "energi": 742,
+    "protein": 0.5,
+    "lemak": 81.6,
+    "karbohidrat": 1.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Santan (dengan air)",
+    "energi": 122,
+    "protein": 2,
+    "lemak": 10,
+    "karbohidrat": 7.6,
+    "serat": 1.4
+  },
+  {
+    "nama": "Santan murni",
+    "energi": 324,
+    "protein": 4.2,
+    "lemak": 34.3,
+    "karbohidrat": 5.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kelapa setengah tua, daging, segar",
+    "energi": 180,
+    "protein": 4,
+    "lemak": 15,
+    "karbohidrat": 10,
+    "serat": 2.4
+  },
+  {
+    "nama": "Kelapa tua, daging, segar",
+    "energi": 359,
+    "protein": 3.4,
+    "lemak": 34.7,
+    "karbohidrat": 14,
+    "serat": 4.7
+  },
+  {
+    "nama": "Lemak babi (lard)",
+    "energi": 902,
+    "protein": 0.0,
+    "lemak": 100,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lemak babi (bacon)",
+    "energi": 626,
+    "protein": 9.1,
+    "lemak": 65,
+    "karbohidrat": 1.1,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lemak ikan",
+    "energi": 372,
+    "protein": 12,
+    "lemak": 29.4,
+    "karbohidrat": 14.4,
+    "serat": 0.0
+  },
+  {
+    "nama": "Lemak kerbau (lemak sapi)",
+    "energi": 818,
+    "protein": 1.5,
+    "lemak": 90,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak hiu, hati",
+    "energi": 902,
+    "protein": 0.0,
+    "lemak": 100,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak ikan",
+    "energi": 902,
+    "protein": 0.0,
+    "lemak": 100,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak kacang tanah",
+    "energi": 902,
+    "protein": 0.0,
+    "lemak": 100,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak kedelai",
+    "energi": 883,
+    "protein": 0.0,
+    "lemak": 99.9,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak kelapa",
+    "energi": 870,
+    "protein": 1,
+    "lemak": 98,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak kelapa sawit",
+    "energi": 884,
+    "protein": 0.0,
+    "lemak": 100,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak wijen",
+    "energi": 881,
+    "protein": 0.2,
+    "lemak": 99.7,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Minyak Zaitun",
+    "energi": 884,
+    "protein": 0.0,
+    "lemak": 100,
+    "karbohidrat": 0.0,
+    "serat": 0.0
+  },
+  {
+    "nama": "Coklat manis, batang",
+    "energi": 527,
+    "protein": 2,
+    "lemak": 29.8,
+    "karbohidrat": 62.7,
+    "serat": 6.5
+  },
+  {
+    "nama": "Coklat pahit,batang",
+    "energi": 615,
+    "protein": 5.5,
+    "lemak": 42.6,
+    "karbohidrat": 29.2,
+    "serat": 10.8
+  },
+  {
+    "nama": "Coklat susu, batang",
+    "energi": 565,
+    "protein": 9,
+    "lemak": 35,
+    "karbohidrat": 53.6,
+    "serat": 3.4
+  },
+  {
+    "nama": "Coklat bubuk",
+    "energi": 311,
+    "protein": 8,
+    "lemak": 4,
+    "karbohidrat": 48.9,
+    "serat": 32.6
+  },
+  {
+    "nama": "Gula aren",
+    "energi": 368,
+    "protein": 0.0,
+    "lemak": 0.0,
+    "karbohidrat": 92,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gula kelapa",
+    "energi": 386,
+    "protein": 3,
+    "lemak": 10,
+    "karbohidrat": 76,
+    "serat": 0.0
+  },
+  {
+    "nama": "Gula putih",
+    "energi": 394,
+    "protein": 0.0,
+    "lemak": 0.0,
+    "karbohidrat": 94,
+    "serat": 0.0
+  },
+  {
+    "nama": "Jam, selai",
+    "energi": 239,
+    "protein": 0.5,
+    "lemak": 0.6,
+    "karbohidrat": 64.5,
+    "serat": 1
+  },
+  {
+    "nama": "Kopi bubuk instant",
+    "energi": 129,
+    "protein": 12.3,
+    "lemak": 0.5,
+    "karbohidrat": 35,
+    "serat": 0.0
+  },
+  {
+    "nama": "Madu",
+    "energi": 294,
+    "protein": 0.3,
+    "lemak": 0.0,
+    "karbohidrat": 79.5,
+    "serat": 0.2
+  },
+  {
+    "nama": "Markisa squash",
+    "energi": 217,
+    "protein": 2.5,
+    "lemak": 1,
+    "karbohidrat": 49.6,
+    "serat": 0.0
+  },
+  {
+    "nama": "Markisa squash, BD",
+    "energi": 104,
+    "protein": 1.2,
+    "lemak": 0.5,
+    "karbohidrat": 23.7,
+    "serat": 0.0
+  },
+  {
+    "nama": "Melase",
+    "energi": 276,
+    "protein": 0.0,
+    "lemak": 0.1,
+    "karbohidrat": 71,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sirup",
+    "energi": 213,
+    "protein": 0.0,
+    "lemak": 0.0,
+    "karbohidrat": 55,
+    "serat": 0.0
+  },
+  {
+    "nama": "Sirup pirous",
+    "energi": 228,
+    "protein": 0.2,
+    "lemak": 0.4,
+    "karbohidrat": 55.9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Teh hijau daun kering",
+    "energi": 300,
+    "protein": 28.3,
+    "lemak": 4.8,
+    "karbohidrat": 53.6,
+    "serat": 9.6
+  },
+  {
+    "nama": "Teh hitam daun kering",
+    "energi": 293,
+    "protein": 24.5,
+    "lemak": 2.8,
+    "karbohidrat": 58.8,
+    "serat": 8.7
+  },
+  {
+    "nama": "Teh melati daun kering",
+    "energi": 299,
+    "protein": 24.1,
+    "lemak": 3.5,
+    "karbohidrat": 59,
+    "serat": 9.7
+  },
+  {
+    "nama": "Balichong",
+    "energi": 152,
+    "protein": 13.2,
+    "lemak": 0.8,
+    "karbohidrat": 22.9,
+    "serat": 1.5
+  },
+  {
+    "nama": "Bekasam",
+    "energi": 116,
+    "protein": 11.9,
+    "lemak": 4.9,
+    "karbohidrat": 6.1,
+    "serat": 3.5
+  },
+  {
+    "nama": "Bekasang",
+    "energi": 78,
+    "protein": 11.4,
+    "lemak": 2,
+    "karbohidrat": 3.6,
+    "serat": 0.4
+  },
+  {
+    "nama": "Cuka",
+    "energi": 21,
+    "protein": 0.1,
+    "lemak": 0.1,
+    "karbohidrat": 5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kecap",
+    "energi": 71,
+    "protein": 5.7,
+    "lemak": 1.3,
+    "karbohidrat": 9,
+    "serat": 0.0
+  },
+  {
+    "nama": "Petis ikan",
+    "energi": 165,
+    "protein": 20,
+    "lemak": 0.2,
+    "karbohidrat": 20.8,
+    "serat": 0.0
+  },
+  {
+    "nama": "Petis udang kering",
+    "energi": 345,
+    "protein": 23.8,
+    "lemak": 1.4,
+    "karbohidrat": 59.3,
+    "serat": 0.0
+  },
+  {
+    "nama": "Petis udang pasta",
+    "energi": 220,
+    "protein": 15,
+    "lemak": 0.9,
+    "karbohidrat": 38,
+    "serat": 2.3
+  },
+  {
+    "nama": "Saos tomat",
+    "energi": 110,
+    "protein": 2,
+    "lemak": 0.4,
+    "karbohidrat": 24.5,
+    "serat": 0.9
+  },
+  {
+    "nama": "Tempoya",
+    "energi": 110,
+    "protein": 1.7,
+    "lemak": 1.3,
+    "karbohidrat": 21.9,
+    "serat": 2.6
+  },
+  {
+    "nama": "Terasi",
+    "energi": 155,
+    "protein": 22.3,
+    "lemak": 2.9,
+    "karbohidrat": 9.9,
+    "serat": 2.7
+  },
+  {
+    "nama": "Terasi dobo",
+    "energi": 191,
+    "protein": 33.1,
+    "lemak": 3.6,
+    "karbohidrat": 6.6,
+    "serat": 1.6
+  },
+  {
+    "nama": "Terasi merah",
+    "energi": 174,
+    "protein": 30,
+    "lemak": 3.5,
+    "karbohidrat": 5.6,
+    "serat": 2.2
+  },
+  {
+    "nama": "Asam arang coklat, segar",
+    "energi": 130,
+    "protein": 0.5,
+    "lemak": 1.1,
+    "karbohidrat": 30.9,
+    "serat": 1.5
+  },
+  {
+    "nama": "Asam arang merah, segar",
+    "energi": 99,
+    "protein": 0.8,
+    "lemak": 1.6,
+    "karbohidrat": 20.3,
+    "serat": 2.8
+  },
+  {
+    "nama": "Asam kandis, kering",
+    "energi": 261,
+    "protein": 0.9,
+    "lemak": 1.6,
+    "karbohidrat": 63.3,
+    "serat": 5
+  },
+  {
+    "nama": "Asam kandis, segar",
+    "energi": 75,
+    "protein": 0.2,
+    "lemak": 1.1,
+    "karbohidrat": 16.1,
+    "serat": 3.4
+  },
+  {
+    "nama": "Asam masak pohon, segar",
+    "energi": 267,
+    "protein": 2.8,
+    "lemak": 0.6,
+    "karbohidrat": 62.5,
+    "serat": 1.2
+  },
+  {
+    "nama": "Asam payak, segar",
+    "energi": 135,
+    "protein": 0.8,
+    "lemak": 0.4,
+    "karbohidrat": 32.1,
+    "serat": 10
+  },
+  {
+    "nama": "Bawang merah, segar",
+    "energi": 46,
+    "protein": 1.5,
+    "lemak": 0.3,
+    "karbohidrat": 9.2,
+    "serat": 1.7
+  },
+  {
+    "nama": "Bawang putih, segar",
+    "energi": 112,
+    "protein": 4.5,
+    "lemak": 0.2,
+    "karbohidrat": 23.1,
+    "serat": 0.6
+  },
+  {
+    "nama": "Boros kunci, segar",
+    "energi": 40,
+    "protein": 1,
+    "lemak": 0.8,
+    "karbohidrat": 7.2,
+    "serat": 1
+  },
+  {
+    "nama": "Boros laja (lengkuas), segar",
+    "energi": 26,
+    "protein": 1,
+    "lemak": 0.3,
+    "karbohidrat": 4.7,
+    "serat": 1.1
+  },
+  {
+    "nama": "Cabai gembor merah, segar",
+    "energi": 38,
+    "protein": 1.6,
+    "lemak": 0.8,
+    "karbohidrat": 6.3,
+    "serat": 1.6
+  },
+  {
+    "nama": "Cabai hijau, segar",
+    "energi": 26,
+    "protein": 0.7,
+    "lemak": 0.3,
+    "karbohidrat": 5.2,
+    "serat": 2.6
+  },
+  {
+    "nama": "Cabai merah, kering",
+    "energi": 367,
+    "protein": 15.9,
+    "lemak": 6.2,
+    "karbohidrat": 61.8,
+    "serat": 26.9
+  },
+  {
+    "nama": "Cabai merah, segar",
+    "energi": 36,
+    "protein": 1,
+    "lemak": 0.3,
+    "karbohidrat": 7.3,
+    "serat": 1.4
+  },
+  {
+    "nama": "Cabai rawit, segar",
+    "energi": 120,
+    "protein": 4.7,
+    "lemak": 2.4,
+    "karbohidrat": 19.9,
+    "serat": 15.2
+  },
+  {
+    "nama": "Cengkeh, kering",
+    "energi": 330,
+    "protein": 5.2,
+    "lemak": 8.9,
+    "karbohidrat": 57.4,
+    "serat": 10
+  },
+  {
+    "nama": "Daun salam, bubuk",
+    "energi": 301,
+    "protein": 14.2,
+    "lemak": 10.9,
+    "karbohidrat": 49,
+    "serat": 9.4
+  },
+  {
+    "nama": "Jahe, segar",
+    "energi": 51,
+    "protein": 1.5,
+    "lemak": 1,
+    "karbohidrat": 10.1,
+    "serat": 12
+  },
+  {
+    "nama": "Kemiri",
+    "energi": 675,
+    "protein": 19,
+    "lemak": 63,
+    "karbohidrat": 8,
+    "serat": 3
+  },
+  {
+    "nama": "Ketumbar, kering",
+    "energi": 418,
+    "protein": 14.1,
+    "lemak": 16.1,
+    "karbohidrat": 54.2,
+    "serat": 12.3
+  },
+  {
+    "nama": "Kluwek",
+    "energi": 310,
+    "protein": 10,
+    "lemak": 24,
+    "karbohidrat": 13.5,
+    "serat": 0.0
+  },
+  {
+    "nama": "Kunyit, segar",
+    "energi": 69,
+    "protein": 2,
+    "lemak": 2.7,
+    "karbohidrat": 9.1,
+    "serat": 0.6
+  },
+  {
+    "nama": "Merica, kering",
+    "energi": 365,
+    "protein": 11.5,
+    "lemak": 6.8,
+    "karbohidrat": 64.4,
+    "serat": 1
+  },
+  {
+    "nama": "Pala, biji, kering",
+    "energi": 518,
+    "protein": 7.5,
+    "lemak": 36.4,
+    "karbohidrat": 40.1,
+    "serat": 3.5
+  },
+  {
+    "nama": "Kelapa muda, air, segar",
+    "energi": 17,
+    "protein": 0.2,
+    "lemak": 0.1,
+    "karbohidrat": 3.8,
+    "serat": 0.0
+  }
+]

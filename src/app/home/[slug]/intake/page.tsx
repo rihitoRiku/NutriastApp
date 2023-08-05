@@ -2,6 +2,11 @@
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import jsonData from "./../../../../DataMakananTKPI.json";
+
+interface FoodItem {
+  nama: string;
+}
 
 export default function Page() {
   // placeholder based on screensize
@@ -10,7 +15,7 @@ export default function Page() {
     const handleResize = () => {
       setIsMediumScreen(window.innerWidth >= 768);
     };
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -21,7 +26,26 @@ export default function Page() {
       ? "Search Food or Drink name... "
       : "Search Food or Drink";
   };
-  
+
+  const [inputValue, setInputValue] = useState<string>("");
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [suggestions, setSuggestions] = useState<FoodItem[]>([]);
+
+  // handler input
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    setSearchTerm(value);
+
+    // Filter the JSON data based on the user's input
+    const filteredSuggestions = jsonData.filter((item: FoodItem) =>
+      item.nama.toLowerCase().includes(value.toLowerCase())
+    );
+
+    setSuggestions(filteredSuggestions);
+  };
+
+  //handler input dropdown
+
   //   onclick back
   const router = useRouter();
   //   const onClickBack = () => {
@@ -30,35 +54,35 @@ export default function Page() {
 
   return (
     <>
-      <div className="px-4 min-h-screen grid grid-rows-6 grid-flow-col gap-4">
-        <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-12 w-full max-w-3xl">
-          <Link href="/home/a">
-            <button
-              type="button"
-              className=" font-medium text-xl text-center flex items-center"
+      <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-12 w-full max-w-3xl">
+        <Link href="/home/a">
+          <button
+            type="button"
+            className=" font-medium text-xl text-center flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#000000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M15 18l-6-6 6-6" />
-              </svg>
-              <span className="">Back</span>
-            </button>
-          </Link>
-        </div>
-        <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2  row-start-2 self-end">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+            <span className="">Back</span>
+          </button>
+        </Link>
+      </div>
+      <div className="px-4 h-screen gap-4 grid grid-rows-3 grid-flow-row">
+        <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2 row-start-1 self-end">
           How was your food today?
         </div>
         {/* Search Bar */}
-        <div id="search" className="w-full max-w-3xl mx-auto row-start-3">
+        <div id="search" className="w-full max-w-3xl mx-auto row-start-2">
           <form className="flex items-center">
             <label htmlFor="simple-search" className="sr-only">
               Search
@@ -94,31 +118,41 @@ export default function Page() {
                 id="simple-search"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-md lg:text-lg rounded-lg block w-full pl-12 lg:pl-16 p-2 lg:p-2.5 focus:outline-none ring-transparent"
                 placeholder={`${getPlaceholder()}`}
+                value={searchTerm}
+                onChange={handleInputChange}
                 required
               />
             </div>
-            <button
-              type="submit"
-              className="p-2.5 lg:p-3.5 ml-2 text-sm font-medium text-white bg-green-700 rounded-lg border "
-            >
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-              <span className="sr-only">Search</span>
-            </button>
           </form>
+          <div
+            className={`max-h-56 border-2 rounded-lg overflow-scroll ${searchTerm ? "" : "hidden"} ${suggestions.length ? "" : "hidden"}`}
+          >
+            <div
+              id="dropdown"
+              className={`z-10 w-full bg-white divide-y divide-gray-100 rounded-lg`}
+            >
+              <ul
+                className="text-sm w-full text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownDefaultButton"
+              >
+                {suggestions.map((item: FoodItem) => (
+                  <li key={item.nama}>
+                    <a
+                      href="#"
+                      className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    >
+                      {item.nama}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          {/* <ul>
+            {suggestions.map((item: FoodItem) => (
+              <li key={item.nama}>{item.nama}</li>
+            ))}
+          </ul> */}
         </div>
       </div>
     </>
