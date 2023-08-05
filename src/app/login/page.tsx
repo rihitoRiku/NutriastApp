@@ -1,40 +1,67 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import axios from "axios";
+import toast from "react-hot-toast";
 import Image from "next/image";
+import Link from "next/link";
+
 import appLogo from "/public/assets/image/nutriast_logo.png";
 import { Register } from "./register";
 import useInputLoginStore from "@/hooks/useInputLogin";
-import axios from "axios";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import toast from "react-hot-toast";
+import LoaderComponent from "../components/loader/loader";
+
 export default function Login() {
   const router = useRouter();
   const [registerModal, setRegisterModal] = useState(false);
+  const [loading, setLoading] = useState(false);
   const input = useInputLoginStore();
+
   const handleLogin = async () => {
+    setLoading(true);
     console.log(input.email, input.password);
+
     const login = {
       email: input.email,
       password: input.password,
     };
+
     try {
-      axios
-        .post("http://localhost:5000/login/", login)
-        .then((response) => {
-          console.log(response.data)
-          // toast.success(`Hello ${response.data.data.username}`);
-          // router.push(`/home/${response.data.data.userId}`);
+      const response = await axios.post("http://localhost:5000/login/", login).then((response) => {
+          if (response.data.status === "400") {
+            toast.error(response.data.message);
+          } else {
+            toast.success(`Hello ${response.data.data.username}`);
+            router.push(`/home/${response.data.data.userId}`);
+            // Assuming the server sends the token in the 'token' property of the response
+      const token = response.data.data.authentication_token;
+
+      // Set the token as a cookie
+      document.cookie = `token=${token}; path=/;`;
+          }
         })
         .catch((error) => {
-          console.log(error)
-        } );
-    } catch (err) {
-      console.log("Error: " + err);
+          console.log(error);
+        });
+    } catch (error) {
+      console.log(error);
     }
+
+    setLoading(false);
   };
+
   return (
     <>
+      {/* Loader */}
+      {loading ? (
+        <>
+          <div className="z-30 flex justify-center items-center fixed top-0 w-screen h-screen bg-slate-700 opacity-20">
+            <LoaderComponent />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
       <div className="lg:flex">
         <div
           id="global-container-right"
@@ -99,7 +126,7 @@ export default function Login() {
               <button
                 onClick={handleLogin}
                 type="button"
-                className="w-3/5 py-2 px-4 rounded-xl h-12 focus:outline-none text-white bg-green-700 hover:bg-green-800"
+                className="w-3/5 py-2 px-4 rounded-full h-12 focus:outline-none text-white bg-green-700 hover:bg-green-800"
               >
                 Login
               </button>

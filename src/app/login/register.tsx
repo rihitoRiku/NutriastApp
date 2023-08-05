@@ -30,8 +30,11 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
       axios.post('http://localhost:5000/register', newRegister).then((response) => {
         // console.log(response);
         // localStorage.setItem('user', JSON.stringify(response.data.data.username));
+        if (response.data.status === "400") {
+          toast.error(response.data.message);
+        }
         toast.success('Registration successfully');
-        
+        closeModal();
       }).catch((err) => (toast.error(err.message)));
 
     }catch(err){
