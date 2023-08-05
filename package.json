@@ -27,6 +27,8 @@
     "zustand": "^4.3.9"
   },
   "devDependencies": {
-    "@types/js-cookie": "^3.0.3"
+    "@types/js-cookie": "^3.0.3",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.4.1"
   }
 }
