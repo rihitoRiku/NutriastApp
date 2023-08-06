@@ -94,11 +94,11 @@ export default function Page() {
 
   return (
     <>
-      <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-12 w-full max-w-3xl">
-        <Link href="/home/a">
+      <Link href="/home/a">
+        <div className="z-30 ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl">
           <button
             type="button"
-            className=" font-medium text-xl text-center flex items-center"
+            className=" font-medium text-xl text-center flex items-center "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -115,9 +115,9 @@ export default function Page() {
             </svg>
             <span className="">Back</span>
           </button>
-        </Link>
-      </div>
-      <div className="px-4 min-h-screen gap-4 grid grid-rows-3 grid-flow-row">
+        </div>
+      </Link>
+      <div className="px-4 min-h-screen gap-4 grid grid-rows-3 grid-flow-row scale-95">
         <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2 row-start-1 self-end">
           How's Your Food Today?
         </div>
@@ -248,9 +248,9 @@ export default function Page() {
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="#000000"
-                          stroke-width="1"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="1"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
                           <polyline points="3 6 5 6 21 6"></polyline>
                           <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>

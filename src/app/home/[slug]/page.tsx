@@ -192,7 +192,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Navbar title="Dashboard" />
-      <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8">
+      <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8 scale-95">
         <div id="avatar" className="flex items-center justify-between ">
           <Link href="a/profile">
             <div className="flex items-center space-x-4">

@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <Link href="/home/a">
-        <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl">
+        <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl scale-95">
           <button
             type="button"
             className=" font-medium text-xl text-center flex items-center "
@@ -34,7 +34,7 @@ export default function Page() {
           </button>
         </div>
       </Link>
-      <div className="px-4 max-w-5xl mx-auto">
+      <div className="px-4 max-w-5xl mx-auto scale-95">
         <div className="text-2xl lg:text-3xl font-semibold text-center mt-24 mb-4">
           Cardiovascular Prediction
         </div>
@@ -46,10 +46,10 @@ export default function Page() {
           includes conditions like heart disease, heart failure, and stroke.
         </div>
       </div>
-      <div className="mt-12 max-w-2xl mx-auto px-6 lg:px-0">
+      <div className="mt-12 max-w-2xl mx-auto px-6 lg:px-0 scale-95">
         <Image src={Illust} alt="Logo Nutriast" />
       </div>
-      <div className="px-4 mb-28">
+      <div className="px-4 mb-28 scale-95">
         <div
           id="global-container"
           className="flex flex-col justify-center items-center"
