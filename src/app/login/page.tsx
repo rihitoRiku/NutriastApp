@@ -10,6 +10,8 @@ import appLogo from "/public/assets/image/nutriast_logo.png";
 import { Register } from "./register";
 import useInputLoginStore from "@/hooks/useInputLogin";
 import LoaderComponent from "../components/loader/loader";
+import create from "../actions/LoginCookies";
+import { cookies } from "next/headers";
 
 export default function Login() {
   const router = useRouter();
@@ -19,7 +21,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     setLoading(true);
-    console.log(input.email, input.password);
+    // console.log(input.email, input.password);
 
     const login = {
       email: input.email,
@@ -27,17 +29,21 @@ export default function Login() {
     };
 
     try {
-      const response = await axios.post("http://localhost:5000/login/", login).then((response) => {
-          if (response.data.status === "400") {
+      await axios
+        .post("http://localhost:5000/login", login)
+        .then((response) => {
+
+          if (response.data.code === 400) {
             toast.error(response.data.message);
           } else {
             toast.success(`Hello ${response.data.data.username}`);
-            router.push(`/home/${response.data.data.userId}`);
+            
             // Assuming the server sends the token in the 'token' property of the response
-      const token = response.data.data.authentication_token;
-
-      // Set the token as a cookie
-      document.cookie = `token=${token}; path=/;`;
+            const token = response.data.data.authentication_token;
+            create(token);
+            // router.push(`/home/${response.data.data.userId}`);
+            // Set the token as a cookie
+            // document.cookie = `token=${token}; path=/;`;
           }
         })
         .catch((error) => {

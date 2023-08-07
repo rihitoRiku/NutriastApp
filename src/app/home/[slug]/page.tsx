@@ -186,7 +186,7 @@ const riskContent = (
 export default function Page({ params }: { params: { slug: string } }) {
   useEffect(() => {
     // Get the value of the "Login_Token" cookie
-    const loginTokenCookie = Cookies.get('Login_Token');
+    const loginTokenCookie = Cookies.get('Login Token');
     console.log('Login_Token Cookie Value:', loginTokenCookie);
   }, []);
   return (
