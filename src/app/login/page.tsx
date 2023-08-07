@@ -73,14 +73,14 @@ export default function Login() {
           id="global-container-right"
           className="lg:w-1/2 h-screen flex flex-col justify-center items-center px-4 "
         >
-          <div id="logo" className="w-40">
+          <div id="logo" className="w-36">
             <Image src={appLogo} alt="Logo Nutriast" />
           </div>
           <div
             id="form"
-            className="flex flex-col gap-6 w-full max-w-[28rem] my-12"
+            className="flex flex-col gap-4 w-full max-w-[26rem] my-12"
           >
-            <div className="flex items-center border py-2 px-4 rounded-md h-12 bg-white">
+            <div className="flex items-center border py-2 px-4 rounded-md h-11 bg-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-gray-400"
@@ -97,14 +97,14 @@ export default function Login() {
               </svg>
               <input
                 id="email"
-                className=" pl-4 w-full outline-none border-none text-lg bg-inherit"
+                className=" pl-4 w-full outline-none border-none text-md bg-inherit"
                 type="email"
                 name="email"
                 placeholder="Email Address"
                 onChange={(e) => input.setEmail(e.target.value)}
               />
             </div>
-            <div className="flex items-center border py-2 px-4 rounded-md h-12 bg-white">
+            <div className="flex items-center border py-2 px-4 rounded-md h-11 bg-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-gray-400"
@@ -118,7 +118,7 @@ export default function Login() {
                 />
               </svg>
               <input
-                className="pl-4 w-full outline-none border-none text-lg bg-inherit"
+                className="pl-4 w-full outline-none border-none text-md bg-inherit"
                 type="password"
                 name="password"
                 id="password"
@@ -132,11 +132,11 @@ export default function Login() {
               <button
                 onClick={handleLogin}
                 type="button"
-                className="w-3/5 py-2 px-4 rounded-full h-12 focus:outline-none text-white bg-green-700 hover:bg-green-800"
+                className="w-3/5 py-2 px-3.5 rounded-full h-11 focus:outline-none text-white bg-green-700 hover:bg-green-800"
               >
                 Login
               </button>
-              <div id="register" className="text-md mt-4">
+              <div id="register" className="text-sm mt-4">
                 Don't have an account?{" "}
                 <span
                   onClick={() => {

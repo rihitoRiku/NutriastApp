@@ -20,9 +20,9 @@ const dailyNutritionContent = (
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5.917 5.724 10.5 15 1.5"
           />
         </svg>
@@ -40,9 +40,9 @@ const dailyNutritionContent = (
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5.917 5.724 10.5 15 1.5"
           />
         </svg>
@@ -61,9 +61,9 @@ const dailyNutritionContent = (
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5.917 5.724 10.5 15 1.5"
           />
         </svg>
@@ -82,9 +82,9 @@ const dailyNutritionContent = (
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5.917 5.724 10.5 15 1.5"
           />
         </svg>
@@ -103,9 +103,9 @@ const dailyNutritionContent = (
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5.917 5.724 10.5 15 1.5"
           />
         </svg>
@@ -140,9 +140,9 @@ const healthStatusContent = (
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>
@@ -172,9 +172,9 @@ const riskContent = (
         >
           <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>
@@ -192,7 +192,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Navbar title="Dashboard" />
-      <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8">
+      <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8 scale-95">
         <div id="avatar" className="flex items-center justify-between ">
           <Link href="a/profile">
             <div className="flex items-center space-x-4">
@@ -221,9 +221,9 @@ export default function Page({ params }: { params: { slug: string } }) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="#000000"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path d="M16 17l5-5-5-5M19.8 12H9M13 22a10 10 0 1 1 0-20" />
               </svg>
