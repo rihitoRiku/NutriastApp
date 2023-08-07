@@ -41,7 +41,7 @@ export default function Login() {
             // Assuming the server sends the token in the 'token' property of the response
             const token = response.data.data.authentication_token;
             create(token);
-            // router.push(`/home/${response.data.data.userId}`);
+            router.push(`/home/${response.data.data.userId}`);
             // Set the token as a cookie
             // document.cookie = `token=${token}; path=/;`;
           }
