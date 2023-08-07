@@ -202,20 +202,20 @@ export default function Page() {
                 <FoodCard />
                 {consumedFoods.map((food: FoodItem, index: number) => (
                   <li className="pb-3 sm:pb-4">
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center">
                       <div className="flex-1 min-w-0">
                         <p className="text-md font-medium text-gray-900 truncate">
                           {food.nama}
                         </p>
-                        <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                          Protein: {food.protein * food.quantity}, Energi:{" "}
-                          {food.energi * food.quantity}, Karbohidrat:{" "}
-                          {food.karbohidrat * food.quantity * food.quantity},
-                          Lemak: {food.lemak * food.quantity}, Serat:{" "}
-                          {food.serat * food.quantity}
-                        </p>
+                        <div className="text-sm text-gray-500 truncate dark:text-gray-400 flex flex-wrap gap-x-3 mt-2">
+                          <div className="">Protein: {food.protein * food.quantity}</div>
+                          <div className="">Energi:{food.energi * food.quantity}</div>
+                          <div className="">Karbohidrat:{food.karbohidrat * food.quantity}</div>
+                          <div className="">Lemak: {food.lemak * food.quantity}</div>
+                          <div className="">Serat:{food.serat * food.quantity}</div>
+                        </div>
                       </div>
-                      <div className="">
+                      <div className="ms-4">
                         <input
                           type="number"
                           min="1"
@@ -236,9 +236,9 @@ export default function Page() {
                         />
                       </div>
 
-                      {/* <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                    Sip
-                  </div> */}
+                      <div className="inline-flex items-center text-base font-normal text-gray-900 ms-2 me-6">
+                        x100 grams
+                      </div>
                       <div className="cursor-pointer">
                         <svg
                           onClick={() => removeFoodFromConsumedList(food.nama)}
