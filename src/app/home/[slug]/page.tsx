@@ -1,13 +1,19 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Card from "../../components/card/card";
 import Navbar from "../../navbar";
 import appLogo from "/public/next.svg";
-import { cookies } from "next/dist/client/components/headers";
-import Cookies from 'js-cookie';
-const dailyNutritionContent = (
+import useSWR from "swr";
+import Cookies from "js-cookie";
+import toast from "react-hot-toast";
+import axios from "axios";
+import fetcherWithToken from "@/app/actions/GetWithToken";
+import create from "@/app/actions/DeleteCookies";
+import Router from "next/router";
+import LoaderComponent from "../../components/loader/loader";
+const dailyNutritionContent = (data: object[]) => (
   <>
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
       <li className="flex items-center space-x-3">
@@ -27,7 +33,7 @@ const dailyNutritionContent = (
           />
         </svg>
         <span>
-          Fat : <span className="font-semibold text-gray-600">undefinied</span>
+          Fat : <span className="font-semibold text-gray-600">{data.data.fatneed}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -48,7 +54,7 @@ const dailyNutritionContent = (
         </svg>
         <span>
           Calory :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          <span className="font-semibold text-gray-600">{data.data.caloryneed}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -69,7 +75,7 @@ const dailyNutritionContent = (
         </svg>
         <span>
           Fiber :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          <span className="font-semibold text-gray-600">{data.data.fiberneed}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -90,7 +96,7 @@ const dailyNutritionContent = (
         </svg>
         <span>
           Carbohidrate :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          <span className="font-semibold text-gray-600">{data.data.carbohidrateneed}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -111,7 +117,7 @@ const dailyNutritionContent = (
         </svg>
         <span>
           Protein :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          <span className="font-semibold text-gray-600">{data.data.proteinneed}</span>
         </span>
       </li>
     </ul>
@@ -184,17 +190,29 @@ const riskContent = (
 );
 
 export default function Page({ params }: { params: { slug: string } }) {
-  useEffect(() => {
-    // Get the value of the "Login_Token" cookie
-    const loginTokenCookie = Cookies.get('Login Token');
-    console.log('Login_Token Cookie Value:', loginTokenCookie);
-  }, []);
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+  const BASE_URL = "http://localhost:5000";
+  const loginTokenCookie = Cookies.get("Login Token");
+  const { data, error } = useSWR(`${BASE_URL}/users/${params.slug}`, async () => await
+    fetcherWithToken(`${BASE_URL}/users/${params.slug}`, loginTokenCookie)
+  );
+  if (error) {
+    toast.error("Error Fetching Data" + error);
+  }
+  const handleLogOut = () => {
+    setLoading(true);
+    create("Login Token");
+    toast.success('Log Out Successfully');
+    router.push('/login');
+    setLoading(false);
+  };
   return (
     <>
       <Navbar title="Dashboard" />
       <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8 scale-95">
         <div id="avatar" className="flex items-center justify-between ">
-          <Link href="a/profile">
+          <Link href={`a=${params.slug}/profile`}>
             <div className="flex items-center space-x-4">
               <img
                 className="w-14 h-14 rounded-full border-2"
@@ -203,7 +221,7 @@ export default function Page({ params }: { params: { slug: string } }) {
               />
               <div className="font-medium">
                 <div className="text-md text-gray-500">Good afternoon,</div>
-                <div className="text-xl">Rihito</div>
+                {/* <div className="text-xl">{data.data.username}</div> */}
               </div>
             </div>
           </Link>
@@ -212,6 +230,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             <button
               type="button"
               className="inline-flex items-center hover:text-white border border-green-700 hover:bg-green-800 font-semibold rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              onClick={handleLogOut}
             >
               <span className="me-2"> Logout </span>
               <svg
@@ -235,7 +254,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             <div className="text-body text-xl font-semibold text-gray-500 mb-4">
               Your Daily Nutrition Needs
             </div>
-            <Card title="" content={dailyNutritionContent} />
+            {/* <Card title="" content={dailyNutritionContent(data)} /> */}
           </div>
           <div className="w-full flex flex-col lg:flex-row gap-8">
             <div className="flex-1 ">
