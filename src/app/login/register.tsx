@@ -6,6 +6,7 @@ import useInputRegisterStore from "@/hooks/useInputRegister";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import LoaderComponent from "../components/loader/loader";
 // import { cookies } from 'next/headers';
 interface modalProps {
   active: string;
@@ -15,7 +16,9 @@ interface modalProps {
 export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
   const router = useRouter();
   const input = useInputRegisterStore();
+  const [loading, setLoading] = useState(false);
   const handleRegister = async () => {
+    setLoading(true);
     const newRegister = {
       email: input.email,
       password: input.password,
@@ -24,28 +27,41 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
       gender: input.gender,
       height: input.height,
       weight: input.weight,
-    }
-    try{
+    };
+    try {
       // console.log(newRegister);
-      axios.post('http://localhost:5000/register', newRegister).then((response) => {
-        // console.log(response);
-        // localStorage.setItem('user', JSON.stringify(response.data.data.username));
-        if (response.data.status === "400") {
-          toast.error(response.data.message);
-        }
-        toast.success('Registration successfully');
-        closeModal();
-      }).catch((err) => (toast.error(err.message)));
-
-    }catch(err){
+      axios
+        .post("http://localhost:5000/register", newRegister)
+        .then((response) => {
+          // console.log(response);
+          // localStorage.setItem('user', JSON.stringify(response.data.data.username));
+          if (response.data.code === 400) {
+            toast.error(response.data.message);
+          } else {
+            toast.success("Registration successfully");
+            closeModal();
+          }
+        })
+        .catch((err) => toast.error(err.message));
+    } catch (err) {
       console.log(err);
     }
-  }
+    setLoading(false);
+  };
   useEffect(() => {
-    <></>
+    <></>;
   }, []);
   return (
     <>
+      {loading ? (
+        <>
+          <div className="z-30 flex justify-center items-center fixed top-0 w-screen h-screen bg-slate-700 opacity-20">
+            <LoaderComponent />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
       <div id="global-container" className="flex justify-center items-center">
         <div
           id="thecontainer"
@@ -235,11 +251,12 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     onChange={(e) => input.setGender(e.target.value)}
                     className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                   >
-                    <option value="" selected disabled>Choose gender</option>
+                    <option value="" selected disabled>
+                      Choose gender
+                    </option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                   </select>
-            
                 </div>
               </div>
               <div className="mb-2">
@@ -326,7 +343,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
               </div>
               <div className="flex justify-end lg:justify-center lg:items-center">
                 <button
-                onClick={handleRegister}
+                  onClick={handleRegister}
                   type="button"
                   className="rounded-xl h-11 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800 text-lg font-medium mb-6"
                 >
