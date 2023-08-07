@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import jsonData from "./../../../../DataMakananTKPI.json";
 import FoodCard from "@/app/components/foodcard/foodcard";
 
@@ -60,16 +61,29 @@ export default function Page() {
   };
 
   const addFoodToConsumedList = (foodName: string) => {
-    // Dapatkan data makanan berdasarkan nama makanan
-    const foodData = getFoodData(foodName);
+    // Check if the food with the given name already exists in the consumedFoods list
+    const existingFood = consumedFoods.find((food) => food.nama === foodName);
 
-    if (foodData) {
-      // Buat objek makanan baru dengan nama makanan dan jumlah default 1
-      const { nama, ...rest } = foodData; // Destructure properti 'nama'
-      const newFood: FoodItem = { nama: foodName, quantity: 1, ...rest }; // Rekonstruksi objek dengan properti 'nama'
-      setConsumedFoods((prevFoods) => [...prevFoods, newFood]);
+    if (existingFood) {
+      // If the food already exists, update its quantity by increasing it by 1
+      setConsumedFoods((prevFoods) =>
+        prevFoods.map((food) =>
+          food.nama === foodName
+            ? { ...food, quantity: food.quantity + 1 }
+            : food
+        )
+      );
     } else {
-      console.error(`Makanan dengan nama '${foodName}' tidak ditemukan.`);
+      // If the food does not exist, get its data and add it as a new item with quantity 1
+      const foodData = getFoodData(foodName);
+
+      if (foodData) {
+        const { nama, ...rest } = foodData;
+        const newFood: FoodItem = { nama: foodName, quantity: 1, ...rest };
+        setConsumedFoods((prevFoods) => [...prevFoods, newFood]);
+      } else {
+        console.error(`Makanan dengan nama '${foodName}' tidak ditemukan.`);
+      }
     }
   };
 
@@ -84,6 +98,27 @@ export default function Page() {
     // Implementasi placeholder - ganti dengan logika pengambilan data sebenarnya
     // Cari dan kembalikan data makanan berdasarkan nama makanan dari array jsonData
     return jsonData.find((item: FoodData) => item.nama === foodName);
+  };
+
+  // HANDLE BUTTON SEND CHECKOUT
+  const handleCheckout = async () => {
+
+    const data = JSON.stringify(consumedFoods);  // Convert the data to a JSON string
+    console.log(data);
+
+    // const url = '/path/endpoint';  // Replace with your endpoint
+    // const headers = {
+    //   'Content-Type': 'application/json',
+    // };
+    // const data = JSON.stringify(consumedFoods);  // Convert the data to a JSON string
+  
+    // try {
+    //   const response = await axios.post(url, data, { headers });
+    //   console.log(response.data);  // If the server returns JSON, you can access the data using response.data
+    //   // Do something with the returned data
+    // } catch (error) {
+    //   console.error('There was a problem with the Axios request:', error);
+    // }
   };
 
   // ONCLICK BACK
@@ -107,9 +142,9 @@ export default function Page() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path d="M15 18l-6-6 6-6" />
             </svg>
@@ -117,13 +152,13 @@ export default function Page() {
           </button>
         </div>
       </Link>
-      <div className="px-4 min-h-screen gap-4 grid grid-rows-3 grid-flow-row scale-95">
-        <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2 row-start-1 self-end">
+      <div className="px-4 h-[22em] gap-4 flex flex-col scale-95 mt-40">
+        <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2">
           How's Your Food Today?
         </div>
         {/* Search Bar */}
         <div id="search" className="w-full max-w-3xl mx-auto row-start-2">
-          <form className="flex items-center">
+          <div className="flex items-center">
             <label htmlFor="simple-search" className="sr-only">
               Search
             </label>
@@ -163,7 +198,7 @@ export default function Page() {
                 required
               />
             </div>
-          </form>
+          </div>
           <div
             className={`max-h-56 border-2 rounded-lg overflow-scroll ${
               searchTerm ? "" : "hidden"
@@ -192,85 +227,137 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="row-start-3 w-full max-w-2xl mx-auto h-min max-h-96 overflow-scroll">
-          <div className="text-2xl font-semibold text-center mb-6 text-slate-700">
+      </div>
+      <div className="px-4 flex flex-col scale-95 mt-8 md:mt-14 w-full">
+        <form className="">
+          <div className="text-2xl font-semibold text-center text-slate-700 mb-6">
             List Foods & Drinks Consumed
+          </div>
+          <div
+            className={`w-full max-w-2xl mx-auto ${
+              consumedFoods.length ? "h-96" : ""
+            } overflow-scroll`}
+          >
+            {consumedFoods.length ? (
+              <>
+                <ul className="w-full divide-y divide-gray-200 dark:divide-gray-700">
+                  <FoodCard />
+                  {consumedFoods.map((food: FoodItem, index: number) => (
+                    <li className="pb-3 sm:pb-4" key={food.nama + index}>
+                      <div className="flex items-center">
+                        <div className="flex-1 min-w-0">
+                          <p className="text-md font-medium text-gray-900 truncate">
+                            {food.nama}
+                          </p>
+                          <div className="text-sm text-gray-500 truncate dark:text-gray-400 flex flex-wrap gap-x-3 mt-2">
+                            <div className="">
+                              Protein:{" "}
+                              {(food.protein * food.quantity).toFixed(4)}
+                            </div>
+                            <div className="">
+                              Energi: {(food.energi * food.quantity).toFixed(4)}
+                            </div>
+                            <div className="">
+                              Karbohidrat:{" "}
+                              {(food.karbohidrat * food.quantity).toFixed(4)}
+                            </div>
+                            <div className="">
+                              Lemak: {(food.lemak * food.quantity).toFixed(4)}
+                            </div>
+                            <div className="">
+                              Serat: {(food.serat * food.quantity).toFixed(4)}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="ms-4">
+                          <input
+                            type="number"
+                            min="1"
+                            value={food.quantity}
+                            onChange={(e) =>
+                              setConsumedFoods((prevFoods) =>
+                                prevFoods.map((prevFood, idx) =>
+                                  idx === index
+                                    ? {
+                                        ...prevFood,
+                                        quantity: parseInt(e.target.value),
+                                      }
+                                    : prevFood
+                                )
+                              )
+                            }
+                            className="w-16 py-1 px-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                          />
+                        </div>
+
+                        <div className="inline-flex items-center text-base font-normal text-gray-900 ms-2 me-6">
+                          x100 grams
+                        </div>
+                        <div className="cursor-pointer">
+                          <svg
+                            onClick={() =>
+                              removeFoodFromConsumedList(food.nama)
+                            }
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#000000"
+                            strokeWidth="1"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                            <line x1="10" y1="11" x2="10" y2="17"></line>
+                            <line x1="14" y1="11" x2="14" y2="17"></line>
+                          </svg>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <>
+                <div className="text-lg text-center text-slate-500">
+                  No food consumed, Huh?
+                </div>
+              </>
+            )}
           </div>
           {consumedFoods.length ? (
             <>
-              <ul className="w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <FoodCard />
-                {consumedFoods.map((food: FoodItem, index: number) => (
-                  <li className="pb-3 sm:pb-4">
-                    <div className="flex items-center">
-                      <div className="flex-1 min-w-0">
-                        <p className="text-md font-medium text-gray-900 truncate">
-                          {food.nama}
-                        </p>
-                        <div className="text-sm text-gray-500 truncate dark:text-gray-400 flex flex-wrap gap-x-3 mt-2">
-                          <div className="">Protein: {food.protein * food.quantity}</div>
-                          <div className="">Energi:{food.energi * food.quantity}</div>
-                          <div className="">Karbohidrat:{food.karbohidrat * food.quantity}</div>
-                          <div className="">Lemak: {food.lemak * food.quantity}</div>
-                          <div className="">Serat:{food.serat * food.quantity}</div>
-                        </div>
-                      </div>
-                      <div className="ms-4">
-                        <input
-                          type="number"
-                          min="1"
-                          value={food.quantity}
-                          onChange={(e) =>
-                            setConsumedFoods((prevFoods) =>
-                              prevFoods.map((prevFood, idx) =>
-                                idx === index
-                                  ? {
-                                      ...prevFood,
-                                      quantity: parseInt(e.target.value),
-                                    }
-                                  : prevFood
-                              )
-                            )
-                          }
-                          className="w-16 py-1 px-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
-                        />
-                      </div>
-
-                      <div className="inline-flex items-center text-base font-normal text-gray-900 ms-2 me-6">
-                        x100 grams
-                      </div>
-                      <div className="cursor-pointer">
-                        <svg
-                          onClick={() => removeFoodFromConsumedList(food.nama)}
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25"
-                          height="25"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="#000000"
-                          strokeWidth="1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <polyline points="3 6 5 6 21 6"></polyline>
-                          <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                          <line x1="10" y1="11" x2="10" y2="17"></line>
-                          <line x1="14" y1="11" x2="14" y2="17"></line>
-                        </svg>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </>
-          ) : (
-            <>
-              <div className="text-lg text-center text-slate-500">
-                No food consumed, Huh?
+              <div className="flex justify-center items-center w-full mt-6 mb-12">
+                <button
+                  type="button"
+                  onClick={handleCheckout}
+                  className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center"
+                >
+                  Checkout
+                  <svg
+                    className="w-3.5 h-3.5 ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </button>
               </div>
             </>
+          ) : (
+            <></>
           )}
-        </div>
+        </form>
       </div>
     </>
   );
