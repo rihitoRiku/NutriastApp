@@ -12,7 +12,7 @@ const create = async (data: string) => {
 
   // Note: The following console.log won't display the cookie in the response,
   // since cookies are part of the response headers and not accessible here.
-  console.log(cookies().get('Login Token'));
+  // console.log(cookies().get('Login Token'));
 };
 
 export default create;
