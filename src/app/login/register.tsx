@@ -6,6 +6,7 @@ import useInputRegisterStore from "@/hooks/useInputRegister";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import LoaderComponent from "../components/loader/loader";
 // import { cookies } from 'next/headers';
 interface modalProps {
   active: string;
@@ -15,7 +16,9 @@ interface modalProps {
 export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
   const router = useRouter();
   const input = useInputRegisterStore();
+  const [loading, setLoading] = useState(false);
   const handleRegister = async () => {
+    setLoading(true);
     const newRegister = {
       email: input.email,
       password: input.password,
@@ -24,32 +27,45 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
       gender: input.gender,
       height: input.height,
       weight: input.weight,
-    }
-    try{
+    };
+    try {
       // console.log(newRegister);
-      axios.post('http://localhost:5000/register', newRegister).then((response) => {
-        // console.log(response);
-        // localStorage.setItem('user', JSON.stringify(response.data.data.username));
-        if (response.data.status === "400") {
-          toast.error(response.data.message);
-        }
-        toast.success('Registration successfully');
-        closeModal();
-      }).catch((err) => (toast.error(err.message)));
-
-    }catch(err){
+      axios
+        .post("http://localhost:5000/register", newRegister)
+        .then((response) => {
+          // console.log(response);
+          // localStorage.setItem('user', JSON.stringify(response.data.data.username));
+          if (response.data.code === 400) {
+            toast.error(response.data.message);
+          } else {
+            toast.success("Registration successfully");
+            closeModal();
+          }
+        })
+        .catch((err) => toast.error(err.message));
+    } catch (err) {
       console.log(err);
     }
-  }
+    setLoading(false);
+  };
   useEffect(() => {
-    <></>
+    <></>;
   }, []);
   return (
     <>
+      {loading ? (
+        <>
+          <div className="z-30 flex justify-center items-center fixed top-0 w-screen h-screen bg-slate-700 opacity-20">
+            <LoaderComponent />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
       <div id="global-container" className="flex justify-center items-center">
         <div
           id="thecontainer"
-          className="z-10 flex flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 max-w-2xl  rounded-xl border bg-white py-4 px-4 lg:py-6 lg:px-8 h-5/6 overflow-auto"
+          className="z-10 flex flex-col fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5/6 max-w-xl rounded-xl border bg-white py-4 px-4 lg:px-6 lg:py-6 h-5/6 overflow-auto"
         >
           <button
             className="absolute right-0 top-0 mt-2 me-2 w-max justify-self-end"
@@ -57,7 +73,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
           >
             <GrClose className="text-3xl text-green-100" />
           </button>
-          <h1 className="text-2xl lg:text-3xl lg:text-center font-semibold mb-8 mt-8">
+          <h1 className="text-2xl lg:text-2xl lg:text-center font-semibold mb-6 mt-6 text-gray-900">
             Create New Account
           </h1>
           <div className="">
@@ -69,11 +85,11 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                 >
                   Full Name
                 </label>
-                <div className="flex items-center border py-2 px-3 rounded-md h-12 bg-white">
+                <div className="flex items-center border py-2 px-3 rounded-md h-11 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="22"
+                    height="22"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
@@ -88,7 +104,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     type="text"
                     placeholder="input your name here"
                     id="fullname"
-                    className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                     onChange={(e) => input.setFullname(e.target.value)}
                   />
                 </div>
@@ -100,11 +116,11 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                 >
                   Email Address
                 </label>
-                <div className="flex items-center border py-2 px-3 rounded-md h-12 bg-white">
+                <div className="flex items-center border py-2 px-3 rounded-md h-11 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="22"
+                    height="22"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
@@ -119,23 +135,23 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     type="email"
                     placeholder="example@gmail.com"
                     id="fullname"
-                    className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                     onChange={(e) => input.setEmail(e.target.value)}
                   />
                 </div>
               </div>
-              <div className="mb-6">
+              <div className="mb-8">
                 <label
                   htmlFor="password"
                   className="block mb-2 ms-1 text-md font-medium text-gray-900"
                 >
                   Password
                 </label>
-                <div className="flex items-center border py-2 px-3 rounded-md h-12 bg-white">
+                <div className="flex items-center border py-2 px-3 rounded-md h-11 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="22"
+                    height="22"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
@@ -157,7 +173,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     type="password"
                     placeholder="(min.8 words)"
                     id="password"
-                    className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                     onChange={(e) => input.setPassword(e.target.value)}
                   />
                 </div>
@@ -170,11 +186,11 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                 >
                   Date of Birth
                 </label>
-                <div className="flex items-center border py-2 px-3 rounded-md h-12 bg-white">
+                <div className="flex items-center border py-2 px-3 rounded-md h-11 bg-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="22"
+                    height="22"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
@@ -198,7 +214,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     type="date"
                     placeholder="dd-mm-yy"
                     id="birthdate"
-                    className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                     onChange={(e) => input.setBirthDate(e.target.value)}
                   />
                 </div>
@@ -210,11 +226,11 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                 >
                   Gender
                 </label>
-                <div className="flex items-center border py-2 px-3 rounded-md h-12 bg-white">
+                <div className="flex items-center border py-2 px-3 rounded-md h-11 bg-white">
                   <svg
                     fill="#000000"
-                    width="24px"
-                    height="24px"
+                    width="22px"
+                    height="22px"
                     viewBox="0 0 256 256"
                     id="Flat"
                     xmlns="http://www.w3.org/2000/svg"
@@ -233,13 +249,14 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                   <select
                     id="gender"
                     onChange={(e) => input.setGender(e.target.value)}
-                    className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                   >
-                    <option value="" selected disabled>Choose gender</option>
+                    <option value="" selected disabled>
+                      Choose gender
+                    </option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                   </select>
-            
                 </div>
               </div>
               <div className="mb-2">
@@ -249,10 +266,10 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                 >
                   Height
                 </label>
-                <div className="flex items-center border py-2 px-3 rounded-md h-12 bg-white">
+                <div className="flex items-center border py-2 px-3 rounded-md h-11 bg-white">
                   <svg
-                    width="24px"
-                    height="24px"
+                    width="22px"
+                    height="22px"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -278,22 +295,22 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     type="number"
                     placeholder="input your height"
                     id="height"
-                    className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                     onChange={(e) => input.setHeight(parseInt(e.target.value))}
                   />
                 </div>
               </div>
-              <div className="mb-12">
+              <div className="mb-8">
                 <label
                   htmlFor="weight"
                   className="block mb-2 ms-1 text-md font-medium text-gray-900"
                 >
                   Weight
                 </label>
-                <div className="flex items-center border py-2 px-3 rounded-md h-12 bg-white">
+                <div className="flex items-center border py-2 px-3 rounded-md h-11 bg-white">
                   <svg
-                    width="24px"
-                    height="24px"
+                    width="22px"
+                    height="22px"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -319,16 +336,16 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
                     type="number"
                     placeholder="input your weight"
                     id="weight"
-                    className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
+                    className="pl-4 w-full outline-none text-md bg-inherit rounded-md h-10"
                     onChange={(e) => input.setWeight(parseInt(e.target.value))}
                   />
                 </div>
               </div>
               <div className="flex justify-end lg:justify-center lg:items-center">
                 <button
-                onClick={handleRegister}
+                  onClick={handleRegister}
                   type="button"
-                  className="rounded-xl h-12 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800 text-lg font-medium mb-6"
+                  className="rounded-xl h-11 w-3/5 focus:outline-none text-white bg-green-700 hover:bg-green-800 text-lg font-medium mb-6"
                 >
                   Register
                 </button>
