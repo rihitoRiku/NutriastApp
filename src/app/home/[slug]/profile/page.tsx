@@ -121,10 +121,11 @@ const profileContent = (
 );
 
 export default function Page({ params }: { params: { slug: string } }) {
+  console.log(params.slug);
   return (
     <>
       <Navbar title="Profile" />
-      <Link href="/home/a">
+      <Link href={`/home/${params.slug}`}>
         <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-12 w-full max-w-2xl">
           <button
             type="button"
