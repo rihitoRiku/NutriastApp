@@ -102,8 +102,7 @@ export default function Page() {
 
   // HANDLE BUTTON SEND CHECKOUT
   const handleCheckout = async () => {
-
-    const data = JSON.stringify(consumedFoods);  // Convert the data to a JSON string
+    const data = JSON.stringify(consumedFoods); // Convert the data to a JSON string
     console.log(data);
 
     // const url = '/path/endpoint';  // Replace with your endpoint
@@ -111,7 +110,7 @@ export default function Page() {
     //   'Content-Type': 'application/json',
     // };
     // const data = JSON.stringify(consumedFoods);  // Convert the data to a JSON string
-  
+
     // try {
     //   const response = await axios.post(url, data, { headers });
     //   console.log(response.data);  // If the server returns JSON, you can access the data using response.data
@@ -129,7 +128,7 @@ export default function Page() {
 
   return (
     <>
-      <Link href="/home/a">
+      <div onClick={() => router.back()}>
         <div className="z-30 ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl">
           <button
             type="button"
@@ -151,7 +150,7 @@ export default function Page() {
             <span className="">Back</span>
           </button>
         </div>
-      </Link>
+      </div>
       <div className="px-4 h-[22em] gap-4 flex flex-col scale-95 mt-40">
         <div className="text-2xl lg:text-3xl font-semibold text-slate-700 text-center mb-2">
           How's Your Food Today?
@@ -214,13 +213,12 @@ export default function Page() {
               >
                 {suggestions.map((item: FoodItem) => (
                   <li key={item.nama}>
-                    <a
-                      href="#"
+                    <div
                       className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       onClick={() => addFoodToConsumedList(item.nama)}
                     >
                       {item.nama}
-                    </a>
+                    </div>
                   </li>
                 ))}
               </ul>
