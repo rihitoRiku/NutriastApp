@@ -149,7 +149,6 @@ export default function Page({ params }: { params: { slug: string } }) {
         </div>
       </Link>
 
-      {/* Rest of your ProfilePage component */}
       <div className="flex justify-center items-center sm:items-start flex-col sm:flex-row px-4 gap-16 mb-16 scale-95">
         <div className="max-w-[20em] h-full block sm:max-w-xs">
           <div className="flex flex-col items-center mb-3  w-max">
