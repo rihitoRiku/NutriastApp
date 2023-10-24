@@ -16,7 +16,7 @@ import LoaderComponent from "../../components/loader/loader";
 
 interface DataProps {
   data: {
-    username: "",
+    username: '',
     proteinneed: 0.0,
     fatneed: 0.0,
     carbohidrateneed: 0.0,
@@ -25,7 +25,7 @@ interface DataProps {
   }
 }
 
-const dailyNutritionContent: FC<DataProps> = ({ data }) => (
+const DailyNutritionContent: FC<DataProps> = ({ data }) => (
   <>
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
       <li className="flex items-center space-x-3">
@@ -148,14 +148,14 @@ const dailyNutritionContent: FC<DataProps> = ({ data }) => (
   </>
 );
 
-const healthStatusContent = (
+const HealthStatusContent = ({ slug }: { slug: string }) => (
   <>
     <div className="text-md break-words w-full mb-6">
       Great job on meeting your daily nutrition needs! Keep up the good work and
       continue to prioritize a balanced and healthy diet. Remember to listen to
       your body and make adjustments as necessary to maintain optimal health
     </div>
-    <Link href="a/intake">
+    <Link href={`/home/${slug}/intake`}>
       <button
         type="button"
         className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center"
@@ -181,13 +181,13 @@ const healthStatusContent = (
   </>
 );
 
-const riskContent = (
+const RiskContent = ({ slug }: { slug: string }) => (
   <>
     <div className="text-md mb-6">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
       delectus voluptas corrupti fugiat unde, labore non officia dignissimos.
     </div>
-    <Link href="a/predict">
+    <Link href={`/home/${slug}/predict`}>
       <button
         type="button"
         className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
@@ -217,7 +217,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  const [data, setData] = useState({
+  const [data, setData] = useState<DataProps>({
     data: {
       username: "",
       proteinneed: 0.0,
@@ -308,20 +308,20 @@ export default function Page({ params }: { params: { slug: string } }) {
             <div className="text-body text-xl font-semibold text-gray-500 mb-4">
               Your Daily Nutrition Needs
             </div>
-            <Card title="" content={dailyNutritionContent(data)} />
+            <Card title="" content={DailyNutritionContent(data)} />
           </div>
           <div className="w-full flex flex-col lg:flex-row gap-8">
             <div className="flex-1 ">
               <div className="text-body text-xl font-semibold text-gray-500 mb-4">
                 Health Status
               </div>
-              <Card title="Good" content={healthStatusContent} />
+              <Card title="Good" content={<HealthStatusContent slug={params.slug} />} />
             </div>
             <div className="flex-1 ">
               <div className="text-body text-xl font-semibold text-gray-500 mb-4">
                 Cardiovascular Risk
               </div>
-              <Card title="Aware" content={riskContent} />
+              <Card title="Aware" content={<RiskContent slug={params.slug} />} />
             </div>
           </div>
         </div>
