@@ -9182,5 +9182,13 @@
     "lemak": 0.1,
     "karbohidrat": 3.8,
     "serat": 0.0
+  },
+  {
+    "nama": "Mie Gacoan",
+    "energi": 17,
+    "protein": 0.2,
+    "lemak": 0.1,
+    "karbohidrat": 3.8,
+    "serat": 0.0
   }
 ]

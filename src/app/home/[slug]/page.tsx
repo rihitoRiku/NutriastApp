@@ -228,28 +228,16 @@ export default function Page({ params }: { params: { slug: string } }) {
     },
   });
   const [error, setError] = useState(null);
-  const BASE_URL = "http://localhost:5000";
 
   useEffect(() => {
-    const loginTokenCookie = Cookies.get("Login Token");
-
-    const userId = params.slug;
-
-    // Make an Axios GET request with the token
     axios
-      .get(`${BASE_URL}/users/${params.slug}`, {
-        headers: {
-          Authorization: `Bearer ${loginTokenCookie}`,
-        },
-      })
+      .get(`http://localhost:5000/users/${params.slug}`, { withCredentials: true })
       .then((response) => {
         setData(response.data);
-        console.log(response.data); // Log the data here
       })
       .catch((err) => {
         setError(err);
         toast.error("Error Fetching Data: " + err.message);
-
       });
   }, [params.slug]);
 
