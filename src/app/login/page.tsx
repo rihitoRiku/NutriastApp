@@ -30,20 +30,18 @@ export default function Login() {
 
     try {
       await axios
-        .post("http://localhost:5000/login", login)
+        .post("http://localhost:5000/login", login, { withCredentials: true })
         .then((response) => {
-
           if (response.data.code === 400) {
             toast.error(response.data.message);
           } else {
             toast.success(`Hello ${response.data.data.username}`);
-            
+
             // Assuming the server sends the token in the 'token' property of the response
             const token = response.data.data.authentication_token;
             create(token);
+            // console.log(response.data.data)
             router.push(`/home/${response.data.data.userId}`);
-            // Set the token as a cookie
-            // document.cookie = `token=${token}; path=/;`;
           }
         })
         .catch((error) => {
@@ -97,7 +95,7 @@ export default function Login() {
               </svg>
               <input
                 id="email"
-                className=" pl-4 w-full outline-none border-none text-md bg-inherit"
+                className=" pl-4 w-full outline-none border-none text-md"
                 type="email"
                 name="email"
                 placeholder="Email Address"
@@ -118,7 +116,7 @@ export default function Login() {
                 />
               </svg>
               <input
-                className="pl-4 w-full outline-none border-none text-md bg-inherit"
+                className="pl-4 w-full outline-none border-none text-md"
                 type="password"
                 name="password"
                 id="password"
