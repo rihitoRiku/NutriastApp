@@ -63,7 +63,7 @@ const ProfileContent: FC<cachedData> = ({ data }) => (
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
         <span>
-          Age : <span className="font-semibold text-gray-600">undefinied</span>
+          Age : <span className="font-semibold text-gray-600">{data.age}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -93,7 +93,7 @@ const ProfileContent: FC<cachedData> = ({ data }) => (
         </svg>
         <span>
           Weight :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          <span className="font-semibold text-gray-600">{data.weight}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -123,7 +123,7 @@ const ProfileContent: FC<cachedData> = ({ data }) => (
         </svg>
         <span>
           Height :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          <span className="font-semibold text-gray-600">{data.height}</span>
         </span>
       </li>
     </ul>

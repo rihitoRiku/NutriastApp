@@ -101,23 +101,49 @@ export default function Page() {
   };
 
   // HANDLE BUTTON SEND CHECKOUT
+
   const handleCheckout = async () => {
+    // Calculate the total accumulated values
+    const totalValues = {
+      totalCalory: 0,
+      totalProtein: 0,
+      totalFat: 0,
+      totalCarbohidrate: 0,
+      totalFiber: 0,
+    };
+
+    const updatedConsumedFoods = consumedFoods.map((food) => {
+      const { quantity, energi, protein, lemak, karbohidrat, serat } = food;
+      const updatedFood = {
+        ...food,
+        quantity: food.quantity * quantity, // Update the quantity to reflect the total quantity
+      };
+      totalValues.totalCalory += energi * updatedFood.quantity;
+      totalValues.totalProtein += protein * updatedFood.quantity;
+      totalValues.totalFat += lemak * updatedFood.quantity;
+      totalValues.totalCarbohidrate += karbohidrat * updatedFood.quantity;
+      totalValues.totalFiber += serat * updatedFood.quantity;
+      return updatedFood;
+    });
+
+    // Convert the data to a JSON string
+
+    const url = `http://localhost:5000/intakeusers/`; // Replace with your endpoint
+    const headers = {
+      "Content-Type": "application/json",
+      withCredentials: true,
+    };
+
     const data = JSON.stringify(consumedFoods); // Convert the data to a JSON string
-    console.log(data);
 
-    // const url = '/path/endpoint';  // Replace with your endpoint
-    // const headers = {
-    //   'Content-Type': 'application/json',
-    // };
-    // const data = JSON.stringify(consumedFoods);  // Convert the data to a JSON string
-
-    // try {
-    //   const response = await axios.post(url, data, { headers });
-    //   console.log(response.data);  // If the server returns JSON, you can access the data using response.data
-    //   // Do something with the returned data
-    // } catch (error) {
-    //   console.error('There was a problem with the Axios request:', error);
-    // }
+    console.log(totalValues);
+    try {
+      const response = await axios.post(url, totalValues, headers );
+      console.log(response.data); // If the server returns JSON, you can access the data using response.data
+      // Do something with the returned data
+    } catch (error) {
+      console.error("There was a problem with the Axios request:", error);
+    }
   };
 
   // ONCLICK BACK

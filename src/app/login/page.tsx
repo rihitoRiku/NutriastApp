@@ -4,20 +4,20 @@ import { useRouter } from "next/navigation";
 import axios from "axios";
 import toast from "react-hot-toast";
 import Image from "next/image";
-import Link from "next/link";
 
 import appLogo from "/public/assets/image/nutriast_logo.png";
 import { Register } from "./register";
 import useInputLoginStore from "@/hooks/useInputLogin";
+import useUserData from "@/hooks/store";
 import LoaderComponent from "../components/loader/loader";
 import create from "../actions/LoginCookies";
-import { cookies } from "next/headers";
 
 export default function Login() {
   const router = useRouter();
   const [registerModal, setRegisterModal] = useState(false);
   const [loading, setLoading] = useState(false);
   const input = useInputLoginStore();
+  const userData = useUserData();
 
   const handleLogin = async () => {
     setLoading(true);
@@ -35,6 +35,16 @@ export default function Login() {
             toast.success(`Hello ${response.data.data.username}`);
             const token = response.data.data.authentication_token;
             create(token);
+            // userData.setEmail(response.data.email);
+            // userData.setUserId(response.data.data.userId);
+            // userData.setGender(response.data.gender);
+            // userData.setWeight(response.data.weight);
+            // userData.setHeight(response.data.height);
+            // userData.setFat(response.data.fat);
+            // userData.setCalory(response.data.calory);
+            // userData.setFiber(response.data.fiber);
+            // userData.setCarbohidrate(response.data.carbohidrate);
+            // userData.setProtein(response.data.protein);
             router.push(`/home/${response.data.data.userId}`);
           }
         })
