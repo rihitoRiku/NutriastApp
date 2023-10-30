@@ -4,32 +4,31 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Card from "../../components/card/card";
 import Navbar from "../../navbar";
-import appLogo from "/public/next.svg";
-import useSWR from "swr";
-import Cookies from "js-cookie";
 import toast from "react-hot-toast";
 import axios from "axios";
 import fetcherWithToken from "@/app/actions/GetWithToken";
 import create from "@/app/actions/DeleteCookies";
 import Router from "next/router";
 import LoaderComponent from "../../components/loader/loader";
-
 interface DataProps {
   data: {
-    username: '',
-    proteinneed: 0.0,
-    fatneed: 0.0,
-    carbohidrateneed: 0.0,
-    caloryneed: 0.0,
-    fiberneed: 0.0,
-  }
+    gender: "";
+    age: 0;
+    weight: 0.0;
+    height: 0.0;
+    username: "";
+    proteinneed: 0.0;
+    fatneed: 0.0;
+    carbohidrateneed: 0.0;
+    caloryneed: 0.0;
+    fiberneed: 0.0;
+  };
 }
 
 const DailyNutritionContent: FC<DataProps> = ({ data }) => (
   <>
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
       <li className="flex items-center space-x-3">
-        
         <svg
           className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
           aria-hidden="true"
@@ -47,9 +46,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         </svg>
         <span>
           Fat :{" "}
-          <span className="font-semibold text-gray-600">
-            {data.fatneed}
-          </span>
+          <span className="font-semibold text-gray-600">{data.fatneed}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -70,9 +67,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         </svg>
         <span>
           Calory :{" "}
-          <span className="font-semibold text-gray-600">
-            {data.caloryneed}
-          </span>
+          <span className="font-semibold text-gray-600">{data.caloryneed}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -93,9 +88,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         </svg>
         <span>
           Fiber :{" "}
-          <span className="font-semibold text-gray-600">
-            {data.fiberneed}
-          </span>
+          <span className="font-semibold text-gray-600">{data.fiberneed}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -219,6 +212,10 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   const [data, setData] = useState<DataProps>({
     data: {
+      gender: "",
+      age: 0,
+      weight: 0.0,
+      height: 0.0,
       username: "",
       proteinneed: 0.0,
       fatneed: 0.0,
@@ -227,23 +224,86 @@ export default function Page({ params }: { params: { slug: string } }) {
       fiberneed: 0.0,
     },
   });
+
   const [error, setError] = useState(null);
 
+  // useEffect(() => {
+  //   setLoading(true);
+  //   axios
+  //     .get(`http://localhost:5000/users/${params.slug}`, {
+  //       withCredentials: true,
+  //     })
+  //     .then((response) => {
+  //       setData(response.data);
+  //       setLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       // setError(err);
+  //       if (err.response.status === 403 || err.response.status === 400) {
+  //         router.push("/login");
+  //       } else {
+  //         setError(err);
+  //         setLoading(false);
+  //         toast.error("Error Fetching Data: " + err.message);
+  //       }
+  //     });
+  // }, [params.slug]);
+
   useEffect(() => {
-    axios
-      .get(`http://localhost:5000/users/${params.slug}`, { withCredentials: true })
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((err) => {
-        setError(err);
-        toast.error("Error Fetching Data: " + err.message);
-      });
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        // Check if data exists in localStorage
+        const cachedData = localStorage.getItem("cachedData");
+        if (cachedData) {
+          // If cached data exists, parse and set it
+          setData(JSON.parse(cachedData));
+        } else {
+          // If no cached data, make a request
+          const response = await axios.get<DataProps>(
+            `http://localhost:5000/users/${params.slug}`,
+            {
+              withCredentials: true,
+            }
+          );
+          // Store the response in localStorage for future use
+          localStorage.setItem("cachedData", JSON.stringify(response.data));
+          setData(response.data);
+        }
+        setLoading(false);
+      } catch (err) {
+        if (axios.isAxiosError(err) && err.response) {
+          if (err.response.status === 403 || err.response.status === 400) {
+            // Redirect to the login page if unauthorized
+            router.push("/login");
+          }
+        }
+        // setError(err);
+        // setLoading(false);
+        // toast.error('Error Fetching Data: ' + err.message);
+      }
+    };
+    fetchData();
   }, [params.slug]);
 
+  // use effect to make request only if user click browser refresh button
+  useEffect(() => {
+    // Add event listener to clear cached data when the page is about to unload (refresh or navigate away)
+    const clearCacheBeforeUnload = (event: BeforeUnloadEvent) => {
+      localStorage.removeItem("cachedData");
+    };
+    window.addEventListener("beforeunload", clearCacheBeforeUnload);
+    return () => {
+      // Remove the event listener when the component unmounts
+      window.removeEventListener("beforeunload", clearCacheBeforeUnload);
+    };
+  }, []);
+
   const handleLogOut = () => {
+    // Clear the cached data
+    localStorage.removeItem("cachedData");
     setLoading(true);
-    create("Login Token");
+    create("access_token");
     toast.success("Log Out Successfully");
     router.push("/login");
     setLoading(false);
@@ -252,14 +312,25 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Navbar title="Dashboard" />
+      {/* Loader */}
+      {loading ? (
+        <>
+          <div className="z-30 flex justify-center items-center fixed top-0 w-screen h-screen bg-slate-700 opacity-20">
+            <LoaderComponent />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
       <div className="mb-14 container max-w-7xl mx-auto px-4 md:px-8 scale-95">
         <div id="avatar" className="flex items-center justify-between ">
-          <Link href={`${params.slug}/profile`}>
+          <Link href={`${params.slug}/profile` } passHref>
             <div className="flex items-center space-x-4">
+              <div className=""></div>
               <img
                 className="w-14 h-14 rounded-full border-2"
-                src={appLogo}
-                alt=""
+                src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Bear"
+                alt="avatar"
               />
               <div className="font-medium">
                 <div className="text-md text-gray-500">Good afternoon,</div>
@@ -303,13 +374,19 @@ export default function Page({ params }: { params: { slug: string } }) {
               <div className="text-body text-xl font-semibold text-gray-500 mb-4">
                 Health Status
               </div>
-              <Card title="Good" content={<HealthStatusContent slug={params.slug} />} />
+              <Card
+                title="Good"
+                content={<HealthStatusContent slug={params.slug} />}
+              />
             </div>
             <div className="flex-1 ">
               <div className="text-body text-xl font-semibold text-gray-500 mb-4">
                 Cardiovascular Risk
               </div>
-              <Card title="Aware" content={<RiskContent slug={params.slug} />} />
+              <Card
+                title="Aware"
+                content={<RiskContent slug={params.slug} />}
+              />
             </div>
           </div>
         </div>

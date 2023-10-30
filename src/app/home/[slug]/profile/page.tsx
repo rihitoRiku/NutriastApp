@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { FC, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { BasicCard } from "../../../components/card/card";
@@ -7,7 +7,17 @@ import Image from "next/image";
 import appLogo from "/public/next.svg";
 import Navbar from "../../../navbar";
 
-const profileContent = (
+interface cachedData {
+  data: {
+    gender: "";
+    age: 0;
+    weight: 0.0;
+    height: 0.0;
+    username: "";
+  };
+}
+
+const ProfileContent: FC<cachedData> = ({ data }) => (
   <>
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
       <li className="flex items-center space-x-3">
@@ -34,7 +44,7 @@ const profileContent = (
         </svg>
         <span>
           Gender :{" "}
-          <span className="font-semibold text-gray-600">undefinied</span>
+          <span className="font-semibold text-gray-600">{data.gender}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -121,7 +131,30 @@ const profileContent = (
 );
 
 export default function Page({ params }: { params: { slug: string } }) {
-  console.log(params.slug);
+  const [data, setData] = useState<cachedData>({
+    data: {
+      gender: "",
+      age: 0,
+      weight: 0.0,
+      height: 0.0,
+      username: "",
+    },
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Check if data exists in localStorage
+        const cachedData = localStorage.getItem("cachedData");
+        if (cachedData) {
+          // If cached data exists, parse and set it
+          setData(JSON.parse(cachedData));
+        }
+      } catch (err) {}
+    };
+    fetchData();
+  }, []);
+
   return (
     <>
       <Navbar title="Profile" />
@@ -152,13 +185,13 @@ export default function Page({ params }: { params: { slug: string } }) {
       <div className="flex justify-center items-center sm:items-start flex-col sm:flex-row px-4 gap-16 mb-16 scale-95">
         <div className="max-w-[20em] h-full block sm:max-w-xs">
           <div className="flex flex-col items-center mb-3  w-max">
-            <Image
+            <img
               className="w-24 h-24 mb-6 rounded-full shadow-lg"
-              src={appLogo}
-              alt=""
+              src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Bear"
+              alt="avatar"
             />
             <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-              Bonnie Green
+              {data.data.username}
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
               bonnie@gmail.com
@@ -166,13 +199,16 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
         </div>
         <div className="w-full max-w-[28em] h-full sm:max-w-md space-y-4 ">
-          <BasicCard title="Personal information" content={profileContent} />
-          <button
+          <BasicCard
+            title="Personal information"
+            content={<ProfileContent {...data} />}
+          />
+          {/* <button
             type="button"
             className=" hover:text-white bg-white border border-gray-200 hover:bg-green-800 font-medium rounded-full text-md px-12 py-3 text-center mr-2 mb-2"
           >
             Change
-          </button>
+          </button> */}
         </div>
       </div>
     </>

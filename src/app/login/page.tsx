@@ -21,13 +21,10 @@ export default function Login() {
 
   const handleLogin = async () => {
     setLoading(true);
-    // console.log(input.email, input.password);
-
     const login = {
       email: input.email,
       password: input.password,
     };
-
     try {
       await axios
         .post("http://localhost:5000/login", login, { withCredentials: true })
@@ -36,11 +33,8 @@ export default function Login() {
             toast.error(response.data.message);
           } else {
             toast.success(`Hello ${response.data.data.username}`);
-
-            // Assuming the server sends the token in the 'token' property of the response
             const token = response.data.data.authentication_token;
             create(token);
-            // console.log(response.data.data)
             router.push(`/home/${response.data.data.userId}`);
           }
         })
@@ -50,7 +44,6 @@ export default function Login() {
     } catch (error) {
       console.log(error);
     }
-
     setLoading(false);
   };
 

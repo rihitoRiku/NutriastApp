@@ -7,11 +7,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Illust from "/public/assets/illust/medical.svg";
 
-export default function Page() {
+export default function Page({ params }: { params: { slug: string } }) {
   const [Cholesterol, setCholesterol] = useState(0);
   return (
     <>
-      <Link href="/home/a">
+      <Link href={`/home/${params.slug}`}>
         <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl scale-95">
           <button
             type="button"

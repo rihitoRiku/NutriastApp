@@ -226,14 +226,14 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="px-4 flex flex-col scale-95 mt-8 md:mt-14 w-full">
+      <div className="px-4 flex flex-col scale-95 mt-8 md:mt-10 w-full">
         <form className="">
           <div className="text-2xl font-semibold text-center text-slate-700 mb-6">
             List Foods & Drinks Consumed
           </div>
           <div
             className={`w-full max-w-2xl mx-auto ${
-              consumedFoods.length ? "h-96" : ""
+              consumedFoods.length ? "max-h-96" : ""
             } overflow-scroll`}
           >
             {consumedFoods.length ? (
