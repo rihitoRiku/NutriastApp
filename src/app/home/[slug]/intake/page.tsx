@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import jsonData from "./../../../../DataMakananTKPI.json";
 import FoodCard from "@/app/components/foodcard/foodcard";
+import LoaderComponent from "../../../components/loader/loader";
 
 interface FoodData {
   nama: string;
@@ -19,6 +20,9 @@ interface FoodItem extends FoodData {
 }
 
 export default function Page() {
+
+  const [loading, setLoading] = useState(false);
+
   // PLACEHOLDER BASED ON SCREEN SIZE
   const [isMediumScreen, setIsMediumScreen] = useState(false);
   useEffect(() => {
@@ -103,6 +107,7 @@ export default function Page() {
   // HANDLE BUTTON SEND CHECKOUT
 
   const handleCheckout = async () => {
+    setLoading(true);
     // Calculate the total accumulated values
     const totalValues = {
       totalCalory: 0,
@@ -138,11 +143,14 @@ export default function Page() {
 
     console.log(totalValues);
     try {
-      const response = await axios.post(url, totalValues, headers );
+      const response = await axios.post(url, totalValues, headers);
       console.log(response.data); // If the server returns JSON, you can access the data using response.data
       // Do something with the returned data
+      setLoading(false);
+      router.push(`/home/${response.data.data.userId}`);
     } catch (error) {
       console.error("There was a problem with the Axios request:", error);
+      setLoading(false);
     }
   };
 
@@ -154,6 +162,16 @@ export default function Page() {
 
   return (
     <>
+      {/* Loader */}
+      {loading ? (
+        <>
+          <div className="z-30 flex justify-center items-center fixed top-0 w-screen h-screen bg-slate-700 opacity-20">
+            <LoaderComponent />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
       <div onClick={() => router.back()}>
         <div className="z-30 ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl">
           <button

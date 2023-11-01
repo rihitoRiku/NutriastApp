@@ -25,6 +25,13 @@ interface DataProps {
   };
 }
 
+interface DataIntakeProps {
+  data: {
+    healthstatus: "";
+    feedback: "";
+  };
+}
+
 const DailyNutritionContent: FC<DataProps> = ({ data }) => (
   <>
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
@@ -72,10 +79,14 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
   </>
 );
 
-const HealthStatusContent = ({ slug }: { slug: string }) => (
+interface HealthStatusContentProps extends DataIntakeProps {
+  slug: string;
+}
+
+const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => (
   <>
     <div className="text-md break-words w-full mb-6">
-      Great job on meeting your daily nutrition needs! Keep up the good work and continue to prioritize a balanced and healthy diet. Remember to listen to your body and make adjustments as necessary to maintain optimal health
+    {data.feedback}
     </div>
     <Link href={`/home/${slug}/intake`}>
       <button type="button" className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center">
@@ -106,6 +117,7 @@ const RiskContent = ({ slug }: { slug: string }) => (
 );
 
 export default function Page({ params }: { params: { slug: string } }) {
+
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -121,6 +133,14 @@ export default function Page({ params }: { params: { slug: string } }) {
       carbohidrateneed: 0.0,
       caloryneed: 0.0,
       fiberneed: 0.0,
+      
+    },
+  });
+
+  const [dataIntake, setDataIntake] = useState<DataIntakeProps>({
+    data: {
+      healthstatus: "",
+      feedback: "",
     },
   });
 
@@ -154,18 +174,34 @@ export default function Page({ params }: { params: { slug: string } }) {
       try {
         // Check if data exists in localStorage
         const cachedData = localStorage.getItem("cachedData");
+        const cacheDataIntake = localStorage.getItem("cacheDataIntake");
+
         if (cachedData) {
           // If cached data exists, parse and set it
           setData(JSON.parse(cachedData));
         } else {
           // If no cached data, make a request
-          const response = await axios.get<DataProps>(`http://localhost:5000/users/${params.slug}`, {
+          const responseUsers = await axios.get<DataProps>(`http://localhost:5000/users/${params.slug}`, {
             withCredentials: true,
           });
-          // Store the response in localStorage for future use
-          localStorage.setItem("cachedData", JSON.stringify(response.data));
-          setData(response.data);
+          // Store the responseUsers in localStorage for future use
+          localStorage.setItem("cachedData", JSON.stringify(responseUsers.data));
+          setData(responseUsers.data);
         }
+
+        if (cacheDataIntake) {
+          setDataIntake(JSON.parse(cacheDataIntake));
+        } else {
+          const responseIntake = await axios.get<DataIntakeProps>(`http://localhost:5000/intakeusers/id`, {
+            withCredentials: true,
+          });
+          localStorage.setItem("cachedDataIntake", JSON.stringify(responseIntake.data));
+          setDataIntake(responseIntake.data); // Use setDataIntake here
+          console.log(responseIntake.data)
+        }
+
+        
+
         setLoading(false);
       } catch (err) {
         if (axios.isAxiosError(err) && err.response) {
@@ -248,7 +284,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <div className="w-full flex flex-col lg:flex-row gap-8">
             <div className="flex-1 ">
               <div className="text-body text-xl font-semibold text-gray-500 mb-4">Health Status</div>
-              <Card title="Good" content={<HealthStatusContent slug={params.slug} />} />
+              <Card title={dataIntake.data.healthstatus} content={<HealthStatusContent data={dataIntake.data} slug={params.slug} />} />
             </div>
             <div className="flex-1 ">
               <div className="text-body text-xl font-semibold text-gray-500 mb-4">Cardiovascular Risk</div>
