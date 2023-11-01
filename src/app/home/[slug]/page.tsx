@@ -231,8 +231,11 @@ export default function Page({ params }: { params: { slug: string } }) {
             </div>
           </Link>
 
-          <div className="">
-            <button type="button" className="inline-flex items-center hover:text-white border border-green-700 hover:bg-green-800 font-semibold rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2" onClick={handleLogOut}>
+          <div className="flex justify-between items-center border gap-12 ">
+            <Link href={`${params.slug}/history`} passHref>
+              History
+            </Link>
+            <button type="button" className="inline-flex items-center hover:text-white border border-green-700 hover:bg-green-800 font-semibold rounded-full text-sm px-5 py-2.5 text-center  " onClick={handleLogOut}>
               <span className="me-2"> Logout </span>
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 17l5-5-5-5M19.8 12H9M13 22a10 10 0 1 1 0-20" />
