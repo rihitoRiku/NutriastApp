@@ -14,6 +14,7 @@ interface cachedData {
     weight: 0.0;
     height: 0.0;
     username: "";
+    email: "";
   };
 }
 
@@ -21,44 +22,20 @@ const ProfileContent: FC<cachedData> = ({ data }) => (
   <>
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
       <li className="flex items-center space-x-3">
-        <svg
-          fill="#000000"
-          width="25px"
-          height="25px"
-          viewBox="0 0 256 256"
-          id="Flat"
-          stroke="#000000"
-          strokeWidth="1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg fill="#000000" width="25px" height="25px" viewBox="0 0 256 256" id="Flat" stroke="#000000" strokeWidth="1" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
+          <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
             {" "}
             <path d="M219.9209,39.21582c-.02246-.11328-.06519-.21777-.09693-.32715a2.32952,2.32952,0,0,0-.324-.7876c-.05811-.10693-.10522-.21777-.17383-.31982a3.99291,3.99291,0,0,0-.49316-.604l-.0044-.00537h0a4.03873,4.03873,0,0,0-.60962-.498c-.10156-.06787-.21142-.11475-.31713-.17237a4.01127,4.01127,0,0,0-.37134-.19531,3.93788,3.93788,0,0,0-.417-.12939c-.11036-.03223-.21558-.0752-.32959-.09766a4.04217,4.04217,0,0,0-.7771-.07861L216,36H168a4,4,0,0,0,0,8h38.34326L168,82.34326,146.82861,61.17188a3.99991,3.99991,0,0,0-5.65722,5.65624L162.34326,88,141.165,109.17822a68.02262,68.02262,0,1,0,5.65674,5.65674L168,93.65674l21.17139,21.17138a3.99991,3.99991,0,0,0,5.65722-5.65624L173.65674,88,212,49.65674V88a4,4,0,0,0,8,0V40.00146A4.03032,4.03032,0,0,0,219.9209,39.21582ZM138.42627,202.42676A60.00052,60.00052,0,1,1,156,160,60.0702,60.0702,0,0,1,138.42627,202.42676Z"></path>{" "}
           </g>
         </svg>
         <span>
-          Gender :{" "}
-          <span className="font-semibold text-gray-600">{data.gender}</span>
+          Gender : <span className="font-semibold text-gray-600">{data.gender}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="25"
-          height="25"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#000000"
-          strokeWidth="1"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
@@ -67,19 +44,9 @@ const ProfileContent: FC<cachedData> = ({ data }) => (
         </span>
       </li>
       <li className="flex items-center space-x-3">
-        <svg
-          width="24px"
-          height="24px"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
+          <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
             {" "}
             <path
@@ -92,38 +59,20 @@ const ProfileContent: FC<cachedData> = ({ data }) => (
           </g>
         </svg>
         <span>
-          Weight :{" "}
-          <span className="font-semibold text-gray-600">{data.weight}</span>
+          Weight : <span className="font-semibold text-gray-600">{data.weight}</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
-        <svg
-          width="24px"
-          height="24px"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
+          <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
             {" "}
-            <path
-              d="M12 22V2M12 22L8 18M12 22L16 18M12 2L8 6M12 2L16 6"
-              stroke="#000000"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>{" "}
+            <path d="M12 22V2M12 22L8 18M12 22L16 18M12 2L8 6M12 2L16 6" stroke="#000000" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"></path>{" "}
           </g>
         </svg>
         <span>
-          Height :{" "}
-          <span className="font-semibold text-gray-600">{data.height}</span>
+          Height : <span className="font-semibold text-gray-600">{data.height}</span>
         </span>
       </li>
     </ul>
@@ -138,6 +87,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       weight: 0.0,
       height: 0.0,
       username: "",
+      email: "",
     },
   });
 
@@ -160,21 +110,8 @@ export default function Page({ params }: { params: { slug: string } }) {
       <Navbar title="Profile" />
       <Link href={`/home/${params.slug}`}>
         <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-12 w-full max-w-2xl">
-          <button
-            type="button"
-            className=" font-medium text-xl text-center flex items-center "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#000000"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
+          <button type="button" className=" font-medium text-xl text-center flex items-center ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
             </svg>
             <span className="">Back</span>
@@ -185,24 +122,13 @@ export default function Page({ params }: { params: { slug: string } }) {
       <div className="flex justify-center items-center sm:items-start flex-col sm:flex-row px-4 gap-16 mb-16 scale-95">
         <div className="max-w-[20em] h-full block sm:max-w-xs">
           <div className="flex flex-col items-center mb-3  w-max">
-            <img
-              className="w-24 h-24 mb-6 rounded-full shadow-lg"
-              src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Bear"
-              alt="avatar"
-            />
-            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-              {data.data.username}
-            </h5>
-            <span className="text-sm text-gray-500 dark:text-gray-400">
-              bonnie@gmail.com
-            </span>
+            <img className="w-24 h-24 mb-6 rounded-full shadow-lg" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Bear" alt="avatar" />
+            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">{data.data.username}</h5>
+            <span className="text-sm text-gray-500 dark:text-gray-400">{data.data.email}</span>
           </div>
         </div>
         <div className="w-full max-w-[28em] h-full sm:max-w-md space-y-4 ">
-          <BasicCard
-            title="Personal information"
-            content={<ProfileContent {...data} />}
-          />
+          <BasicCard title="Personal information" content={<ProfileContent {...data} />} />
           {/* <button
             type="button"
             className=" hover:text-white bg-white border border-gray-200 hover:bg-green-800 font-medium rounded-full text-md px-12 py-3 text-center mr-2 mb-2"
