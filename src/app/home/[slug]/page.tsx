@@ -230,6 +230,7 @@ const RiskContent = ({ slug }: { slug: string }) => (
 );
 
 export default function Page({ params }: { params: { slug: string } }) {
+
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -245,6 +246,14 @@ export default function Page({ params }: { params: { slug: string } }) {
       carbohidrateneed: 0.0,
       caloryneed: 0.0,
       fiberneed: 0.0,
+      
+    },
+  });
+
+  const [dataIntake, setDataIntake] = useState<DataIntakeProps>({
+    data: {
+      healthstatus: "",
+      feedback: "",
     },
   });
   const [dataIntake, setDataIntake] = useState<DataIntakeProps>({
@@ -321,6 +330,20 @@ export default function Page({ params }: { params: { slug: string } }) {
           setDataIntake(responseIntake.data); // Use setDataIntake here
           console.log(responseIntake.data);
         }
+
+        if (cacheDataIntake) {
+          setDataIntake(JSON.parse(cacheDataIntake));
+        } else {
+          const responseIntake = await axios.get<DataIntakeProps>(`http://localhost:5000/intakeusers/id`, {
+            withCredentials: true,
+          });
+          localStorage.setItem("cachedDataIntake", JSON.stringify(responseIntake.data));
+          setDataIntake(responseIntake.data); // Use setDataIntake here
+          console.log(responseIntake.data)
+        }
+
+        
+
         setLoading(false);
       } catch (err) {
         if (axios.isAxiosError(err) && err.response) {

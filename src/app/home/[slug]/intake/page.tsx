@@ -116,7 +116,6 @@ export default function Page() {
 
   const handleCheckout = async () => {
     setLoading(true);
-
     // Calculate the total accumulated values
     const totalValues = {
       totalCalory: 0,
