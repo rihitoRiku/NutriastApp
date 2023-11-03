@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-200 flex items-center justify-center h-screen">
+    <button id="showNotification" class="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600">Tampilkan Notifikasi</button>
+
+    <!-- start here  -->
+    <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 notification-popup bg-white p-4 rounded-md shadow-lg text-center z-50 max-w-lg w-2/4 md:w-3/4 lg:w-11/12 h-2/5 flex flex-col justify-center hidden">
+      <div class="mb-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-36 h-36 md:w-32 md:h-32 lg:w-28 lg:h-28 text-green-500 inline-block"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </div>
+      <p class="text-xl md:text-lg lg:text-md font-semibold text-gray-800">Proses Berhasil!</p>
+      <button
+        id="closeNotification"
+        class="bg-blue-500 mx-auto md:text-sm lg:text-xs font-body mt-4 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-2 py-3 w-2/6 md:w-1/4 lg:w-1/6"
+      >
+        OK
+      </button>
+    </div>
+
+    <div class="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40 hidden" id="overlay"></div>
+    <!-- end here  -->
+    <script>
+      const showNotificationButton = document.getElementById("showNotification");
+      const closeNotificationButton = document.getElementById("closeNotification");
+      const notification = document.querySelector(".notification-popup");
+      const overlay = document.getElementById("overlay");
+
+      showNotificationButton.addEventListener("click", () => {
+        notification.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      });
+
+      closeNotificationButton.addEventListener("click", () => {
+        notification.classList.add("hidden");
+        overlay.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>
