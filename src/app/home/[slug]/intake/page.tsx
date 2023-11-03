@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import toast from "react-hot-toast";
 import jsonData from "./../../../../DataMakananTKPI.json";
 import FoodCard from "@/app/components/foodcard/foodcard";
 import LoaderComponent from "../../../components/loader/loader";
@@ -19,9 +20,16 @@ interface FoodItem extends FoodData {
   quantity: number;
 }
 
-export default function Page() {
+var userId="";
 
+export default function Page() {
   const [loading, setLoading] = useState(false);
+
+  const cachedData = localStorage.getItem("cachedData");
+  if (cachedData) {
+    const data = JSON.parse(cachedData);
+    userId = data.data.userId;
+  }
 
   // PLACEHOLDER BASED ON SCREEN SIZE
   const [isMediumScreen, setIsMediumScreen] = useState(false);
@@ -141,13 +149,12 @@ export default function Page() {
 
     const data = JSON.stringify(consumedFoods); // Convert the data to a JSON string
 
-    console.log(totalValues);
     try {
       const response = await axios.post(url, totalValues, headers);
-      console.log(response.data); // If the server returns JSON, you can access the data using response.data
-      // Do something with the returned data
+      localStorage.removeItem("cachedDataIntake");
+      toast.success(response.data.message);
+      router.push(`/home/${userId}`);
       setLoading(false);
-      router.push(`/home/${response.data.data.userId}`);
     } catch (error) {
       console.error("There was a problem with the Axios request:", error);
       setLoading(false);
@@ -162,7 +169,6 @@ export default function Page() {
 
   return (
     <>
-      {/* Loader */}
       {loading ? (
         <>
           <div className="z-30 flex justify-center items-center fixed top-0 w-screen h-screen bg-slate-700 opacity-20">
