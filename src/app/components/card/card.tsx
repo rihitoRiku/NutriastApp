@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 
 interface CardInterface {
-  title?: string;
+  title?: React.ReactNode;
   content?: ReactNode;
 }
 

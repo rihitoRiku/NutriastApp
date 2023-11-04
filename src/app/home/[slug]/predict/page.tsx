@@ -6,9 +6,108 @@ import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import Illust from "/public/assets/illust/medical.svg";
+import toast from "react-hot-toast";
 
 export default function Page({ params }: { params: { slug: string } }) {
-  const [Cholesterol, setCholesterol] = useState(0);
+  const router = useRouter();
+
+  const [loading, setLoading] = useState(false);
+  const [alco, setSelectedAlchoholValue] = useState<number>(0.0);
+  const [active, setSelectedActivityValue] = useState<number>(0.0);
+  const [smoke, setSelectedSmokerValue] = useState<number>(0.0);
+  const [cholesterol, setSelectedCholesterolValue] = useState<number>(0.0);
+  const [gluc, setSelectedGlucoseValue] = useState<number>(0.0);
+  ("");
+  const [ap_lo, setSelectedAploValue] = useState<number>(0.0);
+  const [ap_hi, setSelectedAphiValue] = useState<number>(0.0);
+
+  // Define a function to handle the radio button selection.
+  const handleAlchoholChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    const numericValue = parseFloat(inputValue);
+    if (!isNaN(numericValue)) {
+      setSelectedAlchoholValue(numericValue);
+    } else {
+    }
+  };
+  const handleActivityChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    const numericValue = parseFloat(inputValue);
+    if (!isNaN(numericValue)) {
+      setSelectedActivityValue(numericValue);
+    } else {
+    }
+  };
+  const handleSmokerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    const numericValue = parseFloat(inputValue);
+    if (!isNaN(numericValue)) {
+      setSelectedSmokerValue(numericValue);
+    } else {
+    }
+  };
+  const handleCholesterolChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const inputValue = event.target.value;
+    const numericValue = parseFloat(inputValue);
+    if (!isNaN(numericValue)) {
+      setSelectedCholesterolValue(numericValue);
+    } else {
+    }
+  };
+  const handleGlucoseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    const numericValue = parseFloat(inputValue);
+    if (!isNaN(numericValue)) {
+      setSelectedGlucoseValue(numericValue);
+    } else {
+    }
+  };
+  const handleAploChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    const numericValue = parseFloat(inputValue);
+    if (!isNaN(numericValue)) {
+      setSelectedAploValue(numericValue);
+    } else {
+    }
+  };
+  const handleAphiChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    const numericValue = parseFloat(inputValue);
+    if (!isNaN(numericValue)) {
+      setSelectedAphiValue(numericValue);
+    } else {
+    }
+  };
+
+  // Define the sendHandler function to send the selected value to the API.
+  const sendHandler = async () => {
+    setLoading(true);
+    const dataToSend = {
+      alco,
+      active,
+      smoke,
+      cholesterol,
+      gluc,
+      ap_lo,
+      ap_hi,
+    };
+    const headers = {
+      "Content-Type": "application/json",
+      withCredentials: true,
+    };
+    const response = await axios.post(
+      "http://localhost:5000/predict",
+      dataToSend,
+      headers
+    );
+    localStorage.removeItem("cachedData");
+    toast.success(response.data.message);
+    router.push(`/home/${params.slug}`);
+    setLoading(false);
+  };
+
   return (
     <>
       <Link href={`/home/${params.slug}`}>
@@ -68,7 +167,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="chol-low"
                   name="chol"
-                  value="chol-low"
+                  value={1}
+                  onChange={handleCholesterolChange}
                   className="hidden peer"
                   required
                 />
@@ -90,7 +190,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="chol-medium"
                   name="chol"
-                  value="chol-medium"
+                  value={2}
+                  onChange={handleCholesterolChange}
                   className="hidden peer"
                 />
                 <label
@@ -111,7 +212,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="chol-high"
                   name="chol"
-                  value="chol-high"
+                  value={3}
+                  onChange={handleCholesterolChange}
                   className="hidden peer"
                 />
                 <label
@@ -138,7 +240,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="gluc-low"
                   name="gluc"
-                  value="gluc-low"
+                  value={1}
+                  onChange={handleGlucoseChange}
                   className="hidden peer"
                   required
                 />
@@ -160,7 +263,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="gluc-medium"
                   name="gluc"
-                  value="gluc-medium"
+                  value={2}
+                  onChange={handleGlucoseChange}
                   className="hidden peer"
                 />
                 <label
@@ -181,7 +285,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="gluc-high"
                   name="gluc"
-                  value="gluc-high"
+                  value={3}
+                  onChange={handleGlucoseChange}
                   className="hidden peer"
                 />
                 <label
@@ -212,6 +317,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="number"
                   placeholder="input your ap-lo"
                   id="ap-lo"
+                  onChange={handleAploChange}
                   className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                 />
               </div>
@@ -230,6 +336,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="number"
                   placeholder="input your ap-hi"
                   id="ap-hi"
+                  onChange={handleAphiChange}
                   className="pl-4 w-full outline-none text-lg bg-inherit rounded-md h-10"
                 />
               </div>
@@ -244,7 +351,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="no-smoke"
                   name="smoke"
-                  value="no-smoke"
+                  value={0}
+                  onChange={handleSmokerChange}
                   className="hidden peer"
                   required
                 />
@@ -266,7 +374,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="yes-smoke"
                   name="smoke"
-                  value="yes-smoke"
+                  value={1}
+                  onChange={handleSmokerChange}
                   className="hidden peer"
                 />
                 <label
@@ -291,14 +400,14 @@ export default function Page({ params }: { params: { slug: string } }) {
               <li>
                 <input
                   type="radio"
-                  id="yes-alcho"
+                  id="no-alcho"
                   name="alcho"
-                  value="yes-alcho"
+                  value={0}
                   className="hidden peer"
-                  required
+                  onChange={handleAlchoholChange}
                 />
                 <label
-                  htmlFor="yes-alcho"
+                  htmlFor="no-alcho"
                   className="inline-flex items-start justify-between w-full h-full p-2 sm:p-6 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                   <div className="block">
@@ -313,13 +422,14 @@ export default function Page({ params }: { params: { slug: string } }) {
               <li>
                 <input
                   type="radio"
-                  id="no-alcho"
+                  id="yes-alcho"
                   name="alcho"
-                  value="no-alcho"
+                  value={1}
                   className="hidden peer"
+                  onChange={handleAlchoholChange}
                 />
                 <label
-                  htmlFor="no-alcho"
+                  htmlFor="yes-alcho"
                   className="inline-flex items-start justify-between w-full h-full p-2 sm:p-6 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
                 >
                   <div className="block">
@@ -342,7 +452,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="light-activity"
                   name="activity"
-                  value="light-activity"
+                  value={1}
+                  onChange={handleActivityChange}
                   className="hidden peer"
                   required
                 />
@@ -364,7 +475,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="med-activity"
                   name="activity"
-                  value="med-activity"
+                  value={2}
+                  onChange={handleActivityChange}
                   className="hidden peer"
                 />
                 <label
@@ -385,7 +497,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                   type="radio"
                   id="hard-activity"
                   name="activity"
-                  value="hard-activity"
+                  value={3}
+                  onChange={handleActivityChange}
                   className="hidden peer"
                 />
                 <label
@@ -406,6 +519,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           {/* Button */}
           <button
             type="button"
+            onClick={sendHandler}
             className="mt-14 inline-flex items-center text-gray-700 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-full text-lg px-14 py-3 text-center"
           >
             Predict Now!

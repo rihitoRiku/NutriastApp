@@ -6,11 +6,8 @@ import Card from "../../components/card/card";
 import Navbar from "../../navbar";
 import toast from "react-hot-toast";
 import axios from "axios";
-import fetcherWithToken from "@/app/actions/GetWithToken";
 import create from "@/app/actions/DeleteCookies";
-import Router from "next/router";
 import LoaderComponent from "../../components/loader/loader";
-import { compare } from "swr/_internal";
 interface DataProps {
   data: {
     gender: "";
@@ -23,12 +20,7 @@ interface DataProps {
     carbohidrateneed: 0.0;
     caloryneed: 0.0;
     fiberneed: 0.0;
-  };
-}
-
-interface IntakeStatus {
-  data: {
-    status: "";
+    cardiovascular: "";
   };
 }
 
@@ -159,10 +151,14 @@ interface HealthStatusContentProps extends DataIntakeProps {
   slug: string;
 }
 
+interface HealthRiskContentProps extends DataProps {
+  slug: string;
+}
+
 const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
   // Ensure data.healthstatus is treated as a string
   const healthStatus: string = data.healthstatus || "";
-  
+
   return (
     <>
       <div className="text-md break-words w-full mb-6">{data.feedback}</div>
@@ -197,40 +193,57 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
   );
 };
 
-const RiskContent = ({ slug }: { slug: string }) => (
-  <>
-    <div className="text-md mb-6">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-      delectus voluptas corrupti fugiat unde, labore non officia dignissimos.
-    </div>
-    <Link href={`/home/${slug}/predict`}>
-      <button
-        type="button"
-        className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
-      >
-        Predict Now!
-        <svg
-          className="w-3.5 h-3.5 ml-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
+const RiskContent: FC<HealthRiskContentProps> = ({ data, slug }) => {
+  const cardioStatus: string = data.cardiovascular || "";
+  let content;
+  if (cardioStatus === "Safe") {
+    content = (
+      <>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla
+        recusandae repellat? Quibusdam, maiores?
+      </>
+    );
+  } else if (cardioStatus === "Aware") {
+    content = (
+      <>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde quo
+        voluptate corrupti quisquam cum quam, doloribus architecto?
+      </>
+    );
+  } else {
+    content = <>UwU</>;
+  }
+  return (
+    <>
+      <div className="text-md mb-6">{content}</div>
+      <Link href={`/home/${slug}/predict`}>
+        <button
+          type="button"
+          className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"
-          />
-        </svg>
-      </button>
-    </Link>
-  </>
-);
+          Predict Now!
+          <svg
+            className="w-3.5 h-3.5 ml-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"
+            />
+          </svg>
+        </button>
+      </Link>
+    </>
+  );
+};
 
 export default function Page({ params }: { params: { slug: string } }) {
-
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -246,16 +259,10 @@ export default function Page({ params }: { params: { slug: string } }) {
       carbohidrateneed: 0.0,
       caloryneed: 0.0,
       fiberneed: 0.0,
-      
+      cardiovascular: "",
     },
   });
 
-  const [dataIntake, setDataIntake] = useState<DataIntakeProps>({
-    data: {
-      healthstatus: "",
-      feedback: "",
-    },
-  });
   const [dataIntake, setDataIntake] = useState<DataIntakeProps>({
     data: {
       healthstatus: "",
@@ -328,21 +335,23 @@ export default function Page({ params }: { params: { slug: string } }) {
             JSON.stringify(responseIntake.data)
           );
           setDataIntake(responseIntake.data); // Use setDataIntake here
-          console.log(responseIntake.data);
         }
 
         if (cacheDataIntake) {
           setDataIntake(JSON.parse(cacheDataIntake));
         } else {
-          const responseIntake = await axios.get<DataIntakeProps>(`http://localhost:5000/intakeusers/id`, {
-            withCredentials: true,
-          });
-          localStorage.setItem("cachedDataIntake", JSON.stringify(responseIntake.data));
+          const responseIntake = await axios.get<DataIntakeProps>(
+            `http://localhost:5000/intakeusers/id`,
+            {
+              withCredentials: true,
+            }
+          );
+          localStorage.setItem(
+            "cachedDataIntake",
+            JSON.stringify(responseIntake.data)
+          );
           setDataIntake(responseIntake.data); // Use setDataIntake here
-          console.log(responseIntake.data)
         }
-
-        
 
         setLoading(false);
       } catch (err) {
@@ -384,6 +393,14 @@ export default function Page({ params }: { params: { slug: string } }) {
     setLoading(false);
   };
 
+  const cardioStatus = data.data.cardiovascular;
+  let cardioStatusTitle;
+  if (cardioStatus == null) {
+    cardioStatusTitle = <>Unpredicted</>;
+  }else{
+    cardioStatusTitle = cardioStatus;
+  }
+
   return (
     <>
       <Navbar title="Dashboard" />
@@ -414,7 +431,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             </div>
           </Link>
 
-          <div className="flex justify-between items-center border gap-12 ">
+          <div className="flex justify-between items-center gap-12 ">
             <Link href={`${params.slug}/history`} passHref>
               History
             </Link>
@@ -467,8 +484,8 @@ export default function Page({ params }: { params: { slug: string } }) {
                 Cardiovascular Risk
               </div>
               <Card
-                title="Aware"
-                content={<RiskContent slug={params.slug} />}
+                title={cardioStatusTitle}
+                content={<RiskContent data={data.data} slug={params.slug} />}
               />
             </div>
           </div>
