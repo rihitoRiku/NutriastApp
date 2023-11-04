@@ -20,7 +20,7 @@ interface FoodItem extends FoodData {
   quantity: number;
 }
 
-var userId="";
+var userId = "";
 
 export default function Page() {
   const [loading, setLoading] = useState(false);
@@ -300,20 +300,28 @@ export default function Page() {
                           <div className="text-sm text-gray-500 truncate dark:text-gray-400 flex flex-wrap gap-x-3 mt-2">
                             <div className="">
                               Protein:{" "}
-                              {(food.protein * food.quantity).toFixed(4)}
+                              {((food.protein / 100) * food.quantity).toFixed(
+                                4
+                              )}
                             </div>
                             <div className="">
-                              Energi: {(food.energi * food.quantity).toFixed(4)}
+                              Energi:{" "}
+                              {((food.energi / 100) * food.quantity).toFixed(4)}
                             </div>
                             <div className="">
                               Karbohidrat:{" "}
-                              {(food.karbohidrat * food.quantity).toFixed(4)}
+                              {(
+                                (food.karbohidrat / 100) *
+                                food.quantity
+                              ).toFixed(4)}
                             </div>
                             <div className="">
-                              Lemak: {(food.lemak * food.quantity).toFixed(4)}
+                              Lemak:{" "}
+                              {((food.lemak / 100) * food.quantity).toFixed(4)}
                             </div>
                             <div className="">
-                              Serat: {(food.serat * food.quantity).toFixed(4)}
+                              Serat:{" "}
+                              {((food.serat / 100) * food.quantity).toFixed(4)}
                             </div>
                           </div>
                         </div>
@@ -339,7 +347,7 @@ export default function Page() {
                         </div>
 
                         <div className="inline-flex items-center text-base font-normal text-gray-900 ms-2 me-6">
-                          x100 grams
+                          grams
                         </div>
                         <div className="cursor-pointer">
                           <svg

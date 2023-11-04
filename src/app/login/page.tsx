@@ -98,6 +98,7 @@ export default function Login() {
               </svg>
               <input
                 id="email"
+                required
                 className=" pl-4 w-full outline-none border-none text-md"
                 type="email"
                 name="email"
@@ -122,6 +123,7 @@ export default function Login() {
                 className="pl-4 w-full outline-none border-none text-md"
                 type="password"
                 name="password"
+                required
                 id="password"
                 placeholder="Password"
                 onChange={(e) => input.setPassword(e.target.value)}
