@@ -36,20 +36,21 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
     <ul className="space-y-4 text-left text-gray-500 dark:text-gray-400">
       <li className="flex items-center space-x-3">
         <svg
-          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
-          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
+          className="icon icon-tabler icon-tabler-droplet "
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
           fill="none"
-          viewBox="0 0 16 12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 5.917 5.724 10.5 15 1.5"
-          />
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" />
         </svg>
+
         <span>
           Fat :{" "}
           <span className="font-semibold text-gray-600">{data.fatneed}</span>
@@ -57,19 +58,20 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
       </li>
       <li className="flex items-center space-x-3">
         <svg
-          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
-          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
+          className="icon icon-tabler icon-tabler-square-rounded-letter-c"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
           fill="none"
-          viewBox="0 0 16 12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 5.917 5.724 10.5 15 1.5"
-          />
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M14 10a2 2 0 1 0 -4 0v4a2 2 0 1 0 4 0" />
+          <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
         </svg>
         <span>
           Calory :{" "}
@@ -78,19 +80,21 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
       </li>
       <li className="flex items-center space-x-3">
         <svg
-          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
-          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
+          className="icon icon-tabler icon-tabler-apple"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
           fill="none"
-          viewBox="0 0 16 12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 5.917 5.724 10.5 15 1.5"
-          />
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2" />
+          <path d="M10 10.5c1.333 .667 2.667 .667 4 0" />
         </svg>
         <span>
           Fiber :{" "}
@@ -99,19 +103,22 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
       </li>
       <li className="flex items-center space-x-3">
         <svg
-          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
-          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
+          className="icon icon-tabler icon-tabler-baguette"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
           fill="none"
-          viewBox="0 0 16 12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 5.917 5.724 10.5 15 1.5"
-          />
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5.628 11.283l5.644 -5.637c2.665 -2.663 5.924 -3.747 8.663 -1.205l.188 .181a2.987 2.987 0 0 1 0 4.228l-11.287 11.274a3 3 0 0 1 -4.089 .135l-.143 -.135c-2.728 -2.724 -1.704 -6.117 1.024 -8.841z" />
+          <path d="M9.5 7.5l1.5 3.5" />
+          <path d="M6.5 10.5l1.5 3.5" />
+          <path d="M12.5 4.5l1.5 3.5" />
         </svg>
         <span>
           Carbohidrate :{" "}
@@ -122,19 +129,22 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
       </li>
       <li className="flex items-center space-x-3">
         <svg
-          className="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
-          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
+          className="icon icon-tabler icon-tabler-meat"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
           fill="none"
-          viewBox="0 0 16 12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
         >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M1 5.917 5.724 10.5 15 1.5"
-          />
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821" />
+          <path d="M5.904 18.596c2.733 2.734 5.9 4 7.07 2.829c1.172 -1.172 -.094 -4.338 -2.828 -7.071c-2.733 -2.734 -5.9 -4 -7.07 -2.829c-1.172 1.172 .094 4.338 2.828 7.071z" />
+          <path d="M7.5 16l1 1" />
+          <path d="M12.975 21.425c3.905 -3.906 4.855 -9.288 2.121 -12.021c-2.733 -2.734 -8.115 -1.784 -12.02 2.121" />
         </svg>
         <span>
           Protein :{" "}
@@ -393,11 +403,11 @@ export default function Page({ params }: { params: { slug: string } }) {
     setLoading(false);
   };
 
-  const cardioStatus = data.data.cardiovascular;
-  let cardioStatusTitle;
-  if (cardioStatus == null) {
-    cardioStatusTitle = <>Unpredicted</>;
-  }else{
+  let cardioStatus: string = data.data.cardiovascular || "";
+  let cardioStatusTitle: string = data.data.cardiovascular || "";
+  if (cardioStatus != "Safe" && cardioStatus != "Aware") {
+    cardioStatusTitle = "Unpredicted";
+  } else {
     cardioStatusTitle = cardioStatus;
   }
 
@@ -457,16 +467,55 @@ export default function Page({ params }: { params: { slug: string } }) {
             </button>
           </div>
         </div>
-        <div id="content" className="mt-8 flex flex-col md:flex-row gap-8">
+        <div id="content" className="mt-12 flex flex-col md:flex-row gap-8">
           <div className="min-w-[20em]">
-            <div className="text-body text-xl font-semibold text-gray-500 mb-4">
+            <div className="text-body text-xl font-semibold text-gray-500 mb-4 flex items-center gap-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="icon icon-tabler icon-tabler-heart-check"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M19.5 12.572l-3 2.928m-5.5 3.5a8916.99 8916.99 0 0 0 -6.5 -6.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                  <path d="M15 19l2 2l4 -4" />
+                </svg>
+              </span>
               Your Daily Nutrition Needs
             </div>
             <Card title="" content={DailyNutritionContent(data)} />
           </div>
           <div className="w-full flex flex-col lg:flex-row gap-8">
             <div className="flex-1 ">
-              <div className="text-body text-xl font-semibold text-gray-500 mb-4">
+              <div className="text-body text-xl font-semibold text-gray-500 mb-4 flex gap-3 items-center">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-heart-rate-monitor"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
+                    <path d="M7 20h10" />
+                    <path d="M9 16v4" />
+                    <path d="M15 16v4" />
+                    <path d="M7 10h2l2 3l2 -6l1 3h3" />
+                  </svg>
+                </span>
                 Health Status
               </div>
               <Card

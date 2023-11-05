@@ -54,12 +54,38 @@ export default function Page() {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [suggestions, setSuggestions] = useState<FoodItem[]>([]);
 
+  const rowCount = 5000;
+  const listHeight = 400;
+  const rowHeight = 50;
+  const rowWidth = 700;
+
+  const list = Array(rowCount)
+    .fill(suggestions)
+    .map((val, idx) => {
+      return {
+        
+      };
+    });
+
+  function renderRow({ index, key, style }) {
+    return (
+      <div key={key} style={style} className="row">
+        <div
+          className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          onClick={() => addFoodToConsumedList(list[index].nama)}
+        >
+          {list[index].nama}
+        </div>
+      </div>
+    );
+  }
+
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
     setSearchTerm(value);
 
     // Filter data makanan berdasarkan nama makanan yang mengandung nilai input
-    const filteredSuggestions: FoodItem[] = jsonData
+    let filteredSuggestions: FoodItem[] = jsonData
       .filter((item: FoodData) =>
         item.nama.toLowerCase().includes(value.toLowerCase())
       )
@@ -68,7 +94,12 @@ export default function Page() {
         quantity: 1, // Tambahkan properti 'quantity' dengan nilai 1 ke setiap item
       }));
 
-    // Perbarui state suggestions dengan data yang sudah difilter dan diberi properti 'quantity'
+    // Sort filteredSuggestions in ascending order by nama
+    filteredSuggestions = filteredSuggestions.sort((a, b) =>
+      a.nama.localeCompare(b.nama)
+    );
+
+    // Perbarui state suggestions dengan data yang sudah difilter, diurutkan, dan diberi properti 'quantity'
     setSuggestions(filteredSuggestions);
   };
 
@@ -129,13 +160,14 @@ export default function Page() {
       const { quantity, energi, protein, lemak, karbohidrat, serat } = food;
       const updatedFood = {
         ...food,
-        quantity: food.quantity * quantity, // Update the quantity to reflect the total quantity
+        quantity: food.quantity, // Update the quantity to reflect the total quantity
       };
-      totalValues.totalCalory += energi * updatedFood.quantity;
-      totalValues.totalProtein += protein * updatedFood.quantity;
-      totalValues.totalFat += lemak * updatedFood.quantity;
-      totalValues.totalCarbohidrate += karbohidrat * updatedFood.quantity;
-      totalValues.totalFiber += serat * updatedFood.quantity;
+      totalValues.totalCalory += (energi / 100) * updatedFood.quantity;
+      totalValues.totalProtein += (protein / 100) * updatedFood.quantity;
+      totalValues.totalFat += (lemak / 100) * updatedFood.quantity;
+      totalValues.totalCarbohidrate +=
+        (karbohidrat / 100) * updatedFood.quantity;
+      totalValues.totalFiber += (serat / 100) * updatedFood.quantity;
       return updatedFood;
     });
 
