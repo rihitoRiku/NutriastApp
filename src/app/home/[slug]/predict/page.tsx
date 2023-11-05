@@ -1,12 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import useInputRegisterStore from "@/hooks/useInputRegister";
 import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 import Illust from "/public/assets/illust/medical.svg";
 import toast from "react-hot-toast";
+import LoaderComponent from "../../../components/loader/loader";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const router = useRouter();
@@ -110,6 +110,16 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      {/* Loader */}
+      {loading ? (
+        <>
+          <div className="z-30 flex justify-center items-center fixed top-0 w-screen h-screen bg-slate-700 opacity-20">
+            <LoaderComponent />
+          </div>
+        </>
+      ) : (
+        ""
+      )}
       <Link href={`/home/${params.slug}`}>
         <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl scale-95">
           <button
