@@ -42,7 +42,7 @@ export const Register: React.FC<modalProps> = ({ active, closeModal }) => {
             closeModal();
           }
         })
-        .catch((err) => toast.error(err.message));
+        .catch((err) => toast.error(err.response.data.message));
     } catch (err) {
       console.log(err);
     }

@@ -67,18 +67,6 @@ export default function Page() {
       };
     });
 
-  function renderRow({ index, key, style }) {
-    return (
-      <div key={key} style={style} className="row">
-        <div
-          className="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-          onClick={() => addFoodToConsumedList(list[index].nama)}
-        >
-          {list[index].nama}
-        </div>
-      </div>
-    );
-  }
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
