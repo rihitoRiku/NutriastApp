@@ -199,6 +199,30 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
       ) : (
         <></>
       )}
+      <Link href={`${slug}/history`} passHref>
+        <button
+          type="button"
+          className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-history me-2"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="#a7a7a7"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 8l0 4l2 2" />
+            <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+          </svg>
+          History
+        </button>
+      </Link>
     </>
   );
 };
@@ -285,29 +309,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      // try {
-      //   const cachedDataStatus = localStorage.getItem("cachedDataStatus");
-      //   if (cachedDataStatus) {
-      //     setStatus(JSON.parse(cachedDataStatus));
-      //   } else {
-      //     const statusIntake = await axios.get(
-      //       `http://localhost:5000/intakeuserstatus`,
-      //       {
-      //         withCredentials: true,
-      //       }
-      //     );
-      //     // Store the response in localStorage for future use
-      //     localStorage.setItem("cachedDataStatus", JSON.stringify(statusIntake.data.status));
-      //     setStatus(statusIntake.data.status);
-      //   }
 
-      // } catch (error) {
-      //   if (axios.isAxiosError(error) && error.response) {
-      //     if (error.response.status === 403 || error.response.status === 400) {
-      //       router.push("/login");
-      //     }
-      //   }
-      // }
       try {
         // Check if data exists in localStorage
         const cachedData = localStorage.getItem("cachedData");
@@ -384,6 +386,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     // Add event listener to clear cached data when the page is about to unload (refresh or navigate away)
     const clearCacheBeforeUnload = (event: BeforeUnloadEvent) => {
       localStorage.removeItem("cachedData");
+      localStorage.removeItem("healthData");
       localStorage.removeItem("cachedDataIntake");
     };
     window.addEventListener("beforeunload", clearCacheBeforeUnload);
@@ -442,22 +445,19 @@ export default function Page({ params }: { params: { slug: string } }) {
           </Link>
 
           <div className="flex justify-between items-center gap-12 ">
-            <Link href={`${params.slug}/history`} passHref>
-              History
-            </Link>
             <button
               type="button"
-              className="inline-flex items-center hover:text-white border border-green-700 hover:bg-green-800 font-semibold rounded-full text-sm px-5 py-2.5 text-center  "
+              className="inline-flex items-center border border-[#a7a7a7] font-semibold rounded-full text-sm px-5 py-2.5 text-center  "
               onClick={handleLogOut}
             >
-              <span className="me-2"> Logout </span>
+              <span className="me-2 text-[#5e5e5e]"> Logout </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#000000"
+                stroke="#5e5e5e"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -529,8 +529,27 @@ export default function Page({ params }: { params: { slug: string } }) {
               />
             </div>
             <div className="flex-1 ">
-              <div className="text-body text-xl font-semibold text-gray-500 mb-4">
-                Cardiovascular Risk
+              <div className="text-body text-xl font-semibold text-gray-500 mb-4 flex items-center gap-3">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="icon icon-tabler icon-tabler-heart-exclamation"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M15.03 17l-3.03 3l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.922 6.102" />
+                    <path d="M19 16v3" />
+                    <path d="M19 22v.01" />
+                  </svg>
+                </span>
+                <span>Cardiovascular Risk</span>
               </div>
               <Card
                 title={cardioStatusTitle}
