@@ -110,7 +110,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             <table className="table-fixed min-w-full">
               <thead className=" text-xl border border-b-[20px] border-white bg-white">
                 <tr className="sticky top-0 bg-white">
-                  <th className="w-1/3 text-start bg-white">
+                  <th className="w-1/3 text-center bg-white">
                     <div className="inline-flex gap-3 items-center">
                       <span>
                         <svg
@@ -137,7 +137,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       <span>Date</span>
                     </div>
                   </th>
-                  <th className="w-1/3 text-start bg-white">
+                  <th className="w-1/3 text-center bg-white">
                     <div className="inline-flex gap-3 items-center">
                       <span>
                         <svg
@@ -161,7 +161,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       <span>Result</span>
                     </div>
                   </th>
-                  <th className="w-1/3 text-start bg-white">
+                  <th className="w-1/3 text-center bg-white">
                     <div className="gap-3 items-center inline-flex">
                       <span>
                         <svg
@@ -188,14 +188,14 @@ export default function Page({ params }: { params: { slug: string } }) {
               </thead>
               <tbody className="">
                 {healthDataArray.map((item, index) => (
-                  <tr className="border-b-[20px] border-white" key={index}>
+                  <tr className="border-b-[20px] border-white hover:bg-gray-50" key={index}>
                     <>
-                      <td className=" text-lg font-normal">{item.createdAt}</td>
-                      <td className=" text-xl font-medium text-green-500">
+                      <td className=" text-lg font-normal text-center">{item.createdAt}</td>
+                      <td className=" text-xl font-medium text-green-500 text-center">
                         {item.healthstatus}
                       </td>
-                      <td className="">
-                        <ul className="flex flex-wrap gap-x-1 gap-y-3">
+                      <td className="block my-4">
+                        <ul className="flex flex-wrap gap-x-1 gap-y-3 justify-center items-center">
                           <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
                             Calory : {item.caloryintake}
                           </li>
