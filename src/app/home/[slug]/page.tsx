@@ -41,11 +41,11 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          stroke-width="2"
+          strokeWidth="2"
           stroke="currentColor"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" />
@@ -63,11 +63,11 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          stroke-width="2"
+          strokeWidth="2"
           stroke="currentColor"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M14 10a2 2 0 1 0 -4 0v4a2 2 0 1 0 4 0" />
@@ -85,11 +85,11 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          stroke-width="2"
+          strokeWidth="2"
           stroke="currentColor"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
@@ -108,11 +108,11 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          stroke-width="2"
+          strokeWidth="2"
           stroke="currentColor"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M5.628 11.283l5.644 -5.637c2.665 -2.663 5.924 -3.747 8.663 -1.205l.188 .181a2.987 2.987 0 0 1 0 4.228l-11.287 11.274a3 3 0 0 1 -4.089 .135l-.143 -.135c-2.728 -2.724 -1.704 -6.117 1.024 -8.841z" />
@@ -134,11 +134,11 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          stroke-width="2"
+          strokeWidth="2"
           stroke="currentColor"
           fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821" />
@@ -172,11 +172,12 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
   return (
     <>
       <div className="text-md break-words w-full mb-6">{data.feedback}</div>
+      <div className="inline-flex items-center">
       {healthStatus === "Unknown" ? (
         <Link href={`/home/${slug}/intake`}>
           <button
             type="button"
-            className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center"
+            className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center me-3"
           >
             Checkout
             <svg
@@ -202,7 +203,7 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
       <Link href={`${slug}/history`} passHref>
         <button
           type="button"
-          className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2"
+          className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -210,11 +211,11 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            stroke-width="2"
+            strokeWidth="2"
             stroke="#a7a7a7"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M12 8l0 4l2 2" />
@@ -223,6 +224,7 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
           History
         </button>
       </Link>
+      </div>
     </>
   );
 };
@@ -233,19 +235,23 @@ const RiskContent: FC<HealthRiskContentProps> = ({ data, slug }) => {
   if (cardioStatus === "Safe") {
     content = (
       <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nulla
-        recusandae repellat? Quibusdam, maiores?
+        Your condition on good situation right now. According to your report, we
+        found out your bloodstream is normal. Keep it up!
       </>
     );
   } else if (cardioStatus === "Aware") {
     content = (
       <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio unde quo
-        voluptate corrupti quisquam cum quam, doloribus architecto?
+        We inform you about your condition now below the average. According to
+        your report, you seems….., we suggest you visit a doctor as soon as
+        possible to treat your problem. Or you can consume more ….. And try to
+        cut your alcohol / reduce your smoking habit.
       </>
     );
   } else {
-    content = <>UwU</>;
+    content = (
+      <>Your report cannot be identified, we need more information from you.</>
+    );
   }
   return (
     <>
@@ -276,6 +282,7 @@ const RiskContent: FC<HealthRiskContentProps> = ({ data, slug }) => {
     </>
   );
 };
+
 
 export default function Page({ params }: { params: { slug: string } }) {
   const [loading, setLoading] = useState(false);
@@ -349,22 +356,6 @@ export default function Page({ params }: { params: { slug: string } }) {
           setDataIntake(responseIntake.data); // Use setDataIntake here
         }
 
-        if (cacheDataIntake) {
-          setDataIntake(JSON.parse(cacheDataIntake));
-        } else {
-          const responseIntake = await axios.get<DataIntakeProps>(
-            `http://localhost:5000/intakeusers/id`,
-            {
-              withCredentials: true,
-            }
-          );
-          localStorage.setItem(
-            "cachedDataIntake",
-            JSON.stringify(responseIntake.data)
-          );
-          setDataIntake(responseIntake.data); // Use setDataIntake here
-        }
-
         setLoading(false);
       } catch (err) {
         if (axios.isAxiosError(err) && err.response) {
@@ -399,6 +390,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const handleLogOut = () => {
     // Clear the cached data
     localStorage.removeItem("cachedData");
+    localStorage.removeItem("cachedDataIntake");
     setLoading(true);
     create("access_token");
     toast.success("Log Out Successfully");
@@ -477,11 +469,11 @@ export default function Page({ params }: { params: { slug: string } }) {
                   width="28"
                   height="28"
                   viewBox="0 0 24 24"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke="currentColor"
                   fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                   <path d="M19.5 12.572l-3 2.928m-5.5 3.5a8916.99 8916.99 0 0 0 -6.5 -6.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
@@ -502,11 +494,11 @@ export default function Page({ params }: { params: { slug: string } }) {
                     width="30"
                     height="30"
                     viewBox="0 0 24 24"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke="currentColor"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
@@ -537,11 +529,11 @@ export default function Page({ params }: { params: { slug: string } }) {
                     width="30"
                     height="30"
                     viewBox="0 0 24 24"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke="currentColor"
                     fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M15.03 17l-3.03 3l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.922 6.102" />
