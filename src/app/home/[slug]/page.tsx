@@ -54,6 +54,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         <span>
           Fat :{" "}
           <span className="font-semibold text-gray-600">{data.fatneed}</span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -76,6 +77,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         <span>
           Calory :{" "}
           <span className="font-semibold text-gray-600">{data.caloryneed}</span>
+          <span className="ms-1">cal</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -99,6 +101,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         <span>
           Fiber :{" "}
           <span className="font-semibold text-gray-600">{data.fiberneed}</span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -125,6 +128,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <span className="font-semibold text-gray-600">
             {data.carbohidrateneed}
           </span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -151,6 +155,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <span className="font-semibold text-gray-600">
             {data.proteinneed}
           </span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
     </ul>
