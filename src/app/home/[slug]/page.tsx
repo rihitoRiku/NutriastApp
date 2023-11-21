@@ -124,7 +124,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <path d="M12.5 4.5l1.5 3.5" />
         </svg>
         <span>
-          Carbohidrate :{" "}
+          Carbohydrate :{" "}
           <span className="font-semibold text-gray-600">
             {data.carbohidrateneed}
           </span>
