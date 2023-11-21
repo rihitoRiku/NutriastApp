@@ -6,7 +6,6 @@ import { parse } from "url";
 export function middleware(req: NextRequest) {
   const cookie = req.cookies.get("Login Token");
   const parsedUrl = parse(req.url, true);
-
   //   console.log(parsedUrl.pathname === "/login");
   if (cookie) {
     return NextResponse.next();
