@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 
 interface CardInterface {
-  title?: React.ReactNode;
+  title?: ReactNode;
   content?: ReactNode;
 }
 
@@ -9,7 +9,7 @@ export default function Card({ title, content }: CardInterface) {
   // Determine the text color class based on the title prop
   let titleColorClass = "text-red-500"; // Default to red color
 
-  if (title === "Good") {
+  if (title === "Excellent") {
     titleColorClass = "text-green-500";
   } else if (title === "Warning") {
     titleColorClass = "text-yellow-500";

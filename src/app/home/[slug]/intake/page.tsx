@@ -167,7 +167,7 @@ export default function Page() {
       withCredentials: true,
     };
 
-    const data = JSON.stringify(consumedFoods); // Convert the data to a JSON string
+    const data = JSON.stringify(totalValues); // Convert the data to a JSON string
 
     try {
       const response = await axios.post(url, totalValues, headers);
