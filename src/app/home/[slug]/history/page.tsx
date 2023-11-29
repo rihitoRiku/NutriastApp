@@ -41,12 +41,9 @@ export default function Page({ params }: { params: { slug: string } }) {
           formattedData = JSON.parse(cachedData);
         } else {
           // Fetch data from API if no cached data
-          const response = await axios.get<ApiResponse>(
-            `http://localhost:5000/history`,
-            {
-              withCredentials: true,
-            }
-          );
+          const response = await axios.get<ApiResponse>(`http://localhost:5000/history`, {
+            withCredentials: true,
+          });
           formattedData = response.data.data.map((item) => ({
             ...item,
             createdAt: new Date(item.createdAt).toISOString().split("T")[0],
@@ -80,21 +77,8 @@ export default function Page({ params }: { params: { slug: string } }) {
     <>
       <Link href={`/home/${params.slug}`}>
         <div className="ps-4 md:ps-0 mx-auto absolute top-0 left-0 right-0 mt-8 md:mt-14 w-full max-w-5xl scale-95">
-          <button
-            type="button"
-            className=" font-medium text-xl text-center flex items-center "
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#000000"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
+          <button type="button" className=" font-medium text-xl text-center flex items-center ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
             </svg>
             <span className="">Back</span>
@@ -102,15 +86,13 @@ export default function Page({ params }: { params: { slug: string } }) {
         </div>
       </Link>
       <div className="px-4 max-w-5xl mx-auto scale-95">
-        <div className="text-2xl lg:text-4xl font-semibold font-display text-center mt-24 mb-4">
-          History Daily Nutrition
-        </div>
+        <div className="text-2xl lg:text-4xl font-semibold font-display text-center mt-24 mb-4">History Daily Nutrition</div>
         <div className="mx-auto font-display mt-12">
           <div className="overflow-x-auto h-[60vh] overflow-y-auto">
             <table className="table-fixed min-w-full">
               <thead className=" text-xl border border-b-[20px] border-white bg-white">
                 <tr className="sticky top-0 bg-white">
-                  <th className="w-1/3 text-center bg-white">
+                  <th className="w-1/5 text-center bg-white">
                     <div className="inline-flex gap-3 items-center">
                       <span>
                         <svg
@@ -137,7 +119,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       <span>Date</span>
                     </div>
                   </th>
-                  <th className="w-1/3 text-center bg-white">
+                  <th className="w-1/5 text-center bg-white">
                     <div className="inline-flex gap-3 items-center">
                       <span>
                         <svg
@@ -161,7 +143,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                       <span>Result</span>
                     </div>
                   </th>
-                  <th className="w-1/3 text-center bg-white">
+                  <th className="w-3/5 text-center bg-white">
                     <div className="gap-3 items-center inline-flex">
                       <span>
                         <svg
@@ -191,26 +173,14 @@ export default function Page({ params }: { params: { slug: string } }) {
                   <tr className="border-b-[20px] border-white hover:bg-gray-50" key={index}>
                     <>
                       <td className=" text-lg font-normal text-center">{item.createdAt}</td>
-                      <td className=" text-xl font-medium text-green-500 text-center">
-                        {item.healthstatus}
-                      </td>
+                      <td className=" text-xl font-medium text-green-500 text-center">{item.healthstatus}</td>
                       <td className="block my-4">
                         <ul className="flex flex-wrap gap-x-1 gap-y-3 justify-center items-center">
-                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-                            Calory : {item.caloryintake}
-                          </li>
-                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-                            Carbohidrate : {item.carbohidrateintake}
-                          </li>
-                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-                            Fat : {item.fatintake}
-                          </li>
-                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-                            Fiber : {item.fiberintake}
-                          </li>
-                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-                            Protein : {item.proteinintake}
-                          </li>
+                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Calory : {item.caloryintake} calories</li>
+                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Carbohidrate : {item.carbohidrateintake} grams</li>
+                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Fat : {item.fatintake} grams</li>
+                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Fiber : {item.fiberintake} grams</li>
+                          <li className="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Protein : {item.proteinintake} grams</li>
                         </ul>
                       </td>
                     </>

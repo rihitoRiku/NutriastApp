@@ -37,29 +37,6 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
       <li className="flex items-center space-x-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-droplet "
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" />
-        </svg>
-
-        <span>
-          Fat :{" "}
-          <span className="font-semibold text-gray-600">{data.fatneed}</span>
-          <span className="ms-1">gr</span>
-        </span>
-      </li>
-      <li className="flex items-center space-x-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
           className="icon icon-tabler icon-tabler-square-rounded-letter-c"
           width="24"
           height="24"
@@ -75,48 +52,12 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
         </svg>
         <span>
-          Calory :{" "}
-          <span className="font-semibold text-gray-600">{data.caloryneed}</span>
+          Calory : <span className="font-semibold text-gray-600">{data.caloryneed}</span>
           <span className="ms-1">cal</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-apple"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-          <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2" />
-          <path d="M10 10.5c1.333 .667 2.667 .667 4 0" />
-        </svg>
-        <span>
-          Fiber :{" "}
-          <span className="font-semibold text-gray-600">{data.fiberneed}</span>
-          <span className="ms-1">gr</span>
-        </span>
-      </li>
-      <li className="flex items-center space-x-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-baguette"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-baguette" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M5.628 11.283l5.644 -5.637c2.665 -2.663 5.924 -3.747 8.663 -1.205l.188 .181a2.987 2.987 0 0 1 0 4.228l-11.287 11.274a3 3 0 0 1 -4.089 .135l-.143 -.135c-2.728 -2.724 -1.704 -6.117 1.024 -8.841z" />
           <path d="M9.5 7.5l1.5 3.5" />
@@ -124,26 +65,37 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <path d="M12.5 4.5l1.5 3.5" />
         </svg>
         <span>
-          Carbohydrate :{" "}
-          <span className="font-semibold text-gray-600">
-            {data.carbohidrateneed}
-          </span>
-          <span className="ms-1">gr</span>
+          Carbohydrate : <span className="font-semibold text-gray-600">{data.carbohidrateneed}</span>
+          <span className="ms-1">grams</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-meat"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          strokeWidth="2"
-          stroke="currentColor"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-droplet " width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M7.502 19.423c2.602 2.105 6.395 2.105 8.996 0c2.602 -2.105 3.262 -5.708 1.566 -8.546l-4.89 -7.26c-.42 -.625 -1.287 -.803 -1.936 -.397a1.376 1.376 0 0 0 -.41 .397l-4.893 7.26c-1.695 2.838 -1.035 6.441 1.567 8.546z" />
+        </svg>
+
+        <span>
+          Fat : <span className="font-semibold text-gray-600">{data.fatneed}</span>
+          <span className="ms-1">grams</span>
+        </span>
+      </li>
+
+      <li className="flex items-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-apple" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 14m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2" />
+          <path d="M10 10.5c1.333 .667 2.667 .667 4 0" />
+        </svg>
+        <span>
+          Fiber : <span className="font-semibold text-gray-600">{data.fiberneed}</span>
+          <span className="ms-1">grams</span>
+        </span>
+      </li>
+
+      <li className="flex items-center space-x-3">
+        <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-meat" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821" />
           <path d="M5.904 18.596c2.733 2.734 5.9 4 7.07 2.829c1.172 -1.172 -.094 -4.338 -2.828 -7.071c-2.733 -2.734 -5.9 -4 -7.07 -2.829c-1.172 1.172 .094 4.338 2.828 7.071z" />
@@ -151,11 +103,8 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <path d="M12.975 21.425c3.905 -3.906 4.855 -9.288 2.121 -12.021c-2.733 -2.734 -8.115 -1.784 -12.02 2.121" />
         </svg>
         <span>
-          Protein :{" "}
-          <span className="font-semibold text-gray-600">
-            {data.proteinneed}
-          </span>
-          <span className="ms-1">gr</span>
+          Protein : <span className="font-semibold text-gray-600">{data.proteinneed}</span>
+          <span className="ms-1">grams</span>
         </span>
       </li>
     </ul>
@@ -179,45 +128,16 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
       <div className="text-md break-words w-full mb-6">{data.feedback}</div>
       <div className="inline-flex items-center">
         <Link href={`/home/${slug}/intake`}>
-          <button
-            type="button"
-            className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center me-3"
-          >
+          <button type="button" className="inline-flex items-center text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl font-medium rounded-lg text-sm px-8 py-3 text-center me-3">
             Checkout
-            <svg
-              className="w-3.5 h-3.5 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
+            <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
           </button>
         </Link>
         <Link href={`${slug}/history`} passHref>
-          <button
-            type="button"
-            className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-history me-2"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="#a7a7a7"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
+          <button type="button" className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-history me-2" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="#a7a7a7" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M12 8l0 4l2 2" />
               <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
@@ -234,25 +154,16 @@ const RiskContent: FC<HealthRiskContentProps> = ({ data, slug }) => {
   const cardioStatus: string = data.cardiovascular || "";
   let content;
   if (cardioStatus === "Safe") {
-    content = (
-      <>
-        Your condition on good situation right now. According to your report, we
-        found out your bloodstream is normal. Keep it up!
-      </>
-    );
+    content = <>Your condition on good situation right now. According to your report, we found out your bloodstream is normal. Keep it up!</>;
   } else if (cardioStatus === "Aware") {
     content = (
       <>
-        We inform you about your condition now below the average. According to
-        your report, you seems….., we suggest you visit a doctor as soon as
-        possible to treat your problem. Or you can consume more ….. And try to
-        cut your alcohol / reduce your smoking habit.
+        We inform you about your condition now below the average. According to your report, you seems….., we suggest you visit a doctor as soon as possible to treat your problem. Or you can consume more ….. And try to cut your alcohol /
+        reduce your smoking habit.
       </>
     );
   } else {
-    content = (
-      <>Your report cannot be identified, we need more information from you.</>
-    );
+    content = <>Your report cannot be identified, we need more information from you.</>;
   }
   return (
     <>
@@ -263,20 +174,8 @@ const RiskContent: FC<HealthRiskContentProps> = ({ data, slug }) => {
           className="inline-flex items-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 font-semibold rounded-lg text-sm px-8 py-3 text-center mr-2 mb-2"
         >
           Predict Now!
-          <svg
-            className="w-3.5 h-3.5 ml-2"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
+          <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
           </svg>
         </button>
       </Link>
@@ -326,33 +225,21 @@ export default function Page({ params }: { params: { slug: string } }) {
           setData(JSON.parse(cachedData));
         } else {
           // If no cached data, make a request
-          const responseUsers = await axios.get<DataProps>(
-            `http://localhost:5000/users/${params.slug}`,
-            {
-              withCredentials: true,
-            }
-          );
+          const responseUsers = await axios.get<DataProps>(`http://localhost:5000/users/${params.slug}`, {
+            withCredentials: true,
+          });
           // Store the responseUsers in localStorage for future use
-          localStorage.setItem(
-            "cachedData",
-            JSON.stringify(responseUsers.data)
-          );
+          localStorage.setItem("cachedData", JSON.stringify(responseUsers.data));
           setData(responseUsers.data);
         }
 
         if (cacheDataIntake) {
           setDataIntake(JSON.parse(cacheDataIntake));
         } else {
-          const responseIntake = await axios.get<DataIntakeProps>(
-            `http://localhost:5000/intakeusers/id`,
-            {
-              withCredentials: true,
-            }
-          );
-          localStorage.setItem(
-            "cachedDataIntake",
-            JSON.stringify(responseIntake.data)
-          );
+          const responseIntake = await axios.get<DataIntakeProps>(`http://localhost:5000/intakeusers/id`, {
+            withCredentials: true,
+          });
+          localStorage.setItem("cachedDataIntake", JSON.stringify(responseIntake.data));
           setDataIntake(responseIntake.data); // Use setDataIntake here
         }
 
@@ -424,11 +311,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <Link href={`${params.slug}/profile`} passHref>
             <div className="flex items-center space-x-4">
               <div className=""></div>
-              <img
-                className="w-14 h-14 rounded-full border-2"
-                src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Bear"
-                alt="avatar"
-              />
+              <img className="w-14 h-14 rounded-full border-2" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=Bear" alt="avatar" />
               <div className="font-medium">
                 <div className="text-md text-gray-500">Good afternoon,</div>
                 <div className="text-xl">{data.data.username}</div>
@@ -437,23 +320,9 @@ export default function Page({ params }: { params: { slug: string } }) {
           </Link>
 
           <div className="flex justify-between items-center gap-12 ">
-            <button
-              type="button"
-              className="inline-flex items-center border border-[#a7a7a7] font-semibold rounded-full text-sm px-5 py-2.5 text-center  "
-              onClick={handleLogOut}
-            >
+            <button type="button" className="inline-flex items-center border border-[#a7a7a7] font-semibold rounded-full text-sm px-5 py-2.5 text-center  " onClick={handleLogOut}>
               <span className="me-2 text-[#5e5e5e]"> Logout </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#5e5e5e"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#5e5e5e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 17l5-5-5-5M19.8 12H9M13 22a10 10 0 1 1 0-20" />
               </svg>
             </button>
@@ -510,15 +379,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 </span>
                 Health Status
               </div>
-              <Card
-                title={dataIntake.data.healthstatus}
-                content={
-                  <HealthStatusContent
-                    data={dataIntake.data}
-                    slug={params.slug}
-                  />
-                }
-              />
+              <Card title={dataIntake.data.healthstatus} content={<HealthStatusContent data={dataIntake.data} slug={params.slug} />} />
             </div>
             <div className="flex-1 ">
               <div className="text-body text-xl font-semibold text-gray-500 mb-4 flex items-center gap-3">
@@ -543,10 +404,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 </span>
                 <span>Cardiovascular Risk</span>
               </div>
-              <Card
-                title={cardioStatusTitle}
-                content={<RiskContent data={data.data} slug={params.slug} />}
-              />
+              <Card title={cardioStatusTitle} content={<RiskContent data={data.data} slug={params.slug} />} />
             </div>
           </div>
         </div>
