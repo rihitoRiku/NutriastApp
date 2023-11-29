@@ -54,6 +54,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         <span>
           Fat :{" "}
           <span className="font-semibold text-gray-600">{data.fatneed}</span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -76,6 +77,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         <span>
           Calory :{" "}
           <span className="font-semibold text-gray-600">{data.caloryneed}</span>
+          <span className="ms-1">cal</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -99,6 +101,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
         <span>
           Fiber :{" "}
           <span className="font-semibold text-gray-600">{data.fiberneed}</span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -121,10 +124,11 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <path d="M12.5 4.5l1.5 3.5" />
         </svg>
         <span>
-          Carbohidrate :{" "}
+          Carbohydrate :{" "}
           <span className="font-semibold text-gray-600">
             {data.carbohidrateneed}
           </span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
       <li className="flex items-center space-x-3">
@@ -151,6 +155,7 @@ const DailyNutritionContent: FC<DataProps> = ({ data }) => (
           <span className="font-semibold text-gray-600">
             {data.proteinneed}
           </span>
+          <span className="ms-1">gr</span>
         </span>
       </li>
     </ul>
@@ -173,7 +178,6 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
     <>
       <div className="text-md break-words w-full mb-6">{data.feedback}</div>
       <div className="inline-flex items-center">
-      {healthStatus === "Unknown" ? (
         <Link href={`/home/${slug}/intake`}>
           <button
             type="button"
@@ -197,33 +201,30 @@ const HealthStatusContent: FC<HealthStatusContentProps> = ({ data, slug }) => {
             </svg>
           </button>
         </Link>
-      ) : (
-        <></>
-      )}
-      <Link href={`${slug}/history`} passHref>
-        <button
-          type="button"
-          className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-history me-2"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            strokeWidth="2"
-            stroke="#a7a7a7"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+        <Link href={`${slug}/history`} passHref>
+          <button
+            type="button"
+            className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
           >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M12 8l0 4l2 2" />
-            <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
-          </svg>
-          History
-        </button>
-      </Link>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-history me-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="#a7a7a7"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 8l0 4l2 2" />
+              <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+            </svg>
+            History
+          </button>
+        </Link>
       </div>
     </>
   );
@@ -282,7 +283,6 @@ const RiskContent: FC<HealthRiskContentProps> = ({ data, slug }) => {
     </>
   );
 };
-
 
 export default function Page({ params }: { params: { slug: string } }) {
   const [loading, setLoading] = useState(false);
